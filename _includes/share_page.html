@@ -1,36 +1,39 @@
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
-  (function(d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-    fjs.parentNode.insertBefore(js, fjs);
-  })(document, "script", "facebook-jssdk");
+    (function (d, s, id) {
+        var js,
+            fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+        fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'facebook-jssdk');
 </script>
-  <script
-  async
-  src="https://platform.twitter.com/widgets.js"
-  charset="utf-8"
-></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <div class="share-page">
-  <p class="share-text">Share this on &rarr;</p>
-  <a
-    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-    class="twitter-share-button"
-    data-size="large"
-    data-show-count="false"
-    style="margin-top:5px;"
-    >Tweet</a
-  >
-  <a
-    class="fb-share-button"
-    data-href="{{site.url}}{{page.url}}"
-    data-size="large"
-    data-layout="button"
-  >Share</a>
+    <p class="share-text">Share this on &rarr;</p>
+    <a
+        href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+        class="twitter-share-button"
+        data-size="large"
+        data-show-count="false"
+        style="margin-top: 5px"
+    ></a>
+    <a class="fb-share-button" data-href="{{site.url}}{{page.url}}" data-size="large" data-layout="button"></a>
+    <a
+        href="https://www.linkedin.com/shareArticle?mini=true&url=YOUR_PAGE_URL&title=Page%20Title&summary=Page%20Description&source=YourWebsite"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="linkedin-share-button"
+        style="margin-left: 10px; text-decoration: none"
+    >
+        <img
+            src="https://static.licdn.com/scds/common/u/images/logos/linkedin/logo_linkedin_93x21_v2.png"
+            alt="Share on LinkedIn"
+            style="height: 24px; vertical-align: middle"
+        />
+    </a>
 </div>

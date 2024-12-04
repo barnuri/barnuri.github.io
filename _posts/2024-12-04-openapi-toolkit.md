@@ -1,7 +1,6 @@
 ---
 title: "Supercharge Your API Development with OpenAPI Toolkit \U0001F680"
 layout: post
-author: barnuri
 date: '2024-12-04 12:05:23'
 thumbnail: "/assets/img/posts/openapi-toolkil-post.png"
 permalink: "/blog/openapi-toolkit/"
