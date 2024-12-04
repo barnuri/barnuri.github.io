@@ -1,5 +1,5 @@
 ---
-title: 'C# LINQ to KQL with ORMGEN OpenSource'
+title: C# LINQ to KQL with ORMGEN OpenSource
 layout: post
 date: '2024-12-04 12:05:23'
 thumbnail: '/assets/img/posts/CSharp.OpenSource.LinqToKql.jpeg'
@@ -7,6 +7,7 @@ permalink: '/blog/LinqToKql/'
 usemathjax: true
 categories:
     - codegen
+    - dotnet
 ---
 
 # CSharp.OpenSource.LinqToKql: LINQ to KQL with ORMGEN
