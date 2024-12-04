@@ -1,54 +1,126 @@
 ---
 title: "Supercharge Your API Development with OpenAPI Toolkit \U0001F680"
 layout: post
-summary: "Supercharge Your API Development with OpenAPI Toolkit \U0001F680"
 author: barnuri
 date: '2024-12-04 12:05:23'
 thumbnail: "/assets/img/posts/openapi-toolkil-post.png"
 permalink: "/blog/openapi-toolkit/"
 usemathjax: true
+categories:
+- codegen
 ---
 
-# Supercharge Your API Development with OpenAPI Toolkit 🚀
+The world of APIs is vast, but developing and integrating them doesn’t have to be complicated. Introducing [**OpenAPI Toolkit**](https://github.com/barnuri/openapi-toolkit)—an open-source solution designed to streamline the way you work with OpenAPI (formerly Swagger) specifications.  
 
-The world of APIs is vast, but developing and integrating them doesn’t have to be complicated. Introducing [**OpenAPI Toolkit**](https://github.com/barnuri/openapi-toolkit)—an open-source solution designed to streamline the way you work with OpenAPI (formerly Swagger) specifications.
+## What is OpenAPI Toolkit?  
 
-## What is OpenAPI Toolkit?
+**OpenAPI Toolkit** is a developer's dream come true. By taking an OpenAPI/Swagger file as input, the toolkit automatically generates both server and client code. This simplifies API integration and development by reducing manual errors, ensuring consistency, and speeding up workflows.  
 
-**OpenAPI Toolkit** is a developer's dream come true. It takes your OpenAPI/Swagger files and automatically generates both server and client code. This means you can focus on what matters most—building robust services and integrating them seamlessly—without being bogged down by repetitive boilerplate coding.
+Whether you're building a new service or integrating with existing APIs, OpenAPI Toolkit provides ready-to-use, tailored code that adheres to your specifications.  
 
-## Key Features
+## Key Features  
 
--   **Automatic Code Generation**:  
-    By feeding an OpenAPI/Swagger specification file into the toolkit, you get server and client code ready to go. This dramatically accelerates development time.
+- **Automatic Code Generation**:  
+  Generate server and client code instantly from your OpenAPI/Swagger specifications.  
 
--   **Consistency Across Platforms**:  
-    Ensures uniformity in how APIs are implemented and consumed, regardless of platform or language.
+- **Versatile Integration**:  
+  Supports multiple languages and frameworks, including TypeScript, Python, Go, and C#.  
 
--   **Error Reduction**:  
-    Automating code generation minimizes the risk of manual errors often encountered during repetitive coding tasks.
+- **Error Reduction**:  
+  Eliminates manual coding errors and ensures accuracy across implementations.  
 
--   **Versatile Application**:  
-    Whether you're creating a new API service or integrating with existing APIs, OpenAPI Toolkit handles the heavy lifting for you.
+- **Consistency Across Platforms**:  
+  Guarantees uniformity, making APIs easier to manage and scale.  
 
-## Why Choose OpenAPI Toolkit?
+## Installation  
 
-With OpenAPI Toolkit, you can:
+You can install OpenAPI Toolkit using npm:  
 
--   **Save Time**: Focus on creating value instead of writing repetitive code.
--   **Ensure Quality**: Generate code that adheres to your OpenAPI specifications, guaranteeing accuracy and reducing debugging time.
--   **Simplify Workflows**: Tackle API integration and development challenges with ease.
+```bash
+npm i openapi-toolkit
+```
 
-## Get Started
+For global CLI usage:  
 
-Ready to transform your API development? Explore the OpenAPI Toolkit on GitHub:
+```bash
+npm i -g openapi-toolkit
+```
 
-➡️ [**Check it out here**](https://github.com/barnuri/openapi-toolkit)
+## Getting Started  
 
-## Contribute
+### Auto-Generate Client/Server Code  
 
-OpenAPI Toolkit is open source and thrives on community collaboration. Have ideas for improvements or found a bug? Head over to the repository and join the conversation!
+With CLI:  
+```bash
+openapi-toolkit -i https://petstore3.swagger.io/api/v3/openapi.json -g typescript-axios -o ./src/services/petStore --modelNamePrefix My --modelNameSuffix .dto
+```
 
----
+With Docker:  
+```bash
+docker run --rm --name openapi-toolkit -v "$(pwd)/output:/output" -e CLI_PARAMS="-i https://petstore3.swagger.io/api/v3/openapi.json -g typescript-axios --modelNamePrefix My --modelNameSuffix .dto" barnuri/openapi-toolkit
+```
 
-With **OpenAPI Toolkit**, API development has never been this effortless. Try it today and see the difference it makes in your workflow!
+### Auto-Generate Programmatically  
+
+Here’s an example of how to use the toolkit in Node.js:  
+
+```js
+const { multipleGenerate, generate } = require('openapi-toolkit');
+
+// Generate multiple outputs
+(async () => {
+    const sharedConfig = { debugLogs: false };
+    await multipleGenerate(`https://petstore3.swagger.io/api/v3/openapi.json`, [
+        { ...sharedConfig, generator: 'typescript-react-query', output: `./typescript-react-query/src` },
+        { ...sharedConfig, generator: 'typescript-axios', output: `./typescript-axios/src` },
+        { ...sharedConfig, generator: 'c#', output: `./c#/src` },
+        { ...sharedConfig, generator: 'go', output: `./go/src` },
+        { ...sharedConfig, generator: 'python', output: `./python/src` },
+    ]);
+})();
+
+// Generate a single output
+(async () => {
+    await generate({ pathOrUrl: `https://petstore3.swagger.io/api/v3/openapi.json`, generator: 'typescript-react-query', output: `./typescript-react-query/src` });
+})();
+```
+
+### CLI Options  
+
+Use the `-h` flag to see all available CLI options:  
+```text
+openapi-toolkit <command>, default command 'generate'
+
+Commands:
+  generate    auto generate proxy client from swagger file             [default]
+  generators  generators list
+  completion  generate completion script
+
+Options:
+      --version                Show version number                     [boolean]
+  -h, --help                   Show help                               [boolean]
+  -i, --pathOrUrl              path or url for swagger file           [required]
+  -o, --output                 output path                            [required]
+  -g, --generator              generator name      [default: "typescript-axios"]
+  -t, --type                   [choices: "client", "server"] [default: "client"]
+  -n, --namespace                         [default: "OpenapiDefinitionGenerate"]
+      --modelsFolderName                                     [default: "models"]
+      --modelNamePrefix                                            [default: ""]
+      --modelNameSuffix                                            [default: ""]
+```
+
+## VSCode Plugin  
+
+Boost productivity with the [**VSCode Plugin for Auto-Generate**](https://marketplace.visualstudio.com/items?itemName=Bar.generator-from-swagger).  
+
+## Examples  
+
+Check out the [examples](https://github.com/barnuri/openapi-toolkit/tree/main/examples/ReadMe.md) for more use cases.  
+
+## Contribute  
+
+OpenAPI Toolkit thrives on community contributions! Found a bug or have a feature request? Visit the [GitHub repository](https://github.com/barnuri/openapi-toolkit) and join the discussion.  
+
+---  
+
+With **OpenAPI Toolkit**, API development has never been this effortless. Try it today and revolutionize your workflow!
