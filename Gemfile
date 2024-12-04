@@ -19,7 +19,6 @@ gem "sinatra", ">= 3", "< 4"
 
 # Plugins
 group :jekyll_plugins do
-    # gem 'devlopr', '~> 0.4.5'
     gem 'jgd'
     gem 'jekyll-feed'
     gem 'jekyll-paginate'

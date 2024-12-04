@@ -23,12 +23,22 @@
     <ul class="nav justify-content-end">
         <li class="nav-item">
             <a class="nav-link toggle-search-button" href="#search">
-                <i class="fa fa-search search-icon" aria-hidden="true"></i>
+                <i class="fa fa-search search-icon header-icon" aria-hidden="true"></i>
             </a>
         </li>
         <li class="nav-item">
-            <input class="nav-link switch theme-toggle" type="checkbox" name="checkbox" />
+            <a class="nav-link" href="http://github.com/{{ site.github_username }}">
+                <i class="fab fa-github header-icon"></i>
+            </a>
         </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://linkedin.com/in/{{ site.linkedin_username }}">
+                <i class="fab fa-linkedin-in header-icon"></i>
+            </a>
+        </li>
+        <!-- <li class="nav-item">
+            <input class="nav-link switch theme-toggle" type="checkbox" name="checkbox" />
+        </li> -->
     </ul>
 </nav>
 <div id="progress-bar"></div>

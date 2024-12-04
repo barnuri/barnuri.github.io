@@ -15,9 +15,12 @@
             <a href="{{post.url}}" class="article-card-link">
                 <div id="article-container">
                     <div id="article-img">
-                        {% if post.author %} {% assign author = post.author %} {% if author %} {% assign author_data = site.data.authors[author] %}
-                        <img src="{{site.url}}{{site.baseurl}}/assets/img/post.png" width="50px" height="50px" />
-                        {% endif %} {% endif %}
+                        {% if post.thumbnail %}
+                        <img src="{{site.url}}{{site.baseurl}}{{ post.thumbnail }}" style="width: 150px; height: 150px" alt="{{ post.title }}" />
+                        {% else %}
+                        <!-- <img src="{{site.url}}{{site.baseurl}}/assets/img/post.png" alt="{{ post.title }}" /> -->
+                        <i class="fas fa-light fa-newspaper" style="font-size: 150px"></i>
+                        {% endif %}
                     </div>
                     <div id="article-link">
                         <p class="recent-article-link">
