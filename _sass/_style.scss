@@ -5,7 +5,7 @@ $mono-typeface: Menlo, Monaco, monospace;
 $text-width: 650px;
 
 html[data-theme='dark'] {
-    --bold-color: rgb(188, 188, 188);
+    --bold-color: rgb(255, 255, 255);
     --box-background-color: hsl(0, 0%, 20%);
     --highlight-color: hsl(0, 0%, 60%);
     --light-border-color: hsl(0, 0%, 30%);
@@ -13,7 +13,7 @@ html[data-theme='dark'] {
     --link-color: #f8f9fa;
     --link-color-visited: hsl(250, 100%, 60%);
     --main-background-color: rgb(28, 28, 30);
-    --main-text-color: rgb(139, 139, 139);
+    --main-text-color: rgb(189, 188, 188);
     --medium-text-color: hsl(0, 0%, 70%);
     --underline-color: hsl(0, 0%, 50%);
     --social-link-color: #ffffff;
@@ -46,7 +46,7 @@ html[data-theme='light'] {
     /* Dark Mode */
     html,
     html[data-theme='dark'] {
-        --bold-color: rgb(188, 188, 188);
+        --bold-color: rgb(255, 255, 255);
         --box-background-color: hsl(0, 0%, 20%);
         --highlight-color: hsl(0, 0%, 60%);
         --light-border-color: hsl(0, 0%, 30%);
@@ -57,7 +57,7 @@ html[data-theme='light'] {
         --nav-link-color: rgba(255, 255, 255, 0.5);
         --link-color-visited: hsl(250, 100%, 60%);
         --main-background-color: rgb(28, 28, 30);
-        --main-text-color: rgb(139, 139, 139);
+        --main-text-color: rgb(189, 188, 188);
         --medium-text-color: hsl(0, 0%, 70%);
         --underline-color: hsl(0, 0%, 50%);
         --social-link-color: #ffffff;
