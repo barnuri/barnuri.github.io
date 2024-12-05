@@ -1,7 +1,7 @@
 ---
 title: C# LINQ to KQL with ORMGEN OpenSource
 layout: post
-date: '2024-12-04 12:05:23'
+date: '2024-12-05 15:44:23'
 thumbnail: '/assets/img/posts/CSharp.OpenSource.LinqToKql.jpeg'
 permalink: '/blog/LinqToKql/'
 usemathjax: true
@@ -22,6 +22,63 @@ One of the standout features within this library is **ORMGEN**, an ORM (Object-R
 
 ORMGEN utilizes LINQ to KQL query translation behind the scenes. Developers can define their data models in C# and use standard LINQ syntax to query Kusto databases. ORMGEN then takes these LINQ queries and translates them into optimized KQL queries, which are executed on the Kusto cluster. This abstraction allows developers to stay focused on their application logic rather than worry about the underlying query language.
 
+#### Example of using ORMGenerator
+
+[Live Example - https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/blob/master//Samples/ORMGeneratorTest/](https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/blob/master//Samples/ORMGeneratorTest/)
+
+##### Generate
+```csharp
+        var providerExecutor = _mockExecutor.Object;
+        var ormGenerator = new ORMGenerator(new()
+        {
+            ProviderExecutor = providerExecutor,
+            ModelsFolderPath = "../../../../ORMGeneratorTests/Models",
+            DbContextFolderPath = "../../../../ORMGeneratorTests",
+            DbContextName = "AutoGenORMKustoDbContext",
+            Namespace = "AutoGen",
+            ModelsNamespace = "AutoGen",
+            DbContextNamespace = "AutoGen",
+            CreateDbContext = true,
+            CleanFolderBeforeCreate = true,
+            EnableNullable = true,
+            FileScopedNamespaces = true,
+            DatabaseConfigs = new List<ORMGeneratorDatabaseConfig>
+            {
+                new ORMGeneratorDatabaseConfig
+                {
+                    DatabaseName = DbName1,
+                    Filters = new ORMGeneratorFilterConfig()
+                },
+                new ORMGeneratorDatabaseConfig
+                {
+                    DatabaseName = DbName2,
+                    DatabaseDisplayName = "db2",
+                    Filters = new ORMGeneratorFilterConfig()
+                }
+            }
+        });
+        await _ormGenerator.GenerateAsync();
+        // output example https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/tree/master/Samples/ORMGeneratorTest
+```
+##### Usage
+```csharp
+using AutoGen;
+using CSharp.OpenSource.LinqToKql.Extensions;
+using CSharp.OpenSource.LinqToKql.Http;
+using Microsoft.Extensions.DependencyInjection;
+
+var services = new ServiceCollection();
+services.AddKustoDbContext<AutoGenORMKustoDbContext, KustoHttpClient>(sp => new KustoHttpClient("mycluster", "auth", "dbName"));
+var provider = services.BuildServiceProvider();
+var dbContext = provider.GetRequiredService<AutoGenORMKustoDbContext>();
+
+dbContext.TestTable1.Where(x => x.TestColumn == "test").ToList();
+dbContext.db2<object>("customQuery").ToList();
+dbContext.func1().ToList();
+dbContext.func2("name", "lastName").ToList();
+```
+
+##### Manual DbContext Example
 For example, a simple LINQ query like [Full Example](https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/blob/master/CSharp.OpenSource.LinqToKql.Test/Provider/MyMultiDbContext.cs):
 
 ```csharp
