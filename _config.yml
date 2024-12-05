@@ -8,6 +8,8 @@ urls:
     url: /
   - text: Blog
     url: /blog
+  - text: Repositories
+    url: 'https://barnuri.github.io/org-github-page-temaple/'
 author_logo: profile.png
 author: Bar Nuri
 author_bio: 'Hi, my name is Bar Nuri.'
@@ -17,36 +19,8 @@ author_website_url: 'https://barnuri.github.io'
 typewrite-text: 'Welcome to GitHub Pages'
 hero_cover_img: sample_cover.jpg
 author_work_experiences:
-  - company_name: Google
-    company_logo: google.png
-    company_url: 'https://google.com'
-    designation: Software Engineer
-    description: Worked on various Google Products
-    visibility: true
-  - company_name: Microsoft
-    company_logo: microsoft.png
-    company_url: 'https://microsoft.com'
-    designation: Azure Developer
-    description: Worked on various Azure Cloud Products
-    visibility: true
 author_education_details:
-  - college_logo: mit.png
-    college_name: MIT
-    college_url: 'https://mit.org'
-    college_degree: CS Engineer
-    description: Bachelor of Technology
-    visibility: true
 author_project_details:
-  - project_thumbnail: gamershub.png
-    project_title: Gamers Hub
-    project_description: A Platform built for Gamers and Game Devs
-    project_url: 'https://gamershub.in'
-    visibility: true
-  - project_thumbnail: hack4r.PNG
-    project_title: Hack4r
-    project_description: A Platform built for Hackers and Penetration Testers
-    project_url: 'https://hack4r.com'
-    visibility: true
 github_username: barnuri
 linkedin_username: barnuri
 formspree_email: barnuri@hotmail.com

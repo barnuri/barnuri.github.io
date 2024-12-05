@@ -15,7 +15,11 @@
         <ul class="navbar-nav">
             {% for i in site.urls %}
             <li class="nav-item">
-                <a class="nav-link" href="{{ site.url}}{{site.baseurl}}{{ i.url }}">{{ i.text }}</a>
+                <a
+                    class="nav-link"
+                    href="{% if i.url contains 'http://' or i.url contains 'https://' %}{{ i.url }}{% else %}{{ site.url }}{{ site.baseurl }}{{ i.url }}{% endif %}"
+                    >{{ i.text }}</a
+                >
             </li>
             {% endfor %}
         </ul>
