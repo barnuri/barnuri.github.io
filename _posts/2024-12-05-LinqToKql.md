@@ -1,7 +1,7 @@
 ---
 title: C# LINQ to KQL with ORMGEN OpenSource
 layout: post
-date: '2024-12-05 15:44:23'
+date: '2024-12-05 10:44:23'
 thumbnail: '/assets/img/posts/CSharp.OpenSource.LinqToKql.jpeg'
 permalink: '/blog/LinqToKql/'
 usemathjax: true
@@ -27,6 +27,7 @@ ORMGEN utilizes LINQ to KQL query translation behind the scenes. Developers can 
 [Live Example - https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/blob/master//Samples/ORMGeneratorTest/](https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/blob/master//Samples/ORMGeneratorTest/)
 
 ##### Generate
+
 ```csharp
         var providerExecutor = _mockExecutor.Object;
         var ormGenerator = new ORMGenerator(new()
@@ -60,7 +61,9 @@ ORMGEN utilizes LINQ to KQL query translation behind the scenes. Developers can 
         await _ormGenerator.GenerateAsync();
         // output example https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/tree/master/Samples/ORMGeneratorTest
 ```
+
 ##### Usage
+
 ```csharp
 using AutoGen;
 using CSharp.OpenSource.LinqToKql.Extensions;
@@ -79,6 +82,7 @@ dbContext.func2("name", "lastName").ToList();
 ```
 
 ##### Manual DbContext Example
+
 For example, a simple LINQ query like [Full Example](https://github.com/csharp-opensource/CSharp.OpenSource.LinqToKql/blob/master/CSharp.OpenSource.LinqToKql.Test/Provider/MyMultiDbContext.cs):
 
 ```csharp
