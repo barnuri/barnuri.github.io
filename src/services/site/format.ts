@@ -1,3 +1,5 @@
+import type { MonthYear } from '../../schemas/linkedin/month-year.ts';
+
 const EXCERPT_LENGTH = 280;
 const HEX_COLOR = /^#[0-9a-f]{3,8}$/i;
 
@@ -15,6 +17,20 @@ export function formatMonth(isoDate: string): string {
 
 export function formatNumber(value: number): string {
   return numberFormat.format(value);
+}
+
+export function formatMonthYear(date: MonthYear): string {
+  if (date.month === null) {
+    return String(date.year);
+  }
+  return monthFormat.format(new Date(Date.UTC(date.year, date.month - 1, 1))) + ` ${date.year}`;
+}
+
+export function formatRange(startedOn: MonthYear | null, finishedOn: MonthYear | null): string {
+  if (startedOn === null) {
+    return finishedOn ? formatMonthYear(finishedOn) : '';
+  }
+  return `${formatMonthYear(startedOn)} – ${finishedOn ? formatMonthYear(finishedOn) : 'Present'}`;
 }
 
 export function safeColor(color: string | null): string {

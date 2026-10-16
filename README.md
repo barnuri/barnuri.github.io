@@ -36,7 +36,10 @@ Set credentials in the current shell session only. Never put them in a file.
 ```bash
 bun run linkedin fetch --output-dir data
 bun run linkedin import-export ~/Downloads/Shares.csv --output-dir data
+bun run linkedin import-profile ~/Downloads/LinkedIn-archive --output-dir data
 ```
+
+`import-profile` reads `Positions.csv` and `Education.csv` from the unzipped full data archive and writes `data/linkedin_profile.json`. The page shows the Experience and Education sections only when that file exists. The LinkedIn API cannot read them, because LinkedIn restricts full profile fields to approved partners.
 
 Both commands write `linkedin_posts.json` and `linkedin_posts.md` and print a summary. `fetch` exit codes: 2 for a missing or invalid token, 3 when LinkedIn refuses `r_member_social`, 4 for other API errors.
 

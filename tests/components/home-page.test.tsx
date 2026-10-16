@@ -4,6 +4,7 @@ import { HomePage } from '../../src/components/HomePage.tsx';
 import type { ActivityItem } from '../../src/schemas/github/activity-item.ts';
 import type { GitHubData } from '../../src/schemas/github/github-data.ts';
 import type { LinkedInPost } from '../../src/schemas/linkedin/linkedin-post.ts';
+import type { LinkedInProfile } from '../../src/schemas/linkedin/linkedin-profile.ts';
 
 const activityItem = (index: number): ActivityItem => ({
   id: `pull_request:${index}`,
@@ -56,8 +57,10 @@ const linkedInPost: LinkedInPost = {
   engagement: { likes: null, comments: null, shares: null },
 };
 
-const render = (posts: LinkedInPost[] = [], data: GitHubData = github): string =>
-  renderToStaticMarkup(<HomePage github={data} linkedInPosts={posts} builtAt="2026-10-16T00:00:00Z" stylesheet="" />);
+const render = (posts: LinkedInPost[] = [], data: GitHubData = github, profile: LinkedInProfile | null = null): string =>
+  renderToStaticMarkup(
+    <HomePage github={data} linkedInPosts={posts} linkedInProfile={profile} builtAt="2026-10-16T00:00:00Z" stylesheet="" />,
+  );
 
 const withActivity = (count: number, privateContributions = 0): GitHubData => ({
   ...github,
@@ -132,5 +135,46 @@ describe('HomePage activity feed', () => {
 
   test('shows the private contribution count without repository names', () => {
     expect(render([], withActivity(1, 2484))).toContain('Plus 2,484 contributions in private repositories');
+  });
+});
+
+describe('HomePage experience and education', () => {
+  const profile: LinkedInProfile = {
+    imported_at: '2026-10-16T00:00:00.000Z',
+    positions: [
+      {
+        company: 'Check Point',
+        title: 'Software Developer',
+        description: 'Builds <agent> tooling',
+        location: 'Tel Aviv',
+        startedOn: { year: 2022, month: 3 },
+        finishedOn: null,
+      },
+    ],
+    education: [{ school: 'Open University', degree: 'B.Sc. Computer Science', notes: null, startedOn: { year: 2015, month: null }, finishedOn: { year: 2019, month: null } }],
+  };
+
+  test('are hidden without profile data', () => {
+    const html = render();
+
+    expect(html).not.toContain('Experience</h2>');
+    expect(html).not.toContain('Education</h2>');
+  });
+
+  test('show positions with date ranges and escaped text', () => {
+    const html = render([], github, profile);
+
+    expect(html).toContain('Software Developer');
+    expect(html).toContain('Check Point, Tel Aviv');
+    expect(html).toContain('Mar 2022 – Present');
+    expect(html).toContain('Builds &lt;agent&gt; tooling');
+  });
+
+  test('show education with year ranges', () => {
+    const html = render([], github, profile);
+
+    expect(html).toContain('Open University');
+    expect(html).toContain('B.Sc. Computer Science');
+    expect(html).toContain('2015 – 2019');
   });
 });

@@ -1,9 +1,12 @@
 import type { GitHubData } from '../schemas/github/github-data.ts';
 import type { LinkedInPost } from '../schemas/linkedin/linkedin-post.ts';
+import type { LinkedInProfile } from '../schemas/linkedin/linkedin-profile.ts';
 import { formatDate, formatNumber } from '../services/site/format.ts';
 import { ActivityFeed } from './ActivityFeed.tsx';
 import { ContributionGraph } from './ContributionGraph.tsx';
 import { Document } from './Document.tsx';
+import { Education } from './Education.tsx';
+import { Experience } from './Experience.tsx';
 import { FeaturedRepos } from './FeaturedRepos.tsx';
 import { LinkedInPosts } from './LinkedInPosts.tsx';
 import { ProfileIntro } from './ProfileIntro.tsx';
@@ -12,11 +15,12 @@ import { RecentRepos } from './RecentRepos.tsx';
 interface HomePageProps {
   readonly github: GitHubData;
   readonly linkedInPosts: readonly LinkedInPost[];
+  readonly linkedInProfile: LinkedInProfile | null;
   readonly builtAt: string;
   readonly stylesheet: string;
 }
 
-export function HomePage({ github, linkedInPosts, builtAt, stylesheet }: HomePageProps) {
+export function HomePage({ github, linkedInPosts, linkedInProfile, builtAt, stylesheet }: HomePageProps) {
   return (
     <Document
       title="Bar Nuri"
@@ -34,6 +38,8 @@ export function HomePage({ github, linkedInPosts, builtAt, stylesheet }: HomePag
             <strong>{formatNumber(github.contributions.total)} contributions</strong> in the last 12 months.
           </p>
         </section>
+        <Experience positions={linkedInProfile?.positions ?? []} />
+        <Education entries={linkedInProfile?.education ?? []} />
         <ActivityFeed activity={github.activity} />
         <LinkedInPosts posts={linkedInPosts} />
         <FeaturedRepos repos={github.featured} />

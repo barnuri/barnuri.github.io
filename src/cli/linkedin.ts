@@ -1,7 +1,10 @@
+import { mkdir } from 'node:fs/promises';
+import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { LinkedInSettings } from '../configs/linkedin-settings.ts';
 import { EXIT_CODES } from '../consts/exit-codes.ts';
 import { GITHUB_SECRET_NAME, READ_POSTS_SCOPE } from '../consts/linkedin-api.ts';
+import { LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
 import { AuthenticationError } from '../errors/authentication-error.ts';
 import { ExportFormatError } from '../errors/export-format-error.ts';
 import { LinkedInApiError } from '../errors/linkedin-api-error.ts';
@@ -11,6 +14,7 @@ import { OAuthHelper } from '../services/auth/oauth-helper.ts';
 import { ExportImporter } from '../services/linkedin/export-importer.ts';
 import { LinkedInClient } from '../services/linkedin/linkedin-client.ts';
 import { PostFetcher } from '../services/linkedin/post-fetcher.ts';
+import { ProfileImporter } from '../services/linkedin/profile-importer.ts';
 import { PostWriter } from '../services/output/post-writer.ts';
 
 const SECONDS_PER_DAY = 86_400;
@@ -20,6 +24,7 @@ const USAGE = `Usage: bun run linkedin <command> [options]
 Commands:
   fetch [--output-dir DIR]                         Fetch your posts with the official Posts API.
   import-export SHARES_CSV [--output-dir DIR]      Import posts from the LinkedIn data export.
+  import-profile EXPORT_DIR [--output-dir DIR]     Import experience and education (Positions.csv, Education.csv).
   auth-url --redirect-uri URL                      Print the OAuth authorization URL.
   exchange-code --code CODE --redirect-uri URL --repo OWNER/NAME
                                                    Exchange the code and store the token as a repo secret.`;
@@ -82,6 +87,27 @@ async function runImportExport(sharesCsv: string | undefined, outputDir: string)
   }
 }
 
+async function runImportProfile(exportDir: string | undefined, outputDir: string): Promise<number> {
+  if (!exportDir) {
+    console.error(`import-profile needs the unzipped LinkedIn data archive folder.\n\n${USAGE}`);
+    return EXIT_CODES.usage;
+  }
+  try {
+    const profile = await new ProfileImporter().loadDir(exportDir);
+    await mkdir(outputDir, { recursive: true });
+    const path = join(outputDir, LINKEDIN_PROFILE_FILE_NAME);
+    await Bun.write(path, `${JSON.stringify(profile, null, 2)}\n`);
+    console.log(`Wrote ${path} with ${profile.positions.length} positions and ${profile.education.length} education entries.`);
+    return EXIT_CODES.ok;
+  } catch (err) {
+    if (err instanceof ExportFormatError) {
+      console.error(err.message);
+      return EXIT_CODES.exportFormat;
+    }
+    throw err;
+  }
+}
+
 function runAuthUrl(redirectUri: string): number {
   const state = crypto.randomUUID();
   const url = new OAuthHelper(LinkedInSettings.fromEnv()).authorizationUrl(redirectUri, state);
@@ -126,6 +152,9 @@ async function main(argv: string[]): Promise<number> {
     }
     if (command === 'import-export') {
       return await runImportExport(argument, outputDir);
+    }
+    if (command === 'import-profile') {
+      return await runImportProfile(argument, outputDir);
     }
     if (command === 'auth-url' && redirectUri) {
       return runAuthUrl(redirectUri);

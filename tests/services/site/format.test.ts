@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { excerpt, formatDate, formatNumber, safeColor } from '../../../src/services/site/format.ts';
+import { excerpt, formatDate, formatNumber, formatRange, safeColor } from '../../../src/services/site/format.ts';
 
 describe('format helpers', () => {
   test('formats dates in UTC and numbers with separators', () => {
@@ -18,5 +18,14 @@ describe('format helpers', () => {
     const cut = excerpt('word '.repeat(100));
     expect(cut.length).toBeLessThanOrEqual(281);
     expect(cut.endsWith('word…')).toBe(true);
+  });
+});
+
+describe('formatRange', () => {
+  test('formats month ranges, year ranges, ongoing roles and missing dates', () => {
+    expect(formatRange({ year: 2022, month: 3 }, null)).toBe('Mar 2022 – Present');
+    expect(formatRange({ year: 2015, month: null }, { year: 2019, month: null })).toBe('2015 – 2019');
+    expect(formatRange(null, { year: 2019, month: 6 })).toBe('Jun 2019');
+    expect(formatRange(null, null)).toBe('');
   });
 });
