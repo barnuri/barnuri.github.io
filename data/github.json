@@ -307,12 +307,12 @@
         },
         {
           "date": "2025-11-17",
-          "count": 21,
+          "count": 20,
           "level": 4
         },
         {
           "date": "2025-11-18",
-          "count": 16,
+          "count": 17,
           "level": 3
         },
         {
@@ -1792,12 +1792,12 @@
         },
         {
           "date": "2026-08-25",
-          "count": 7,
+          "count": 6,
           "level": 2
         },
         {
           "date": "2026-08-26",
-          "count": 6,
+          "count": 7,
           "level": 2
         },
         {
@@ -2071,5 +2071,2610 @@
         }
       ]
     ]
+  },
+  "activity": {
+    "items": [
+      {
+        "id": "commits:barnuri/ghx:2026-10-16",
+        "kind": "commits",
+        "occurredAt": "2026-10-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/barnuri.github.io:2026-10-16",
+        "kind": "commits",
+        "occurredAt": "2026-10-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/barnuri.github.io",
+          "url": "https://github.com/barnuri/barnuri.github.io"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/barnuri.github.io/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/ghx",
+        "kind": "repository",
+        "occurredAt": "2026-10-15T17:25:14Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-15",
+        "kind": "commits",
+        "occurredAt": "2026-10-15T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-10-15",
+        "kind": "commits",
+        "occurredAt": "2026-10-15T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/ghx:2026-10-15",
+        "kind": "commits",
+        "occurredAt": "2026-10-15T07:00:00Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-10-14",
+        "kind": "commits",
+        "occurredAt": "2026-10-14T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-14",
+        "kind": "commits",
+        "occurredAt": "2026-10-14T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "review:https://github.com/argoproj/argo-cd/pull/30156#pullrequestreview-5500763657",
+        "kind": "review",
+        "occurredAt": "2026-10-13T08:25:20Z",
+        "repo": {
+          "name": "argoproj/argo-cd",
+          "url": "https://github.com/argoproj/argo-cd"
+        },
+        "title": "feat(ui): add kind filter to sync panel resources (#18265)",
+        "url": "https://github.com/argoproj/argo-cd/pull/30156#pullrequestreview-5500763657",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-13",
+        "kind": "commits",
+        "occurredAt": "2026-10-13T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-12",
+        "kind": "commits",
+        "occurredAt": "2026-10-12T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/zod-decorators:2026-10-12",
+        "kind": "commits",
+        "occurredAt": "2026-10-12T07:00:00Z",
+        "repo": {
+          "name": "barnuri/zod-decorators",
+          "url": "https://github.com/barnuri/zod-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/zod-decorators/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/hono-decorators:2026-10-12",
+        "kind": "commits",
+        "occurredAt": "2026-10-12T07:00:00Z",
+        "repo": {
+          "name": "barnuri/hono-decorators",
+          "url": "https://github.com/barnuri/hono-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/hono-decorators/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/hono-decorators",
+        "kind": "repository",
+        "occurredAt": "2026-10-11T13:02:22Z",
+        "repo": {
+          "name": "barnuri/hono-decorators",
+          "url": "https://github.com/barnuri/hono-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/hono-decorators",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/zod-decorators",
+        "kind": "repository",
+        "occurredAt": "2026-10-11T13:00:50Z",
+        "repo": {
+          "name": "barnuri/zod-decorators",
+          "url": "https://github.com/barnuri/zod-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/zod-decorators",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-11",
+        "kind": "commits",
+        "occurredAt": "2026-10-11T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-10-11",
+        "kind": "commits",
+        "occurredAt": "2026-10-11T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/zod-decorators:2026-10-11",
+        "kind": "commits",
+        "occurredAt": "2026-10-11T07:00:00Z",
+        "repo": {
+          "name": "barnuri/zod-decorators",
+          "url": "https://github.com/barnuri/zod-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/zod-decorators/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/hono-decorators:2026-10-11",
+        "kind": "commits",
+        "occurredAt": "2026-10-11T07:00:00Z",
+        "repo": {
+          "name": "barnuri/hono-decorators",
+          "url": "https://github.com/barnuri/hono-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/hono-decorators/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-07",
+        "kind": "commits",
+        "occurredAt": "2026-10-07T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-10-06",
+        "kind": "commits",
+        "occurredAt": "2026-10-06T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4034",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-05T08:39:53Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(onecli): isolate payload tests from the caller's ONECLI_* / ANTHROPIC_BASE_URL env",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/4034",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-10-05",
+        "kind": "commits",
+        "occurredAt": "2026-10-05T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-10-05",
+        "kind": "commits",
+        "occurredAt": "2026-10-05T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-05",
+        "kind": "commits",
+        "occurredAt": "2026-10-05T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/harness-skills",
+        "kind": "repository",
+        "occurredAt": "2026-10-04T09:39:50Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-04",
+        "kind": "commits",
+        "occurredAt": "2026-10-04T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-10-04",
+        "kind": "commits",
+        "occurredAt": "2026-10-04T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-04",
+        "kind": "commits",
+        "occurredAt": "2026-10-04T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-03",
+        "kind": "commits",
+        "occurredAt": "2026-10-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-10-03",
+        "kind": "commits",
+        "occurredAt": "2026-10-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-bridge:2026-10-03",
+        "kind": "commits",
+        "occurredAt": "2026-10-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-10-02",
+        "kind": "commits",
+        "occurredAt": "2026-10-02T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-10-02",
+        "kind": "commits",
+        "occurredAt": "2026-10-02T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-bridge:2026-10-02",
+        "kind": "commits",
+        "occurredAt": "2026-10-02T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-01",
+        "kind": "commits",
+        "occurredAt": "2026-10-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 10,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-10-01",
+        "kind": "commits",
+        "occurredAt": "2026-10-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-10-01",
+        "kind": "commits",
+        "occurredAt": "2026-10-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "commits:nanocoai/nanoclaw:2026-10-01",
+        "kind": "commits",
+        "occurredAt": "2026-10-01T07:00:00Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": null,
+        "url": "https://github.com/nanocoai/nanoclaw/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3976",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-30T18:11:30Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-copilot GitHub Copilot SDK provider",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3976",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-09-30",
+        "kind": "commits",
+        "occurredAt": "2026-09-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-09-30",
+        "kind": "commits",
+        "occurredAt": "2026-09-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-09-30",
+        "kind": "commits",
+        "occurredAt": "2026-09-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-project-manager:2026-09-30",
+        "kind": "commits",
+        "occurredAt": "2026-09-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-bridge:2026-09-30",
+        "kind": "commits",
+        "occurredAt": "2026-09-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-09-30",
+        "kind": "commits",
+        "occurredAt": "2026-09-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "review:https://github.com/barnuri/herdr-web/pull/6#pullrequestreview-5335446193",
+        "kind": "review",
+        "occurredAt": "2026-09-28T07:50:25Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": "Mobile usability: reconnect, touch scrolling, inertia, touch targets, WebView help",
+        "url": "https://github.com/barnuri/herdr-web/pull/6#pullrequestreview-5335446193",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-09-28",
+        "kind": "commits",
+        "occurredAt": "2026-09-28T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "review:https://github.com/barnuri/herdr-web/pull/5#pullrequestreview-5331774773",
+        "kind": "review",
+        "occurredAt": "2026-09-27T19:48:03Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": "Coalesce PTY output to cut the mobile frame rate",
+        "url": "https://github.com/barnuri/herdr-web/pull/5#pullrequestreview-5331774773",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "review:https://github.com/barnuri/herdr-web/pull/4#pullrequestreview-5331766816",
+        "kind": "review",
+        "occurredAt": "2026-09-27T19:46:18Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": "chore(deps): bump @vitest/mocker and vitest in /client",
+        "url": "https://github.com/barnuri/herdr-web/pull/4#pullrequestreview-5331766816",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-09-27",
+        "kind": "commits",
+        "occurredAt": "2026-09-27T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3940",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T18:03:47Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(slack): render collapsible send_card sections as Block Kit containers",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3940",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3939",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:57:14Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add-turn-traces, per-turn agent traces in the central DB",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3939",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3938",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:53:52Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skill): add /add-voice-replies for spoken agent replies",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3938",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3937",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:52:29Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-repo-self-edit — admin-approved edits to NanoClaw's own source",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3937",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3936",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:46:39Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(telegram): opt-in live progress message during long turns",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3936",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3935",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:39:00Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-error-reports to report the install's own failures to a chat",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3935",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3934",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:38:56Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "refactor: add an operational error sink seam for host plumbing failures",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3934",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3933",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:36:08Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-flows, graph-shaped pre-task scripts for scheduled tasks",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3933",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3932",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:36:03Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-lean-tasks for minimal-context scheduled task runs",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3932",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3931",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:35:51Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "refactor(agent-runner): add a minimalContext provider option",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3931",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3930",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:29:26Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(opencode): resolve config, runtime key and server env from one environment",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3930",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3929",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:29:21Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-scheduled-update for unattended host-side updates",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3929",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3928",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:28:04Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /contribute-upstream operational skill for giving fork features back",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3928",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3927",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:20:41Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(send_card): accept collapsible section children",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3927",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3926",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:20:35Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "refactor(chat-sdk-bridge): add an optional postCard hook for display cards",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3926",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3925",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:15:54Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "refactor(agent-runner): add a provider-wrapper seam with per-query model and retryable failures",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3925",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3924",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:14:49Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat: add opt-in delivery fallback skill with delivery adapter and approver order hooks",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3924",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3923",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:12:00Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(discord): connect the Gateway through Node's env proxy",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3923",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3922",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:03:51Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat: add-session-logs skill and a per-session container log sink",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3922",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3921",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-26T17:03:46Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "refactor(tasks): let installs register extra task content fields",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3921",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:nanocoai/nanoclaw:2026-09-26",
+        "kind": "commits",
+        "occurredAt": "2026-09-26T07:00:00Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": null,
+        "url": "https://github.com/nanocoai/nanoclaw/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3904",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:48:03Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "refactor(agent-runner): turn-lifecycle hook registry for the poll loop",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3904",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3903",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:47:58Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(scheduling): pluggable scheduler admission with a container-cap skill",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3903",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3902",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:39:54Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat: add registerEnvContributor seam and /add-env-passthrough skill",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3902",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3901",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:34:59Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(setup): let the host service reach the internet through an HTTPS proxy",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3901",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3900",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:34:53Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(groups): add a per-group system_prompt_mode for the Claude provider",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3900",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3899",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:34:49Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "docs: document the fork-local code folder convention",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3899",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3898",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:34:17Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat: park channels with NANOCLAW_DISABLED_CHANNELS",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3898",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3897",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:29:27Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "docs: let forks extend agent instructions without editing CLAUDE.md",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3897",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3896",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:29:16Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(opencode): read provider config from options.env when supplied",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3896",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3895",
+        "kind": "pull_request",
+        "occurredAt": "2026-09-25T14:29:05Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(agent-runner): keep send_card url pattern parseable by llama.cpp grammars",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/3895",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "repository:barnuri/nanoclaw-contrib",
+        "kind": "repository",
+        "occurredAt": "2026-09-25T14:28:40Z",
+        "repo": {
+          "name": "barnuri/nanoclaw-contrib",
+          "url": "https://github.com/barnuri/nanoclaw-contrib"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/nanoclaw-contrib",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-09-25",
+        "kind": "commits",
+        "occurredAt": "2026-09-25T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:nanocoai/nanoclaw:2026-09-25",
+        "kind": "commits",
+        "occurredAt": "2026-09-25T07:00:00Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": null,
+        "url": "https://github.com/nanocoai/nanoclaw/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-09-16",
+        "kind": "commits",
+        "occurredAt": "2026-09-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-09-14",
+        "kind": "commits",
+        "occurredAt": "2026-09-14T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-09-10",
+        "kind": "commits",
+        "occurredAt": "2026-09-10T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-09-09",
+        "kind": "commits",
+        "occurredAt": "2026-09-09T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-09-09",
+        "kind": "commits",
+        "occurredAt": "2026-09-09T07:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 6,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-auto-update:2026-09-09",
+        "kind": "commits",
+        "occurredAt": "2026-09-09T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-auto-update",
+          "url": "https://github.com/barnuri/herdr-auto-update"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-auto-update/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/orch-skill",
+        "kind": "repository",
+        "occurredAt": "2026-09-09T06:46:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-09-08",
+        "kind": "commits",
+        "occurredAt": "2026-09-08T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-09-03",
+        "kind": "commits",
+        "occurredAt": "2026-09-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-09-02",
+        "kind": "commits",
+        "occurredAt": "2026-09-02T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-09-01",
+        "kind": "commits",
+        "occurredAt": "2026-09-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-09-01",
+        "kind": "commits",
+        "occurredAt": "2026-09-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-command-palette:2026-09-01",
+        "kind": "commits",
+        "occurredAt": "2026-09-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-command-palette",
+          "url": "https://github.com/barnuri/herdr-command-palette"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-command-palette/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-08-31",
+        "kind": "commits",
+        "occurredAt": "2026-08-31T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/llm-hub",
+        "kind": "repository",
+        "occurredAt": "2026-08-30T07:34:53Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-08-30",
+        "kind": "commits",
+        "occurredAt": "2026-08-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-08-30",
+        "kind": "commits",
+        "occurredAt": "2026-08-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 16,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-08-30",
+        "kind": "commits",
+        "occurredAt": "2026-08-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-08-26",
+        "kind": "commits",
+        "occurredAt": "2026-08-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-project-manager:2026-08-26",
+        "kind": "commits",
+        "occurredAt": "2026-08-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-auto-update:2026-08-26",
+        "kind": "commits",
+        "occurredAt": "2026-08-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-auto-update",
+          "url": "https://github.com/barnuri/herdr-auto-update"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-auto-update/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-command-palette:2026-08-26",
+        "kind": "commits",
+        "occurredAt": "2026-08-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-command-palette",
+          "url": "https://github.com/barnuri/herdr-command-palette"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-command-palette/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-command-palette",
+        "kind": "repository",
+        "occurredAt": "2026-08-25T21:35:11Z",
+        "repo": {
+          "name": "barnuri/herdr-command-palette",
+          "url": "https://github.com/barnuri/herdr-command-palette"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-command-palette",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-08-25",
+        "kind": "commits",
+        "occurredAt": "2026-08-25T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-08-25",
+        "kind": "commits",
+        "occurredAt": "2026-08-25T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-08-24",
+        "kind": "commits",
+        "occurredAt": "2026-08-24T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-project-manager:2026-08-24",
+        "kind": "commits",
+        "occurredAt": "2026-08-24T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-08-24",
+        "kind": "commits",
+        "occurredAt": "2026-08-24T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-auto-update:2026-08-24",
+        "kind": "commits",
+        "occurredAt": "2026-08-24T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-auto-update",
+          "url": "https://github.com/barnuri/herdr-auto-update"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-auto-update/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-08-23",
+        "kind": "commits",
+        "occurredAt": "2026-08-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-08-23",
+        "kind": "commits",
+        "occurredAt": "2026-08-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-project-manager:2026-08-23",
+        "kind": "commits",
+        "occurredAt": "2026-08-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-08-23",
+        "kind": "commits",
+        "occurredAt": "2026-08-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-auto-update:2026-08-23",
+        "kind": "commits",
+        "occurredAt": "2026-08-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-auto-update",
+          "url": "https://github.com/barnuri/herdr-auto-update"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-auto-update/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-notifications",
+        "kind": "repository",
+        "occurredAt": "2026-08-23T00:53:32Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-08-21",
+        "kind": "commits",
+        "occurredAt": "2026-08-21T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 20,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-project-manager:2026-08-21",
+        "kind": "commits",
+        "occurredAt": "2026-08-21T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-auto-update:2026-08-21",
+        "kind": "commits",
+        "occurredAt": "2026-08-21T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-auto-update",
+          "url": "https://github.com/barnuri/herdr-auto-update"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-auto-update/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-auto-update",
+        "kind": "repository",
+        "occurredAt": "2026-08-21T01:19:47Z",
+        "repo": {
+          "name": "barnuri/herdr-auto-update",
+          "url": "https://github.com/barnuri/herdr-auto-update"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-auto-update",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-web",
+        "kind": "repository",
+        "occurredAt": "2026-08-20T16:32:08Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-project-manager",
+        "kind": "repository",
+        "occurredAt": "2026-08-20T16:32:02Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-08-20",
+        "kind": "commits",
+        "occurredAt": "2026-08-20T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 9,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-project-manager:2026-08-20",
+        "kind": "commits",
+        "occurredAt": "2026-08-20T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-project-manager",
+          "url": "https://github.com/barnuri/herdr-project-manager"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-project-manager/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-08-18",
+        "kind": "commits",
+        "occurredAt": "2026-08-18T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-08-16",
+        "kind": "commits",
+        "occurredAt": "2026-08-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-bridge:2026-08-16",
+        "kind": "commits",
+        "occurredAt": "2026-08-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/harness-bridge",
+        "kind": "repository",
+        "occurredAt": "2026-08-04T04:32:28Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-07-29",
+        "kind": "commits",
+        "occurredAt": "2026-07-29T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/claude-dashboard:2026-07-28",
+        "kind": "commits",
+        "occurredAt": "2026-07-28T07:00:00Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/claude-dashboard:2026-07-26",
+        "kind": "commits",
+        "occurredAt": "2026-07-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-07-16",
+        "kind": "commits",
+        "occurredAt": "2026-07-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/claude-dashboard:2026-07-14",
+        "kind": "commits",
+        "occurredAt": "2026-07-14T07:00:00Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/claude-dashboard:2026-07-13",
+        "kind": "commits",
+        "occurredAt": "2026-07-13T07:00:00Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/claude-dashboard:2026-07-10",
+        "kind": "commits",
+        "occurredAt": "2026-07-10T07:00:00Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-07-07",
+        "kind": "commits",
+        "occurredAt": "2026-07-07T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/claude-dashboard/pull/1",
+        "kind": "pull_request",
+        "occurredAt": "2026-07-03T12:15:54Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": "Claude/sessions dashboard hwc736",
+        "url": "https://github.com/barnuri/claude-dashboard/pull/1",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "repository:barnuri/claude-dashboard",
+        "kind": "repository",
+        "occurredAt": "2026-07-03T08:13:22Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-07-03",
+        "kind": "commits",
+        "occurredAt": "2026-07-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/claude-dashboard:2026-07-03",
+        "kind": "commits",
+        "occurredAt": "2026-07-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/claude-dashboard",
+          "url": "https://github.com/barnuri/claude-dashboard"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/claude-dashboard/commits",
+        "count": 6,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-07-01",
+        "kind": "commits",
+        "occurredAt": "2026-07-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-06-28",
+        "kind": "commits",
+        "occurredAt": "2026-06-28T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-06-27",
+        "kind": "commits",
+        "occurredAt": "2026-06-27T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-06-27",
+        "kind": "commits",
+        "occurredAt": "2026-06-27T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/homebrew-brew:2026-06-27",
+        "kind": "commits",
+        "occurredAt": "2026-06-27T07:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-06-21",
+        "kind": "commits",
+        "occurredAt": "2026-06-21T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-06-20",
+        "kind": "commits",
+        "occurredAt": "2026-06-20T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/harness-status-line",
+        "kind": "repository",
+        "occurredAt": "2026-06-19T15:20:20Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-06-19",
+        "kind": "commits",
+        "occurredAt": "2026-06-19T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/retrospect-skill:2026-06-04",
+        "kind": "commits",
+        "occurredAt": "2026-06-04T07:00:00Z",
+        "repo": {
+          "name": "barnuri/retrospect-skill",
+          "url": "https://github.com/barnuri/retrospect-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/retrospect-skill/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-06-02",
+        "kind": "commits",
+        "occurredAt": "2026-06-02T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/retrospect-skill:2026-05-19",
+        "kind": "commits",
+        "occurredAt": "2026-05-19T07:00:00Z",
+        "repo": {
+          "name": "barnuri/retrospect-skill",
+          "url": "https://github.com/barnuri/retrospect-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/retrospect-skill/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/retrospect-skill:2026-05-16",
+        "kind": "commits",
+        "occurredAt": "2026-05-16T07:00:00Z",
+        "repo": {
+          "name": "barnuri/retrospect-skill",
+          "url": "https://github.com/barnuri/retrospect-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/retrospect-skill/commits",
+        "count": 13,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/retrospect-skill:2026-05-15",
+        "kind": "commits",
+        "occurredAt": "2026-05-15T07:00:00Z",
+        "repo": {
+          "name": "barnuri/retrospect-skill",
+          "url": "https://github.com/barnuri/retrospect-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/retrospect-skill/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/retrospect-skill",
+        "kind": "repository",
+        "occurredAt": "2026-05-14T16:58:10Z",
+        "repo": {
+          "name": "barnuri/retrospect-skill",
+          "url": "https://github.com/barnuri/retrospect-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/retrospect-skill",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/retrospect-skill:2026-05-14",
+        "kind": "commits",
+        "occurredAt": "2026-05-14T07:00:00Z",
+        "repo": {
+          "name": "barnuri/retrospect-skill",
+          "url": "https://github.com/barnuri/retrospect-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/retrospect-skill/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/barnuri.github.io:2026-05-07",
+        "kind": "commits",
+        "occurredAt": "2026-05-07T07:00:00Z",
+        "repo": {
+          "name": "barnuri/barnuri.github.io",
+          "url": "https://github.com/barnuri/barnuri.github.io"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/barnuri.github.io/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/openapi-toolkit:2026-05-05",
+        "kind": "commits",
+        "occurredAt": "2026-05-05T07:00:00Z",
+        "repo": {
+          "name": "barnuri/openapi-toolkit",
+          "url": "https://github.com/barnuri/openapi-toolkit"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/openapi-toolkit/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/openapi-toolkit/pull/49",
+        "kind": "pull_request",
+        "occurredAt": "2026-05-05T05:49:39Z",
+        "repo": {
+          "name": "barnuri/openapi-toolkit",
+          "url": "https://github.com/barnuri/openapi-toolkit"
+        },
+        "title": "openai-swagger-to-mcp",
+        "url": "https://github.com/barnuri/openapi-toolkit/pull/49",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "issue:https://github.com/astral-sh/uv/issues/19260",
+        "kind": "issue",
+        "occurredAt": "2026-05-04T10:55:17Z",
+        "repo": {
+          "name": "astral-sh/uv",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        "title": "optional uv source, if local path not existing search in uv index",
+        "url": "https://github.com/astral-sh/uv/issues/19260",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-04-23",
+        "kind": "commits",
+        "occurredAt": "2026-04-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-04-20",
+        "kind": "commits",
+        "occurredAt": "2026-04-20T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/homebrew-brew:2026-04-20",
+        "kind": "commits",
+        "occurredAt": "2026-04-20T07:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-04-19",
+        "kind": "commits",
+        "occurredAt": "2026-04-19T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-04-14",
+        "kind": "commits",
+        "occurredAt": "2026-04-14T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-04-12",
+        "kind": "commits",
+        "occurredAt": "2026-04-12T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-04-05",
+        "kind": "commits",
+        "occurredAt": "2026-04-05T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-03-30",
+        "kind": "commits",
+        "occurredAt": "2026-03-30T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-03-29",
+        "kind": "commits",
+        "occurredAt": "2026-03-29T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-03-29",
+        "kind": "commits",
+        "occurredAt": "2026-03-29T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/homebrew-brew:2026-03-29",
+        "kind": "commits",
+        "occurredAt": "2026-03-29T07:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-03-26",
+        "kind": "commits",
+        "occurredAt": "2026-03-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-03-26",
+        "kind": "commits",
+        "occurredAt": "2026-03-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-03-02",
+        "kind": "commits",
+        "occurredAt": "2026-03-02T08:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-02-15",
+        "kind": "commits",
+        "occurredAt": "2026-02-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 6,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/homebrew-brew:2026-02-15",
+        "kind": "commits",
+        "occurredAt": "2026-02-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-02-05",
+        "kind": "commits",
+        "occurredAt": "2026-02-05T08:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "issue:https://github.com/astral-sh/uv/issues/17792",
+        "kind": "issue",
+        "occurredAt": "2026-02-01T08:47:23Z",
+        "repo": {
+          "name": "astral-sh/uv",
+          "url": "https://github.com/astral-sh/uv"
+        },
+        "title": "uv version bump allow decrease",
+        "url": "https://github.com/astral-sh/uv/issues/17792",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-01-28",
+        "kind": "commits",
+        "occurredAt": "2026-01-28T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2025-12-24",
+        "kind": "commits",
+        "occurredAt": "2025-12-24T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2025-12-15",
+        "kind": "commits",
+        "occurredAt": "2025-12-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:langchain-ai/langchain-mongodb:2025-11-25",
+        "kind": "commits",
+        "occurredAt": "2025-11-25T08:00:00Z",
+        "repo": {
+          "name": "langchain-ai/langchain-mongodb",
+          "url": "https://github.com/langchain-ai/langchain-mongodb"
+        },
+        "title": null,
+        "url": "https://github.com/langchain-ai/langchain-mongodb/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "review:https://github.com/barnuri/langchain-mongodb/pull/1#pullrequestreview-3502103809",
+        "kind": "review",
+        "occurredAt": "2025-11-24T20:19:49Z",
+        "repo": {
+          "name": "barnuri/langchain-mongodb",
+          "url": "https://github.com/barnuri/langchain-mongodb"
+        },
+        "title": "Patch 1",
+        "url": "https://github.com/barnuri/langchain-mongodb/pull/1#pullrequestreview-3502103809",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/langchain-mongodb/pull/1",
+        "kind": "pull_request",
+        "occurredAt": "2025-11-24T20:17:05Z",
+        "repo": {
+          "name": "barnuri/langchain-mongodb",
+          "url": "https://github.com/barnuri/langchain-mongodb"
+        },
+        "title": "Patch 1",
+        "url": "https://github.com/barnuri/langchain-mongodb/pull/1",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "commits:langchain-ai/langchain-mongodb:2025-11-24",
+        "kind": "commits",
+        "occurredAt": "2025-11-24T08:00:00Z",
+        "repo": {
+          "name": "langchain-ai/langchain-mongodb",
+          "url": "https://github.com/langchain-ai/langchain-mongodb"
+        },
+        "title": null,
+        "url": "https://github.com/langchain-ai/langchain-mongodb/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:mongodb-labs/pymongo-search-utils:2025-11-24",
+        "kind": "commits",
+        "occurredAt": "2025-11-24T08:00:00Z",
+        "repo": {
+          "name": "mongodb-labs/pymongo-search-utils",
+          "url": "https://github.com/mongodb-labs/pymongo-search-utils"
+        },
+        "title": null,
+        "url": "https://github.com/mongodb-labs/pymongo-search-utils/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/pymongo-search-utils/pull/1",
+        "kind": "pull_request",
+        "occurredAt": "2025-11-20T07:24:22Z",
+        "repo": {
+          "name": "barnuri/pymongo-search-utils",
+          "url": "https://github.com/barnuri/pymongo-search-utils"
+        },
+        "title": "Update index.py",
+        "url": "https://github.com/barnuri/pymongo-search-utils/pull/1",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/mongodb-labs/pymongo-search-utils/pull/14",
+        "kind": "pull_request",
+        "occurredAt": "2025-11-19T14:36:35Z",
+        "repo": {
+          "name": "mongodb-labs/pymongo-search-utils",
+          "url": "https://github.com/mongodb-labs/pymongo-search-utils"
+        },
+        "title": "INTPYTHON-834 Allow additional arguments to vector_search_index_definition",
+        "url": "https://github.com/mongodb-labs/pymongo-search-utils/pull/14",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "repository:barnuri/pymongo-search-utils",
+        "kind": "repository",
+        "occurredAt": "2025-11-19T14:33:59Z",
+        "repo": {
+          "name": "barnuri/pymongo-search-utils",
+          "url": "https://github.com/barnuri/pymongo-search-utils"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/pymongo-search-utils",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/langchain-ai/langchain-mongodb/pull/267",
+        "kind": "pull_request",
+        "occurredAt": "2025-11-17T12:05:03Z",
+        "repo": {
+          "name": "langchain-ai/langchain-mongodb",
+          "url": "https://github.com/langchain-ai/langchain-mongodb"
+        },
+        "title": "INTPYTHON-838 Allow additional arguments to vector_search_index_definition",
+        "url": "https://github.com/langchain-ai/langchain-mongodb/pull/267",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/langchain-ai/langchain-mongodb/pull/266",
+        "kind": "pull_request",
+        "occurredAt": "2025-11-17T12:02:52Z",
+        "repo": {
+          "name": "langchain-ai/langchain-mongodb",
+          "url": "https://github.com/langchain-ai/langchain-mongodb"
+        },
+        "title": "INTPYTHON-832 Add search_by_vector method to VectorStore",
+        "url": "https://github.com/langchain-ai/langchain-mongodb/pull/266",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "repository:barnuri/langchain-mongodb",
+        "kind": "repository",
+        "occurredAt": "2025-11-17T12:01:36Z",
+        "repo": {
+          "name": "barnuri/langchain-mongodb",
+          "url": "https://github.com/barnuri/langchain-mongodb"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/langchain-mongodb",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2025-10-23",
+        "kind": "commits",
+        "occurredAt": "2025-10-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/win-dock/pull/2",
+        "kind": "pull_request",
+        "occurredAt": "2025-10-22T08:57:44Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": "001-ui-performance-fix",
+        "url": "https://github.com/barnuri/win-dock/pull/2",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/win-dock:2025-10-22",
+        "kind": "commits",
+        "occurredAt": "2025-10-22T07:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/homebrew-brew:2025-10-22",
+        "kind": "commits",
+        "occurredAt": "2025-10-22T07:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 1,
+        "state": null
+      }
+    ],
+    "privateContributions": 2484
   }
 }

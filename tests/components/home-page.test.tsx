@@ -1,8 +1,20 @@
 import { describe, expect, test } from 'bun:test';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { HomePage } from '../../src/components/HomePage.tsx';
+import type { ActivityItem } from '../../src/schemas/github/activity-item.ts';
 import type { GitHubData } from '../../src/schemas/github/github-data.ts';
 import type { LinkedInPost } from '../../src/schemas/linkedin/linkedin-post.ts';
+
+const activityItem = (index: number): ActivityItem => ({
+  id: `pull_request:${index}`,
+  kind: 'pull_request',
+  occurredAt: `2026-10-${String(30 - index).padStart(2, '0')}T08:00:00Z`,
+  repo: { name: 'nanocoai/nanoclaw', url: 'https://github.com/nanocoai/nanoclaw' },
+  title: `<i>PR ${index}</i>`,
+  url: `https://github.com/nanocoai/nanoclaw/pull/${index}`,
+  count: null,
+  state: 'MERGED',
+});
 
 const github: GitHubData = {
   featured: [
@@ -31,6 +43,7 @@ const github: GitHubData = {
     total: 2911,
     weeks: [[{ date: '2026-01-04', count: 0, level: 0 }], [{ date: '2026-02-01', count: 5, level: 3 }]],
   },
+  activity: { items: [], privateContributions: 0 },
 };
 
 const linkedInPost: LinkedInPost = {
@@ -43,8 +56,13 @@ const linkedInPost: LinkedInPost = {
   engagement: { likes: null, comments: null, shares: null },
 };
 
-const render = (posts: LinkedInPost[] = []): string =>
-  renderToStaticMarkup(<HomePage github={github} linkedInPosts={posts} builtAt="2026-10-16T00:00:00Z" stylesheet="" />);
+const render = (posts: LinkedInPost[] = [], data: GitHubData = github): string =>
+  renderToStaticMarkup(<HomePage github={data} linkedInPosts={posts} builtAt="2026-10-16T00:00:00Z" stylesheet="" />);
+
+const withActivity = (count: number, privateContributions = 0): GitHubData => ({
+  ...github,
+  activity: { items: Array.from({ length: count }, (_, index) => activityItem(index)), privateContributions },
+});
 
 describe('HomePage', () => {
   test('escapes repo text and blocks unsafe language colors', () => {
@@ -83,5 +101,36 @@ describe('HomePage', () => {
     expect(html).toContain('&lt;b&gt;hi&lt;/b&gt;');
     expect(html).toContain('href="https://www.linkedin.com/feed/update/urn:li:share:1/"');
     expect(html).toContain('May 5, 2026');
+  });
+});
+
+describe('HomePage activity feed', () => {
+  test('is hidden without activity', () => {
+    expect(render()).not.toContain('Recent activity');
+  });
+
+  test('shows the first ten items and hides the rest behind show more', () => {
+    const html = render([], withActivity(12));
+
+    expect(html.match(/class="activity-item"/g)).toHaveLength(12);
+    expect(html.match(/class="activity-item" hidden=""/g)).toHaveLength(2);
+    expect(html).toContain('class="show-more"');
+    expect(html).toContain('<noscript>');
+  });
+
+  test('has no show more button with ten items or fewer', () => {
+    expect(render([], withActivity(10))).not.toContain('class="show-more"');
+  });
+
+  test('escapes titles and shows the state', () => {
+    const html = render([], withActivity(1));
+
+    expect(html).toContain('&lt;i&gt;PR 0&lt;/i&gt;');
+    expect(html).toContain('Opened a pull request in');
+    expect(html).toContain('Merged');
+  });
+
+  test('shows the private contribution count without repository names', () => {
+    expect(render([], withActivity(1, 2484))).toContain('Plus 2,484 contributions in private repositories');
   });
 });

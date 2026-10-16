@@ -1,0 +1,4 @@
+export const ACTIVITY_STORE_LIMIT = 500;
+export const ACTIVITY_VISIBLE_COUNT = 10;
+export const ACTIVITY_PAGE_SIZE = 100;
+export const ACTIVITY_WINDOW_DAYS = 365;

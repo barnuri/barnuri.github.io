@@ -1,6 +1,7 @@
 import type { GitHubData } from '../schemas/github/github-data.ts';
 import type { LinkedInPost } from '../schemas/linkedin/linkedin-post.ts';
 import { formatDate, formatNumber } from '../services/site/format.ts';
+import { ActivityFeed } from './ActivityFeed.tsx';
 import { ContributionGraph } from './ContributionGraph.tsx';
 import { Document } from './Document.tsx';
 import { FeaturedRepos } from './FeaturedRepos.tsx';
@@ -33,6 +34,7 @@ export function HomePage({ github, linkedInPosts, builtAt, stylesheet }: HomePag
             <strong>{formatNumber(github.contributions.total)} contributions</strong> in the last 12 months.
           </p>
         </section>
+        <ActivityFeed activity={github.activity} />
         <LinkedInPosts posts={linkedInPosts} />
         <FeaturedRepos repos={github.featured} />
         <RecentRepos repos={github.recent} />

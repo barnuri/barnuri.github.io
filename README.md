@@ -1,6 +1,6 @@
 # barnuri.github.io
 
-Personal page built from GitHub and LinkedIn data with Bun, TypeScript and React 19. React renders static HTML at build time, so the page ships no JavaScript.
+Personal page built from GitHub and LinkedIn data with Bun, TypeScript and React 19. React renders static HTML at build time. The only script is a small "Show more" button for the activity feed, and the page works without it.
 
 ## How it updates
 
