@@ -1,0 +1,147 @@
+import { parseArgs } from 'node:util';
+import { LinkedInSettings } from '../configs/linkedin-settings.ts';
+import { EXIT_CODES } from '../consts/exit-codes.ts';
+import { GITHUB_SECRET_NAME, READ_POSTS_SCOPE } from '../consts/linkedin-api.ts';
+import { AuthenticationError } from '../errors/authentication-error.ts';
+import { ExportFormatError } from '../errors/export-format-error.ts';
+import { LinkedInApiError } from '../errors/linkedin-api-error.ts';
+import { MissingPermissionError } from '../errors/missing-permission-error.ts';
+import type { PostCollection } from '../schemas/linkedin/post-collection.ts';
+import { OAuthHelper } from '../services/auth/oauth-helper.ts';
+import { ExportImporter } from '../services/linkedin/export-importer.ts';
+import { LinkedInClient } from '../services/linkedin/linkedin-client.ts';
+import { PostFetcher } from '../services/linkedin/post-fetcher.ts';
+import { PostWriter } from '../services/output/post-writer.ts';
+
+const SECONDS_PER_DAY = 86_400;
+
+const USAGE = `Usage: bun run linkedin <command> [options]
+
+Commands:
+  fetch [--output-dir DIR]                         Fetch your posts with the official Posts API.
+  import-export SHARES_CSV [--output-dir DIR]      Import posts from the LinkedIn data export.
+  auth-url --redirect-uri URL                      Print the OAuth authorization URL.
+  exchange-code --code CODE --redirect-uri URL --repo OWNER/NAME
+                                                   Exchange the code and store the token as a repo secret.`;
+
+const PERMISSION_HELP = `LinkedIn only lets approved apps read a member's posts. ${READ_POSTS_SCOPE} is restricted and is
+available to approved users only, so a self-serve app gets 403 here. w_member_social only allows posting.
+
+Fallback with the official data export:
+  1. LinkedIn > Settings > Data privacy > Get a copy of your data > select "Posts" (or the full archive).
+  2. Download the archive when LinkedIn emails you, and unzip it.
+  3. Run: bun run linkedin import-export path/to/Shares.csv --output-dir data
+  4. Commit data/linkedin_posts.json. The daily workflow keeps it while the API stays unavailable.`;
+
+async function writeAndReport(collection: PostCollection, outputDir: string): Promise<number> {
+  const { jsonPath, markdownPath } = await new PostWriter(outputDir).write(collection);
+  console.log(`Wrote ${jsonPath} and ${markdownPath}.`);
+  console.log(PostWriter.summary(collection));
+  return EXIT_CODES.ok;
+}
+
+async function runFetch(outputDir: string): Promise<number> {
+  const settings = LinkedInSettings.fromEnv();
+  if (!settings.hasAccessToken) {
+    console.error('LINKEDIN_ACCESS_TOKEN is not set. Run auth-url and exchange-code, or export it in this shell session only.');
+    return EXIT_CODES.authentication;
+  }
+  try {
+    const fetcher = new PostFetcher(new LinkedInClient(settings), settings.hasClientCredentials);
+    return await writeAndReport(await fetcher.fetch(), outputDir);
+  } catch (err) {
+    if (err instanceof MissingPermissionError) {
+      console.error(`${err.message}\n\n${PERMISSION_HELP}`);
+      return EXIT_CODES.missingPermission;
+    }
+    if (err instanceof AuthenticationError) {
+      console.error(`${err.message} Create a new token with auth-url and exchange-code.`);
+      return EXIT_CODES.authentication;
+    }
+    if (err instanceof LinkedInApiError) {
+      console.error(err.message);
+      return EXIT_CODES.apiError;
+    }
+    throw err;
+  }
+}
+
+async function runImportExport(sharesCsv: string | undefined, outputDir: string): Promise<number> {
+  if (!sharesCsv) {
+    console.error(`import-export needs the path to Shares.csv.\n\n${USAGE}`);
+    return EXIT_CODES.usage;
+  }
+  try {
+    return await writeAndReport(await new ExportImporter().load(sharesCsv), outputDir);
+  } catch (err) {
+    if (err instanceof ExportFormatError) {
+      console.error(err.message);
+      return EXIT_CODES.exportFormat;
+    }
+    throw err;
+  }
+}
+
+function runAuthUrl(redirectUri: string): number {
+  const state = crypto.randomUUID();
+  const url = new OAuthHelper(LinkedInSettings.fromEnv()).authorizationUrl(redirectUri, state);
+  console.log('Open this URL, approve access, then copy the code parameter from the redirect URL:');
+  console.log(url);
+  console.log(`Check that the redirect URL has state=${state} before you use its code.`);
+  return EXIT_CODES.ok;
+}
+
+async function runExchangeCode(code: string, redirectUri: string, repo: string): Promise<number> {
+  const token = await new OAuthHelper(LinkedInSettings.fromEnv()).exchangeCode(code, redirectUri);
+  try {
+    await OAuthHelper.storeToken(token, repo);
+  } catch (err) {
+    const reason = err instanceof Error ? err.message : String(err);
+    console.error(`Could not store the token with gh secret set: ${reason}. The token was not saved anywhere.`);
+    return EXIT_CODES.authentication;
+  }
+  console.log(`Stored the token as the ${GITHUB_SECRET_NAME} secret in ${repo}.`);
+  console.log(`It expires in ${Math.floor(token.expires_in / SECONDS_PER_DAY)} days. Granted scopes: ${token.scope ?? 'not reported'}.`);
+  return EXIT_CODES.ok;
+}
+
+async function main(argv: string[]): Promise<number> {
+  const { values, positionals } = parseArgs({
+    args: argv,
+    allowPositionals: true,
+    options: {
+      'output-dir': { type: 'string', default: '.' },
+      'redirect-uri': { type: 'string' },
+      code: { type: 'string' },
+      repo: { type: 'string' },
+    },
+  });
+  const [command, argument] = positionals;
+  const outputDir = values['output-dir'] ?? '.';
+  const redirectUri = values['redirect-uri'];
+
+  try {
+    if (command === 'fetch') {
+      return await runFetch(outputDir);
+    }
+    if (command === 'import-export') {
+      return await runImportExport(argument, outputDir);
+    }
+    if (command === 'auth-url' && redirectUri) {
+      return runAuthUrl(redirectUri);
+    }
+    if (command === 'exchange-code' && redirectUri && values.code && values.repo) {
+      return await runExchangeCode(values.code, redirectUri, values.repo);
+    }
+  } catch (err) {
+    if (err instanceof AuthenticationError) {
+      console.error(err.message);
+      return EXIT_CODES.authentication;
+    }
+    throw err;
+  }
+  console.error(USAGE);
+  return EXIT_CODES.usage;
+}
+
+process.exit(await main(Bun.argv.slice(2)));
