@@ -1,31 +1,16 @@
-import { z } from 'zod';
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
+import { nodesOf } from './graphql/nodes-of.ts';
+import { ProfileContributions } from './graphql/profile-contributions.ts';
+import { RepoNode } from './graphql/repo-node.ts';
 
-export const repoNodeSchema = z.object({
-  name: z.string(),
-  description: z.string().nullable(),
-  url: z.url(),
-  stargazerCount: z.number().int(),
-  isFork: z.boolean(),
-  isArchived: z.boolean(),
-  pushedAt: z.string(),
-  primaryLanguage: z.object({ name: z.string(), color: z.string().nullable() }).nullable(),
-});
+@ZodObject({ description: 'The profile query result for one user.' })
+export class GraphqlProfile extends ZodDto {
+  @ZodField(nodesOf(RepoNode))
+  starred!: { nodes: RepoNode[] };
 
-export const contributionCalendarSchema = z.object({
-  totalContributions: z.number().int(),
-  weeks: z.array(
-    z.object({
-      contributionDays: z.array(z.object({ date: z.string(), contributionCount: z.number().int() })),
-    }),
-  ),
-});
+  @ZodField(nodesOf(RepoNode))
+  recent!: { nodes: RepoNode[] };
 
-export const graphqlProfileSchema = z.object({
-  starred: z.object({ nodes: z.array(repoNodeSchema) }),
-  recent: z.object({ nodes: z.array(repoNodeSchema) }),
-  contributionsCollection: z.object({ contributionCalendar: contributionCalendarSchema }),
-});
-
-export type RepoNode = z.infer<typeof repoNodeSchema>;
-export type ContributionCalendar = z.infer<typeof contributionCalendarSchema>;
-export type GraphqlProfile = z.infer<typeof graphqlProfileSchema>;
+  @ZodField(ProfileContributions)
+  contributionsCollection!: ProfileContributions;
+}

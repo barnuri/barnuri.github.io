@@ -1,7 +1,7 @@
 import type { LinkedInSettings } from '../../configs/linkedin-settings.ts';
 import { GITHUB_SECRET_NAME, OAUTH_BASE_URL, OAUTH_SCOPES } from '../../consts/linkedin-api.ts';
 import { AuthenticationError } from '../../errors/authentication-error.ts';
-import { type TokenResponse, tokenResponseSchema } from '../../schemas/linkedin/token-response.ts';
+import { TokenResponse } from '../../schemas/linkedin/token-response.ts';
 import type { Fetch } from '../linkedin/linkedin-client.ts';
 
 export type SecretStore = (name: string, repo: string, value: string) => Promise<void>;
@@ -47,7 +47,7 @@ export class OAuthHelper {
         response.status,
       );
     }
-    return tokenResponseSchema.parse(await response.json());
+    return TokenResponse.parse(await response.json());
   }
 
   static async storeWithGh(name: string, repo: string, value: string): Promise<void> {

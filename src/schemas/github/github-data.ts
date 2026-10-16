@@ -1,13 +1,19 @@
-import { z } from 'zod';
-import { activitySchema, EMPTY_ACTIVITY } from './activity.ts';
-import { contributionsSchema } from './contributions.ts';
-import { repoSchema } from './repo.ts';
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
+import { Activity } from './activity.ts';
+import { Contributions } from './contributions.ts';
+import { Repo } from './repo.ts';
 
-export const githubDataSchema = z.object({
-  featured: z.array(repoSchema),
-  recent: z.array(repoSchema),
-  contributions: contributionsSchema,
-  activity: activitySchema.default(EMPTY_ACTIVITY),
-});
+@ZodObject({ description: 'Everything the page shows from GitHub, stored in data/github.json.' })
+export class GitHubData extends ZodDto {
+  @ZodField([Repo])
+  featured!: Repo[];
 
-export type GitHubData = z.infer<typeof githubDataSchema>;
+  @ZodField([Repo])
+  recent!: Repo[];
+
+  @ZodField(Contributions)
+  contributions!: Contributions;
+
+  @ZodField(Activity.schema.default({ ...Activity.EMPTY }))
+  activity!: Activity;
+}

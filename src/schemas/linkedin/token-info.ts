@@ -1,20 +1,30 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
+import type { IntrospectionResponse } from './introspection-response.ts';
 
-export const introspectionResponseSchema = z.object({
-  active: z.boolean(),
-  status: z.string().optional(),
-  scope: z.string().optional(),
-  expires_at: z.number().optional(),
-});
+@ZodObject({ description: 'Token state and scopes derived from introspection.' })
+export class TokenInfo extends ZodDto {
+  @ZodField(z.boolean())
+  active!: boolean;
 
-export const tokenInfoSchema = introspectionResponseSchema.transform((response) => ({
-  active: response.active,
-  status: response.status ?? null,
-  scopes: (response.scope ?? '')
-    .split(',')
-    .map((scope) => scope.trim())
-    .filter(Boolean),
-  expiresAt: response.expires_at ? new Date(response.expires_at * 1000) : null,
-}));
+  @ZodField(z.string().nullable())
+  status!: string | null;
 
-export type TokenInfo = z.infer<typeof tokenInfoSchema>;
+  @ZodField(z.array(z.string()))
+  scopes!: string[];
+
+  @ZodField(z.date().nullable())
+  expiresAt!: Date | null;
+
+  static fromIntrospection(response: IntrospectionResponse): TokenInfo {
+    return {
+      active: response.active,
+      status: response.status ?? null,
+      scopes: (response.scope ?? '')
+        .split(',')
+        .map((scope) => scope.trim())
+        .filter(Boolean),
+      expiresAt: response.expires_at ? new Date(response.expires_at * 1000) : null,
+    };
+  }
+}

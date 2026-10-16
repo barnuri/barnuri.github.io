@@ -2,7 +2,7 @@ import { mkdir } from 'node:fs/promises';
 import { ACTIVITY_WINDOW_DAYS } from '../consts/github.ts';
 import { DATA_DIR, GITHUB_DATA_PATH } from '../consts/paths.ts';
 import type { Activity } from '../schemas/github/activity.ts';
-import { type GitHubData, githubDataSchema } from '../schemas/github/github-data.ts';
+import { GitHubData } from '../schemas/github/github-data.ts';
 import { mergeActivity, toActivityItems } from '../services/github/activity-data.ts';
 import { GitHubClient } from '../services/github/github-client.ts';
 import { selectRepos, toContributions } from '../services/github/profile-data.ts';
@@ -14,7 +14,7 @@ async function readSavedActivity(): Promise<Activity | null> {
   if (!(await file.exists())) {
     return null;
   }
-  const saved = githubDataSchema.safeParse(await file.json());
+  const saved = GitHubData.safeParse(await file.json());
   if (!saved.success) {
     console.warn(`${GITHUB_DATA_PATH} does not match the current schema. Starting the activity history fresh.`);
     return null;

@@ -1,15 +1,12 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
+import { ContributionDay } from './contribution-day.ts';
 
-export const contributionDaySchema = z.object({
-  date: z.string(),
-  count: z.number().int().nonnegative(),
-  level: z.number().int().min(0).max(4),
-});
+@ZodObject({ description: 'The contribution graph for the last year.' })
+export class Contributions extends ZodDto {
+  @ZodField(z.number().int().nonnegative())
+  total!: number;
 
-export const contributionsSchema = z.object({
-  total: z.number().int().nonnegative(),
-  weeks: z.array(z.array(contributionDaySchema)),
-});
-
-export type ContributionDay = z.infer<typeof contributionDaySchema>;
-export type Contributions = z.infer<typeof contributionsSchema>;
+  @ZodField(z.array(z.array(ContributionDay.schema)), { description: 'Weeks, each a list of days.' })
+  weeks!: ContributionDay[][];
+}

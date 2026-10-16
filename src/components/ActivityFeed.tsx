@@ -1,6 +1,7 @@
 import { ACTIVITY_VISIBLE_COUNT } from '../consts/github.ts';
 import type { Activity } from '../schemas/github/activity.ts';
-import type { ActivityItem, ActivityState } from '../schemas/github/activity-item.ts';
+import type { ActivityState } from '../consts/github.ts';
+import type { ActivityItem } from '../schemas/github/activity-item.ts';
 import { formatDate, formatNumber } from '../services/site/format.ts';
 import { ShowMoreScript } from './ShowMoreScript.tsx';
 

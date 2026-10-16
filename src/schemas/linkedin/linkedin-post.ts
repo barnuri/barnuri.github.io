@@ -1,15 +1,28 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
-import { engagementSchema } from './engagement.ts';
-import { mediaItemSchema } from './media-item.ts';
+import { Engagement } from './engagement.ts';
+import { MediaItem } from './media-item.ts';
 
-export const linkedInPostSchema = z.object({
-  id: z.string(),
-  text: z.string(),
-  published_at: z.iso.datetime().nullable(),
-  url: z.url(),
-  visibility: z.string().nullable().default(null),
-  media: z.array(mediaItemSchema).default([]),
-  engagement: engagementSchema,
-});
+@ZodObject({ description: 'One LinkedIn post.' })
+export class LinkedInPost extends ZodDto {
+  @ZodField(z.string(), { description: 'Post URN.' })
+  id!: string;
 
-export type LinkedInPost = z.infer<typeof linkedInPostSchema>;
+  @ZodField(z.string())
+  text!: string;
+
+  @ZodField(z.iso.datetime().nullable())
+  published_at!: string | null;
+
+  @ZodField(z.url())
+  url!: string;
+
+  @ZodField(z.string().nullable().default(null))
+  visibility!: string | null;
+
+  @ZodField(z.array(MediaItem.schema).default([]))
+  media!: MediaItem[];
+
+  @ZodField(Engagement)
+  engagement!: Engagement;
+}

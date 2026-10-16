@@ -1,5 +1,6 @@
 import type { Contributions } from '../../schemas/github/contributions.ts';
-import type { ContributionCalendar, RepoNode } from '../../schemas/github/graphql-profile.ts';
+import type { ContributionCalendar } from '../../schemas/github/graphql/contribution-calendar.ts';
+import type { RepoNode } from '../../schemas/github/graphql/repo-node.ts';
 import type { Repo } from '../../schemas/github/repo.ts';
 
 const FEATURED_COUNT = 6;

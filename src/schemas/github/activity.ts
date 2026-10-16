@@ -1,11 +1,14 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
-import { activityItemSchema } from './activity-item.ts';
+import { ActivityItem } from './activity-item.ts';
 
-export const activitySchema = z.object({
-  items: z.array(activityItemSchema),
-  privateContributions: z.number().int().nonnegative(),
-});
+@ZodObject({ description: 'Saved public activity history.' })
+export class Activity extends ZodDto {
+  static readonly EMPTY: Activity = { items: [], privateContributions: 0 };
 
-export type Activity = z.infer<typeof activitySchema>;
+  @ZodField([ActivityItem], { description: 'Newest first, capped at the store limit.' })
+  items!: ActivityItem[];
 
-export const EMPTY_ACTIVITY: Activity = { items: [], privateContributions: 0 };
+  @ZodField(z.number().int().nonnegative(), { description: 'Contributions in private repositories, count only.' })
+  privateContributions!: number;
+}

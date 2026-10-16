@@ -1,19 +1,31 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
+import { ACTIVITY_KINDS, ACTIVITY_STATES, type ActivityKind, type ActivityState } from '../../consts/github.ts';
+import { ActivityRepo } from './activity-repo.ts';
 
-export const ACTIVITY_KINDS = ['commits', 'repository', 'pull_request', 'issue', 'review'] as const;
-export const ACTIVITY_STATES = ['OPEN', 'MERGED', 'CLOSED'] as const;
+@ZodObject({ description: 'One public GitHub activity.' })
+export class ActivityItem extends ZodDto {
+  @ZodField(z.string(), { description: 'Stable id used to merge fetches.' })
+  id!: string;
 
-export const activityItemSchema = z.object({
-  id: z.string(),
-  kind: z.enum(ACTIVITY_KINDS),
-  occurredAt: z.string(),
-  repo: z.object({ name: z.string(), url: z.url() }),
-  title: z.string().nullable(),
-  url: z.url(),
-  count: z.number().int().positive().nullable(),
-  state: z.enum(ACTIVITY_STATES).nullable(),
-});
+  @ZodField(z.enum(ACTIVITY_KINDS))
+  kind!: ActivityKind;
 
-export type ActivityKind = (typeof ACTIVITY_KINDS)[number];
-export type ActivityState = (typeof ACTIVITY_STATES)[number];
-export type ActivityItem = z.infer<typeof activityItemSchema>;
+  @ZodField(z.string())
+  occurredAt!: string;
+
+  @ZodField(ActivityRepo)
+  repo!: ActivityRepo;
+
+  @ZodField(z.string().nullable(), { description: 'Pull request or issue title.' })
+  title!: string | null;
+
+  @ZodField(z.url())
+  url!: string;
+
+  @ZodField(z.number().int().positive().nullable(), { description: 'Commit count for commit days.' })
+  count!: number | null;
+
+  @ZodField(z.enum(ACTIVITY_STATES).nullable())
+  state!: ActivityState | null;
+}

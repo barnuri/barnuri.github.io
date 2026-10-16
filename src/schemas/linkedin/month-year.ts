@@ -1,8 +1,11 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
 
-export const monthYearSchema = z.object({
-  year: z.number().int().min(1900).max(2200),
-  month: z.number().int().min(1).max(12).nullable(),
-});
+@ZodObject({ description: 'A date with month precision, or year only.' })
+export class MonthYear extends ZodDto {
+  @ZodField(z.number().int().min(1900).max(2200))
+  year!: number;
 
-export type MonthYear = z.infer<typeof monthYearSchema>;
+  @ZodField(z.number().int().min(1).max(12).nullable(), { description: 'Null when only the year is known.' })
+  month!: number | null;
+}

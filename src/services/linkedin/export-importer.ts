@@ -1,5 +1,5 @@
 import { ExportFormatError } from '../../errors/export-format-error.ts';
-import { UNKNOWN_ENGAGEMENT } from '../../schemas/linkedin/engagement.ts';
+import { Engagement } from '../../schemas/linkedin/engagement.ts';
 import type { LinkedInPost } from '../../schemas/linkedin/linkedin-post.ts';
 import type { MediaItem } from '../../schemas/linkedin/media-item.ts';
 import type { PostCollection } from '../../schemas/linkedin/post-collection.ts';
@@ -55,7 +55,7 @@ export class ExportImporter {
       url: link,
       visibility: record.Visibility?.trim() || null,
       media,
-      engagement: UNKNOWN_ENGAGEMENT,
+      engagement: Engagement.UNKNOWN,
     };
   }
 

@@ -1,9 +1,14 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
 
-export const tokenResponseSchema = z.object({
-  access_token: z.string().min(1),
-  expires_in: z.number().int(),
-  scope: z.string().optional(),
-});
+@ZodObject({ description: 'LinkedIn OAuth access token response.' })
+export class TokenResponse extends ZodDto {
+  @ZodField(z.string().min(1))
+  access_token!: string;
 
-export type TokenResponse = z.infer<typeof tokenResponseSchema>;
+  @ZodField(z.number().int(), { description: 'Seconds until the token expires.' })
+  expires_in!: number;
+
+  @ZodField(z.string().optional())
+  scope?: string;
+}

@@ -1,12 +1,21 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
-import { monthYearSchema } from './month-year.ts';
+import { MonthYear } from './month-year.ts';
 
-export const educationSchema = z.object({
-  school: z.string(),
-  degree: z.string().nullable(),
-  notes: z.string().nullable(),
-  startedOn: monthYearSchema.nullable(),
-  finishedOn: monthYearSchema.nullable(),
-});
+@ZodObject({ description: 'One school from Education.csv.' })
+export class Education extends ZodDto {
+  @ZodField(z.string())
+  school!: string;
 
-export type Education = z.infer<typeof educationSchema>;
+  @ZodField(z.string().nullable())
+  degree!: string | null;
+
+  @ZodField(z.string().nullable())
+  notes!: string | null;
+
+  @ZodField(MonthYear.schema.nullable())
+  startedOn!: MonthYear | null;
+
+  @ZodField(MonthYear.schema.nullable())
+  finishedOn!: MonthYear | null;
+}

@@ -1,5 +1,5 @@
 import { postUrl } from '../../consts/linkedin-api.ts';
-import { type Engagement, UNKNOWN_ENGAGEMENT } from '../../schemas/linkedin/engagement.ts';
+import { Engagement } from '../../schemas/linkedin/engagement.ts';
 import type { LinkedInPost } from '../../schemas/linkedin/linkedin-post.ts';
 import type { MediaItem } from '../../schemas/linkedin/media-item.ts';
 import type { JsonObject } from './linkedin-client.ts';
@@ -72,7 +72,7 @@ export function toEngagement(socialActions: JsonObject): Engagement {
   };
 }
 
-export function normalizePost(post: JsonObject, engagement: Engagement = UNKNOWN_ENGAGEMENT): LinkedInPost {
+export function normalizePost(post: JsonObject, engagement: Engagement = Engagement.UNKNOWN): LinkedInPost {
   const urn = asString(post.id);
   if (!urn) {
     throw new Error('LinkedIn returned a post without an id.');

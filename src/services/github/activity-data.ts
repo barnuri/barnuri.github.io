@@ -2,10 +2,9 @@ import { ACTIVITY_STORE_LIMIT } from '../../consts/github.ts';
 import type { Activity } from '../../schemas/github/activity.ts';
 import type { ActivityItem } from '../../schemas/github/activity-item.ts';
 import type { GraphqlActivity } from '../../schemas/github/graphql-activity.ts';
+import type { ActivityRepository } from '../../schemas/github/graphql/activity-repository.ts';
 
-type Repository = GraphqlActivity['repositoryContributions']['nodes'][number]['repository'];
-
-const toRepo = (repository: Repository): ActivityItem['repo'] => ({ name: repository.nameWithOwner, url: repository.url });
+const toRepo = (repository: ActivityRepository): ActivityItem['repo'] => ({ name: repository.nameWithOwner, url: repository.url });
 
 const byNewest = (a: ActivityItem, b: ActivityItem): number => b.occurredAt.localeCompare(a.occurredAt);
 

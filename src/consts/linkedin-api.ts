@@ -16,3 +16,5 @@ export const MAX_RETRY_SECONDS = 120;
 export const RETRYABLE_STATUS_CODES: ReadonlySet<number> = new Set([429, 500, 502, 503, 504]);
 
 export const postUrl = (urn: string): string => `https://www.linkedin.com/feed/update/${urn}/`;
+
+export const POST_SOURCES = ['api', 'export'] as const;

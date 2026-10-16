@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2913,
+    "total": 2915,
     "weeks": [
       [
         {
@@ -2066,8 +2066,8 @@
         },
         {
           "date": "2026-10-16",
-          "count": 8,
-          "level": 2
+          "count": 10,
+          "level": 3
         }
       ]
     ]
@@ -2097,7 +2097,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/barnuri.github.io/commits",
-        "count": 1,
+        "count": 3,
         "state": null
       },
       {

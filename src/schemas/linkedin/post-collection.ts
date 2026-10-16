@@ -1,14 +1,22 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
-import { linkedInPostSchema } from './linkedin-post.ts';
+import { POST_SOURCES } from '../../consts/linkedin-api.ts';
+import { LinkedInPost } from './linkedin-post.ts';
 
-export const POST_SOURCES = ['api', 'export'] as const;
+@ZodObject({ description: 'LinkedIn posts stored in data/linkedin_posts.json.' })
+export class PostCollection extends ZodDto {
+  @ZodField(z.enum(POST_SOURCES), { description: 'api for the Posts API, export for the data archive.' })
+  source!: (typeof POST_SOURCES)[number];
 
-export const postCollectionSchema = z.object({
-  source: z.enum(POST_SOURCES),
-  fetched_at: z.iso.datetime(),
-  author_urn: z.string().nullable().default(null),
-  posts: z.array(linkedInPostSchema),
-  unavailable_fields: z.array(z.string()),
-});
+  @ZodField(z.iso.datetime())
+  fetched_at!: string;
 
-export type PostCollection = z.infer<typeof postCollectionSchema>;
+  @ZodField(z.string().nullable().default(null))
+  author_urn!: string | null;
+
+  @ZodField([LinkedInPost])
+  posts!: LinkedInPost[];
+
+  @ZodField(z.array(z.string()), { description: 'Fields the source could not provide.' })
+  unavailable_fields!: string[];
+}

@@ -1,11 +1,16 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
-import { educationSchema } from './education.ts';
-import { positionSchema } from './position.ts';
+import { Education } from './education.ts';
+import { Position } from './position.ts';
 
-export const linkedInProfileSchema = z.object({
-  imported_at: z.iso.datetime(),
-  positions: z.array(positionSchema),
-  education: z.array(educationSchema),
-});
+@ZodObject({ description: 'Experience and education stored in data/linkedin_profile.json.' })
+export class LinkedInProfile extends ZodDto {
+  @ZodField(z.iso.datetime())
+  imported_at!: string;
 
-export type LinkedInProfile = z.infer<typeof linkedInProfileSchema>;
+  @ZodField([Position], { description: 'Most recent first, current roles at the top.' })
+  positions!: Position[];
+
+  @ZodField([Education])
+  education!: Education[];
+}

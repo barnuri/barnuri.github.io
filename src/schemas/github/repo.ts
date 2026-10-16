@@ -1,13 +1,26 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
 
-export const repoSchema = z.object({
-  name: z.string(),
-  description: z.string(),
-  url: z.url(),
-  stars: z.number().int().nonnegative(),
-  language: z.string().nullable(),
-  languageColor: z.string().nullable(),
-  pushedAt: z.string(),
-});
+@ZodObject({ description: 'A public repository shown on the page.' })
+export class Repo extends ZodDto {
+  @ZodField(z.string())
+  name!: string;
 
-export type Repo = z.infer<typeof repoSchema>;
+  @ZodField(z.string())
+  description!: string;
+
+  @ZodField(z.url())
+  url!: string;
+
+  @ZodField(z.number().int().nonnegative())
+  stars!: number;
+
+  @ZodField(z.string().nullable())
+  language!: string | null;
+
+  @ZodField(z.string().nullable())
+  languageColor!: string | null;
+
+  @ZodField(z.string())
+  pushedAt!: string;
+}

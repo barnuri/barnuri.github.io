@@ -10,7 +10,8 @@ import {
 import { AuthenticationError } from '../../errors/authentication-error.ts';
 import { LinkedInApiError } from '../../errors/linkedin-api-error.ts';
 import { MissingPermissionError } from '../../errors/missing-permission-error.ts';
-import { type TokenInfo, tokenInfoSchema } from '../../schemas/linkedin/token-info.ts';
+import { IntrospectionResponse } from '../../schemas/linkedin/introspection-response.ts';
+import { TokenInfo } from '../../schemas/linkedin/token-info.ts';
 
 export type Fetch = (input: string, init: RequestInit) => Promise<Response>;
 export type Sleep = (milliseconds: number) => Promise<void>;
@@ -55,7 +56,7 @@ export class LinkedInClient {
       this.fetchImpl(`${OAUTH_BASE_URL}/introspectToken`, { method: 'POST', body }),
     );
     await LinkedInClient.throwForStatus(response);
-    return tokenInfoSchema.parse(await response.json());
+    return TokenInfo.fromIntrospection(IntrospectionResponse.parse(await response.json()));
   }
 
   private async sendWithRetries(send: () => Promise<Response>): Promise<Response> {

@@ -1,10 +1,17 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
 
-export const mediaItemSchema = z.object({
-  kind: z.string(),
-  urn: z.string().nullable().default(null),
-  url: z.string().nullable().default(null),
-  title: z.string().nullable().default(null),
-});
+@ZodObject({ description: 'Media attached to a LinkedIn post.' })
+export class MediaItem extends ZodDto {
+  @ZodField(z.string(), { description: 'image, video, document, article, poll or reshare.' })
+  kind!: string;
 
-export type MediaItem = z.infer<typeof mediaItemSchema>;
+  @ZodField(z.string().nullable().default(null))
+  urn!: string | null;
+
+  @ZodField(z.string().nullable().default(null))
+  url!: string | null;
+
+  @ZodField(z.string().nullable().default(null))
+  title!: string | null;
+}

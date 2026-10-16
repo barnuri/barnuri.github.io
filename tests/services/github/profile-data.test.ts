@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import type { RepoNode } from '../../../src/schemas/github/graphql-profile.ts';
+import type { RepoNode } from '../../../src/schemas/github/graphql/repo-node.ts';
 import { selectRepos, toContributions, toRepo } from '../../../src/services/github/profile-data.ts';
 
 const repoNode = (name: string, overrides: Partial<RepoNode> = {}): RepoNode => ({

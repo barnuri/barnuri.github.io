@@ -5,6 +5,7 @@
     "": {
       "name": "barnuri.github.io",
       "dependencies": {
+        "@barnuri/zod-decorators": "github:barnuri/zod-decorators#98877d2",
         "react": "19.3.1",
         "react-dom": "19.3.1",
         "zod": "4.6.7",
@@ -18,6 +19,8 @@
     },
   },
   "packages": {
+    "@barnuri/zod-decorators": ["@barnuri/zod-decorators@github:barnuri/zod-decorators#98877d2", { "peerDependencies": { "zod": "^4.4.3" } }, "barnuri-zod-decorators-98877d2", "sha512-sm6faj68CtxfUCDsII7XoDS8NOBL2rhjBYfbSFe++BycnNroWPkfQsffWa56OxkJ3ITyFTbe0s1DuE4wYh80uQ=="],
+
     "@types/bun": ["@types/bun@1.4.3", "", { "dependencies": { "bun-types": "1.4.3" } }, "sha512-N67Pqy8JXbAY/j0tNraS3V5mubGvc6rrrNDmDCtZLlFzccbUJPDb0tvgUBC5q4m8ybkP93Jcn1QB+RYQ6PvBhw=="],
 
     "@types/node": ["@types/node@26.6.5", "", { "dependencies": { "undici-types": "~8.9.0" } }, "sha512-uMzsv9stDdofIZBx4UGh4Z9ZgXnGC9seRDscilBcTHAeOFk67MZg/k9bWVfO+bk4qZmG+l52hRnLwUiH2LnJTg=="],

@@ -1,7 +1,7 @@
 import { z } from 'zod';
 import { ACTIVITY_PAGE_SIZE } from '../../consts/github.ts';
-import { type GraphqlActivity, graphqlActivitySchema } from '../../schemas/github/graphql-activity.ts';
-import { type GraphqlProfile, graphqlProfileSchema } from '../../schemas/github/graphql-profile.ts';
+import { GraphqlActivity } from '../../schemas/github/graphql-activity.ts';
+import { GraphqlProfile } from '../../schemas/github/graphql-profile.ts';
 
 type Fetch = (input: string, init: RequestInit) => Promise<Response>;
 
@@ -15,8 +15,8 @@ export class GitHubClient {
     contributionsCollection { contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } } }
   }
 }`;
-  static readonly RESPONSE_SCHEMA = z.object({
-    data: z.object({ user: graphqlProfileSchema.nullable() }).optional(),
+  static readonly ENVELOPE_SCHEMA = z.object({
+    data: z.object({ user: z.unknown() }).optional(),
     errors: z.array(z.object({ message: z.string() })).optional(),
   });
   static readonly ACTIVITY_REPOSITORY_FIELDS = 'nameWithOwner url isPrivate';
@@ -43,10 +43,7 @@ export class GitHubClient {
     }
   }
 }`;
-  static readonly ACTIVITY_RESPONSE_SCHEMA = z.object({
-    data: z.object({ user: z.object({ contributionsCollection: graphqlActivitySchema }).nullable() }).optional(),
-    errors: z.array(z.object({ message: z.string() })).optional(),
-  });
+  static readonly ACTIVITY_USER_SCHEMA = z.object({ contributionsCollection: z.unknown() });
 
   constructor(
     private readonly token: string,
@@ -54,22 +51,24 @@ export class GitHubClient {
   ) {}
 
   async fetchProfile(login: string): Promise<GraphqlProfile> {
-    const body = GitHubClient.RESPONSE_SCHEMA.parse(await this.query(login, GitHubClient.PROFILE_QUERY, { login }));
-    GitHubClient.throwOnErrors(body.errors);
+    const user = await this.queryUser(login, GitHubClient.PROFILE_QUERY, { login });
+    return GraphqlProfile.parse(user);
+  }
+
+  async fetchActivity(login: string, from: Date): Promise<GraphqlActivity> {
+    const user = await this.queryUser(login, GitHubClient.ACTIVITY_QUERY, { login, from: from.toISOString() });
+    return GraphqlActivity.parse(GitHubClient.ACTIVITY_USER_SCHEMA.parse(user).contributionsCollection);
+  }
+
+  private async queryUser(login: string, query: string, variables: Record<string, string>): Promise<unknown> {
+    const body = GitHubClient.ENVELOPE_SCHEMA.parse(await this.query(login, query, variables));
+    if (body.errors?.length) {
+      throw new Error(`GitHub GraphQL returned errors: ${body.errors.map((error) => error.message).join('; ')}`);
+    }
     if (!body.data?.user) {
       throw new Error(`GitHub user ${login} was not found.`);
     }
     return body.data.user;
-  }
-
-  async fetchActivity(login: string, from: Date): Promise<GraphqlActivity> {
-    const variables = { login, from: from.toISOString() };
-    const body = GitHubClient.ACTIVITY_RESPONSE_SCHEMA.parse(await this.query(login, GitHubClient.ACTIVITY_QUERY, variables));
-    GitHubClient.throwOnErrors(body.errors);
-    if (!body.data?.user) {
-      throw new Error(`GitHub user ${login} was not found.`);
-    }
-    return body.data.user.contributionsCollection;
   }
 
   private async query(login: string, query: string, variables: Record<string, string>): Promise<unknown> {
@@ -82,11 +81,5 @@ export class GitHubClient {
       throw new Error(`GitHub GraphQL request failed with status ${response.status}.`);
     }
     return response.json();
-  }
-
-  private static throwOnErrors(errors: readonly { message: string }[] | undefined): void {
-    if (errors?.length) {
-      throw new Error(`GitHub GraphQL returned errors: ${errors.map((error) => error.message).join('; ')}`);
-    }
   }
 }

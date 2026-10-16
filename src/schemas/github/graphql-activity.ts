@@ -1,41 +1,29 @@
+import { ZodDto, ZodField, ZodObject } from '@barnuri/zod-decorators';
 import { z } from 'zod';
+import { CommitsByRepository } from './graphql/commits-by-repository.ts';
+import { IssueContribution } from './graphql/issue-contribution.ts';
+import { nodesOf } from './graphql/nodes-of.ts';
+import { PullRequestContribution } from './graphql/pull-request-contribution.ts';
+import { RepositoryContribution } from './graphql/repository-contribution.ts';
+import { ReviewContribution } from './graphql/review-contribution.ts';
 
-const repositorySchema = z.object({
-  nameWithOwner: z.string(),
-  url: z.url(),
-  isPrivate: z.boolean(),
-});
+@ZodObject({ description: 'The activity query result for one user and time window.' })
+export class GraphqlActivity extends ZodDto {
+  @ZodField(z.number().int(), { description: 'Contributions in private repositories, count only.' })
+  restrictedContributionsCount!: number;
 
-const pullRequestSchema = z.object({
-  title: z.string(),
-  url: z.url(),
-  state: z.enum(['OPEN', 'MERGED', 'CLOSED']),
-  repository: repositorySchema,
-});
+  @ZodField([CommitsByRepository])
+  commitContributionsByRepository!: CommitsByRepository[];
 
-const issueSchema = z.object({
-  title: z.string(),
-  url: z.url(),
-  state: z.enum(['OPEN', 'CLOSED']),
-  repository: repositorySchema,
-});
+  @ZodField(nodesOf(RepositoryContribution))
+  repositoryContributions!: { nodes: RepositoryContribution[] };
 
-const nodes = <T extends z.ZodType>(node: T) => z.object({ nodes: z.array(node) });
+  @ZodField(nodesOf(PullRequestContribution))
+  pullRequestContributions!: { nodes: PullRequestContribution[] };
 
-export const graphqlActivitySchema = z.object({
-  restrictedContributionsCount: z.number().int(),
-  commitContributionsByRepository: z.array(
-    z.object({
-      repository: repositorySchema,
-      contributions: nodes(z.object({ occurredAt: z.string(), commitCount: z.number().int() })),
-    }),
-  ),
-  repositoryContributions: nodes(z.object({ occurredAt: z.string(), repository: repositorySchema })),
-  pullRequestContributions: nodes(z.object({ occurredAt: z.string(), pullRequest: pullRequestSchema })),
-  issueContributions: nodes(z.object({ occurredAt: z.string(), issue: issueSchema })),
-  pullRequestReviewContributions: nodes(
-    z.object({ occurredAt: z.string(), pullRequestReview: z.object({ url: z.url() }), pullRequest: pullRequestSchema }),
-  ),
-});
+  @ZodField(nodesOf(IssueContribution))
+  issueContributions!: { nodes: IssueContribution[] };
 
-export type GraphqlActivity = z.infer<typeof graphqlActivitySchema>;
+  @ZodField(nodesOf(ReviewContribution))
+  pullRequestReviewContributions!: { nodes: ReviewContribution[] };
+}
