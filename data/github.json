@@ -40,7 +40,7 @@
       "name": "ghx",
       "description": "Use the right GitHub account in every folder: a thin per-directory profile wrapper for the gh CLI",
       "url": "https://github.com/barnuri/ghx",
-      "stars": 2,
+      "stars": 3,
       "language": "Go",
       "languageColor": "#00ADD8",
       "pushedAt": "2026-10-15T21:55:46Z"
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2915,
+    "total": 2916,
     "weeks": [
       [
         {
@@ -307,12 +307,12 @@
         },
         {
           "date": "2025-11-17",
-          "count": 20,
+          "count": 21,
           "level": 4
         },
         {
           "date": "2025-11-18",
-          "count": 17,
+          "count": 16,
           "level": 3
         },
         {
@@ -1792,12 +1792,12 @@
         },
         {
           "date": "2026-08-25",
-          "count": 6,
+          "count": 7,
           "level": 2
         },
         {
           "date": "2026-08-26",
-          "count": 7,
+          "count": 6,
           "level": 2
         },
         {
@@ -2066,8 +2066,13 @@
         },
         {
           "date": "2026-10-16",
-          "count": 10,
+          "count": 11,
           "level": 3
+        },
+        {
+          "date": "2026-10-17",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
@@ -2097,7 +2102,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/barnuri.github.io/commits",
-        "count": 3,
+        "count": 4,
         "state": null
       },
       {
@@ -4675,6 +4680,6 @@
         "state": null
       }
     ],
-    "privateContributions": 2484
+    "privateContributions": 2460
   }
 }
