@@ -141,6 +141,8 @@ describe('HomePage activity feed', () => {
 describe('HomePage experience and education', () => {
   const profile: LinkedInProfile = {
     imported_at: '2026-10-16T00:00:00.000Z',
+    headline: null,
+    summary: null,
     positions: [
       {
         company: 'Check Point',

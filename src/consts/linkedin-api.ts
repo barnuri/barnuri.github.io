@@ -17,12 +17,13 @@ export const RETRYABLE_STATUS_CODES: ReadonlySet<number> = new Set([429, 500, 50
 
 export const postUrl = (urn: string): string => `https://www.linkedin.com/feed/update/${urn}/`;
 
-export const POST_SOURCES = ['api', 'export'] as const;
+export const POST_SOURCES = ['api', 'export', 'browser'] as const;
 
 export const ARCHIVE_FILES = {
   shares: 'Shares.csv',
   positions: 'Positions.csv',
   education: 'Education.csv',
+  profile: 'Profile.csv',
 } as const;
 export type ArchiveFileKey = keyof typeof ARCHIVE_FILES;
 export const DEFAULT_IMPORT_DIR = 'imports/linkedin';
@@ -30,6 +31,15 @@ export const DEFAULT_IMPORT_DIR = 'imports/linkedin';
 export const EXPORT_PAGE_URL = 'https://www.linkedin.com/mypreferences/d/download-my-data';
 export const LOGIN_PATH_PREFIXES = ['/login', '/uas/', '/checkpoint/', '/authwall', '/signup'] as const;
 export const EXPORT_PAGE_PATH = '/mypreferences/d/download-my-data';
-export const EXPORT_CATEGORY_LABELS = [/^profile$/i, /^positions$/i, /^education$/i, /^(shares|posts)$/i] as const;
+export const PROFILE_LABEL = /^profile$/i;
+export const EXPORT_CATEGORY_LABELS: readonly RegExp[] = [PROFILE_LABEL, /^articles$/i];
+export const EXPORT_REQUIRED_LABELS: readonly RegExp[] = [PROFILE_LABEL];
+export const EXPORT_RADIO_IDS = { particular: 'fast-file-only', full: 'fast-file-only-plus-other-data' } as const;
+export const EXPORT_FORM_TEXT = /want something in particular|download larger data archive|download archive/i;
 export const DEFAULT_EXPORT_WAIT_MINUTES = 20;
 export const RECENT_ARCHIVE_HOURS = 24;
+export const BROWSER_PROFILE_DIR = '.playwright-linkedin';
+export const PLAYWRIGHT_MOCK_KEYCHAIN_FLAG = '--use-mock-keychain';
+export const LINKEDIN_VANITY_NAME = 'barnuri';
+export const activityPostsUrl = (vanityName: string): string => `https://www.linkedin.com/in/${vanityName}/recent-activity/shares/`;
+export const MAX_SCRAPED_POSTS = 300;

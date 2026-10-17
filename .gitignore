@@ -10,3 +10,4 @@ tasks.md
 !/imports/linkedin/
 /imports/linkedin/*
 !/imports/linkedin/README.md
+/.playwright-linkedin/

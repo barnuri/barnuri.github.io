@@ -5,7 +5,7 @@ import { LinkedInPost } from './linkedin-post.ts';
 
 @ZodObject({ description: 'LinkedIn posts stored in data/linkedin_posts.json.' })
 export class PostCollection extends ZodDto {
-  @ZodField(z.enum(POST_SOURCES), { description: 'api for the Posts API, export for the data archive.' })
+  @ZodField(z.enum(POST_SOURCES), { description: 'api for the Posts API, export for the data archive, browser for the activity page.' })
   source!: (typeof POST_SOURCES)[number];
 
   @ZodField(z.iso.datetime())

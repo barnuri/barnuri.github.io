@@ -16,6 +16,8 @@ const EDUCATION = 'School Name,Start Date,End Date,Notes,Degree Name,Activities\
 
 const existingProfile: LinkedInProfile = {
   imported_at: '2026-10-01T00:00:00.000Z',
+  headline: null,
+  summary: null,
   positions: [],
   education: [{ school: 'Kept School', degree: null, notes: null, startedOn: null, finishedOn: null }],
 };

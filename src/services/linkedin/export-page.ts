@@ -26,7 +26,8 @@ export function archiveFileName(suggested: string, now: Date): string {
   if (!base || base === 'zip') {
     return `LinkedInDataExport_${now.toISOString().slice(0, 10)}.zip`;
   }
-  return base.toLowerCase().endsWith('.zip') ? base : `${base}.zip`;
+  const withoutZip = base.replace(/(\.zip)+$/i, '');
+  return `${withoutZip}.zip`;
 }
 
 export function isRecentArchive(modified: Date, now: Date, maxAgeHours: number): boolean {

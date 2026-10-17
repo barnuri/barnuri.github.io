@@ -11,8 +11,12 @@ bun run linkedin export
 The script opens a visible Chromium window on LinkedIn's **Download your data** page. Log in there yourself; the script never sees or saves your password, and keeps no session after it closes. Then it:
 
 1. Downloads the archive if LinkedIn has one ready.
-2. Otherwise selects Profile, Positions, Education and Shares, clicks **Request archive**, and checks every minute for up to 20 minutes until the archive is ready.
-3. Saves the zip in this folder and runs the import.
+2. Otherwise selects **Profile** and **Articles**, clicks **Request archive**, and checks every minute for up to 20 minutes until the archive is ready.
+3. Saves the zip in this folder and imports your headline from `Profile.csv`. It reads only the Headline and Summary columns.
+4. Reads your posts from your activity page: text, date, link, media type and reaction, comment and repost counts.
+5. Reads your experience and education from your profile pages.
+
+LinkedIn's quick export holds only `Profile.csv`; positions, education and posts come only in the larger archive. Steps 4 and 5 read them from your own profile in the same browser instead. The login is saved in `.playwright-linkedin/` (git-ignored, cookies encrypted with the macOS Keychain); `bun run linkedin export --forget-login` removes it.
 
 If LinkedIn asks for your password again, enter it in the window. If the script can't find a button, it tells you what to click and waits.
 
@@ -23,6 +27,9 @@ When this folder already has a zip from the last 24 hours, the script skips the 
 | `--force` | Opens the browser even when a recent zip exists |
 | `--full` | Requests the larger archive instead of the four categories |
 | `--wait-minutes N` | Waits N minutes for the archive, default 20 |
+| `--skip-posts` | Skips steps 4 and 5 |
+
+`bun run linkedin posts` and `bun run linkedin profile` run steps 4 and 5 on their own.
 
 Shares (your posts) can take up to 48 hours. The first run usually gets profile, positions and education. Run `bun run linkedin export --force` again after LinkedIn emails you that the rest is ready.
 

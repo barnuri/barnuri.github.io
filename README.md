@@ -34,7 +34,9 @@ bun run typecheck
 Set credentials in the current shell session only. Never put them in a file.
 
 ```bash
-bun run linkedin export                       # visible browser: request + download the archive, then import
+bun run linkedin export                       # visible browser: archive, posts, experience and education
+bun run linkedin posts                        # only your posts, from your activity page
+bun run linkedin profile                      # only experience and education, from your profile pages
 bun run linkedin import                       # reads the export zip from imports/linkedin/, writes data/
 bun run linkedin fetch --output-dir data      # Posts API, needs an approved r_member_social token
 ```

@@ -1,13 +1,16 @@
-import { mkdir } from 'node:fs/promises';
+import { mkdir, stat } from 'node:fs/promises';
 import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { LinkedInSettings } from '../configs/linkedin-settings.ts';
 import { EXIT_CODES } from '../consts/exit-codes.ts';
 import {
   ARCHIVE_FILES,
+  BROWSER_PROFILE_DIR,
   DEFAULT_EXPORT_WAIT_MINUTES,
   DEFAULT_IMPORT_DIR,
   GITHUB_SECRET_NAME,
+  LINKEDIN_VANITY_NAME,
+  MAX_SCRAPED_POSTS,
   READ_POSTS_SCOPE,
   RECENT_ARCHIVE_HOURS,
 } from '../consts/linkedin-api.ts';
@@ -19,7 +22,9 @@ import { MissingPermissionError } from '../errors/missing-permission-error.ts';
 import { LinkedInProfile } from '../schemas/linkedin/linkedin-profile.ts';
 import type { PostCollection } from '../schemas/linkedin/post-collection.ts';
 import { OAuthHelper } from '../services/auth/oauth-helper.ts';
+import { LinkedInActivityScraper } from '../services/linkedin/activity-scraper.ts';
 import { LinkedInArchiveImporter } from '../services/linkedin/archive-importer.ts';
+import { LinkedInProfileScraper } from '../services/linkedin/profile-scraper.ts';
 import { LinkedInArchiveReader } from '../services/linkedin/archive-reader.ts';
 import { LinkedInExportAutomation } from '../services/linkedin/export-automation.ts';
 import { isRecentArchive } from '../services/linkedin/export-page.ts';
@@ -42,6 +47,15 @@ Commands:
   export [--full] [--wait-minutes N] [--force]     Open LinkedIn "Download your data" in a visible browser, request and
                                                    download the archive into imports/linkedin, then import it. Skips
                                                    the browser when a zip from the last 24 hours is already there.
+                                                   The login is kept in .playwright-linkedin (git-ignored, Keychain-
+                                                   encrypted cookies).
+  export --forget-login                            Move the saved LinkedIn browser profile to the Trash.
+  export --skip-posts                              Skip reading posts from your activity page after the archive step.
+  profile [--output-dir DIR]                       Read your experience and education from your LinkedIn profile pages
+                                                   into DIR/linkedin_profile.json, default data. Uses the saved login.
+  posts [--max N] [--output-dir DIR]               Read your own posts (text, date, link, media, reaction, comment
+                                                   and repost counts) from your LinkedIn activity page into DIR,
+                                                   default data. Uses the saved login.
   auth-url --redirect-uri URL                      Print the OAuth authorization URL.
   exchange-code --code CODE --redirect-uri URL --repo OWNER/NAME
                                                    Exchange the code and store the token as a repo secret.`;
@@ -172,17 +186,93 @@ async function runImport(path: string, outputDir: string): Promise<number> {
   }
 }
 
-async function runExport(options: { fullArchive: boolean; waitMinutes: number; force: boolean }): Promise<number> {
+async function forgetLogin(): Promise<number> {
+  if (!(await stat(BROWSER_PROFILE_DIR).catch(() => null))) {
+    console.log('No saved LinkedIn login to forget.');
+    return EXIT_CODES.ok;
+  }
+  const trash = Bun.spawn(['trash', BROWSER_PROFILE_DIR], { stdout: 'ignore', stderr: 'pipe' });
+  if ((await trash.exited) !== 0) {
+    console.error(`Could not move ${BROWSER_PROFILE_DIR} to the Trash: ${(await new Response(trash.stderr).text()).trim()}`);
+    return EXIT_CODES.usage;
+  }
+  console.log(`Moved ${BROWSER_PROFILE_DIR} to the Trash. The next export asks you to log in again.`);
+  return EXIT_CODES.ok;
+}
+
+async function runPosts(maxPosts: number, outputDir: string): Promise<number> {
+  try {
+    const collection = await new LinkedInActivityScraper({
+      profileDir: BROWSER_PROFILE_DIR,
+      vanityName: LINKEDIN_VANITY_NAME,
+      maxPosts,
+    }).scrape();
+    if (collection.posts.length === 0) {
+      console.error('Found no posts on the activity page. Existing LinkedIn posts are kept.');
+      return EXIT_CODES.apiError;
+    }
+    return await writeAndReport(collection, outputDir);
+  } catch (err) {
+    console.error(`Reading posts stopped: ${err instanceof Error ? err.message : String(err)}`);
+    return EXIT_CODES.apiError;
+  }
+}
+
+async function runProfile(outputDir: string): Promise<number> {
+  try {
+    const scraped = await new LinkedInProfileScraper({ profileDir: BROWSER_PROFILE_DIR, vanityName: LINKEDIN_VANITY_NAME }).scrape();
+    if (scraped.positions.length === 0 && scraped.education.length === 0) {
+      console.error('Found no experience or education on your profile pages. Existing data is kept.');
+      return EXIT_CODES.apiError;
+    }
+    const existing = await readExistingProfile(outputDir);
+    const profile: LinkedInProfile = {
+      imported_at: new Date().toISOString(),
+      headline: existing?.headline ?? null,
+      summary: existing?.summary ?? null,
+      positions: scraped.positions.length > 0 ? scraped.positions : (existing?.positions ?? []),
+      education: scraped.education.length > 0 ? scraped.education : (existing?.education ?? []),
+    };
+    await mkdir(outputDir, { recursive: true });
+    const path = join(outputDir, LINKEDIN_PROFILE_FILE_NAME);
+    await Bun.write(path, `${JSON.stringify(profile, null, 2)}\n`);
+    console.log(`Wrote ${path} with ${profile.positions.length} positions and ${profile.education.length} education entries.`);
+    return EXIT_CODES.ok;
+  } catch (err) {
+    console.error(`Reading your profile stopped: ${err instanceof Error ? err.message : String(err)}`);
+    return EXIT_CODES.apiError;
+  }
+}
+
+async function runExport(options: { fullArchive: boolean; waitMinutes: number; force: boolean; skipPosts: boolean }): Promise<number> {
+  const results = [await runArchiveStep(options)];
+  if (!options.skipPosts) {
+    console.log('Reading your posts from the LinkedIn activity page.');
+    results.push(await runPosts(MAX_SCRAPED_POSTS, DATA_DIR));
+    console.log('Reading your experience and education from your profile pages.');
+    results.push(await runProfile(DATA_DIR));
+  }
+  return results.find((result) => result !== EXIT_CODES.ok) ?? EXIT_CODES.ok;
+}
+
+async function runArchiveStep(options: { fullArchive: boolean; waitMinutes: number; force: boolean }): Promise<number> {
   const recent = await LinkedInArchiveReader.newestZip(DEFAULT_IMPORT_DIR);
   if (!options.force && recent && isRecentArchive(recent.modified, new Date(), RECENT_ARCHIVE_HOURS)) {
     console.log(`Using ${recent.path}, downloaded ${recent.modified.toISOString()}. Pass --force to download a new archive.`);
     return runImport(DEFAULT_IMPORT_DIR, DATA_DIR);
   }
-  const saved = await new LinkedInExportAutomation({
-    importDir: DEFAULT_IMPORT_DIR,
-    waitMinutes: options.waitMinutes,
-    fullArchive: options.fullArchive,
-  }).run();
+  let saved: string | null;
+  try {
+    saved = await new LinkedInExportAutomation({
+      importDir: DEFAULT_IMPORT_DIR,
+      waitMinutes: options.waitMinutes,
+      fullArchive: options.fullArchive,
+      profileDir: BROWSER_PROFILE_DIR,
+    }).run();
+  } catch (err) {
+    console.error(`The export stopped: ${err instanceof Error ? err.message : String(err)} Run "bun run linkedin export" again.`);
+    return EXIT_CODES.authentication;
+  }
   if (!saved) {
     return EXIT_CODES.ok;
   }
@@ -223,6 +313,9 @@ async function main(argv: string[]): Promise<number> {
       repo: { type: 'string' },
       full: { type: 'boolean', default: false },
       force: { type: 'boolean', default: false },
+      'forget-login': { type: 'boolean', default: false },
+      'skip-posts': { type: 'boolean', default: false },
+      max: { type: 'string' },
       'wait-minutes': { type: 'string' },
     },
   });
@@ -238,13 +331,32 @@ async function main(argv: string[]): Promise<number> {
     if (command === 'import-export') {
       return await runImportExport(argument, outputDir);
     }
+    if (command === 'export' && values['forget-login']) {
+      return await forgetLogin();
+    }
     if (command === 'export') {
       const waitMinutes = Number(values['wait-minutes'] ?? DEFAULT_EXPORT_WAIT_MINUTES);
       if (!Number.isFinite(waitMinutes) || waitMinutes < 0) {
         console.error('--wait-minutes must be a number of minutes, 0 or more.');
         return EXIT_CODES.usage;
       }
-      return await runExport({ fullArchive: values.full ?? false, waitMinutes, force: values.force ?? false });
+      return await runExport({
+        fullArchive: values.full ?? false,
+        waitMinutes,
+        force: values.force ?? false,
+        skipPosts: values['skip-posts'] ?? false,
+      });
+    }
+    if (command === 'profile') {
+      return await runProfile(values['output-dir'] ?? DATA_DIR);
+    }
+    if (command === 'posts') {
+      const maxPosts = Number(values.max ?? MAX_SCRAPED_POSTS);
+      if (!Number.isInteger(maxPosts) || maxPosts < 1) {
+        console.error('--max must be a whole number of posts, 1 or more.');
+        return EXIT_CODES.usage;
+      }
+      return await runPosts(maxPosts, values['output-dir'] ?? DATA_DIR);
     }
     if (command === 'import') {
       return await runImport(argument ?? DEFAULT_IMPORT_DIR, importOutputDir);

@@ -16,7 +16,7 @@ export function LinkedInPosts({ posts }: LinkedInPostsProps) {
         {posts.map((post) => (
           <li key={post.id} className="post">
             {post.published_at && <time dateTime={post.published_at}>{formatDate(post.published_at)}</time>}
-            <p className="post-text">{excerpt(post.text)}</p>
+            <p className="post-text" dir="auto">{excerpt(post.text)}</p>
             <a className="post-link" href={post.url}>
               Read on LinkedIn
             </a>

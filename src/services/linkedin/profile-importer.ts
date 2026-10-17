@@ -38,12 +38,23 @@ export class ProfileImporter {
   parse(positionsCsv: string, educationCsv: string): LinkedInProfile {
     return {
       imported_at: this.now().toISOString(),
+      headline: null,
+      summary: null,
       positions: ProfileImporter.records(positionsCsv, ProfileImporter.POSITION_COLUMNS, ProfileImporter.POSITIONS_FILE)
         .map((record) => ProfileImporter.toPosition(record))
         .toSorted(ProfileImporter.byMostRecent),
       education: ProfileImporter.records(educationCsv, ProfileImporter.EDUCATION_COLUMNS, ProfileImporter.EDUCATION_FILE)
         .map((record) => ProfileImporter.toEducation(record))
         .toSorted(ProfileImporter.byMostRecent),
+    };
+  }
+
+  /** Reads only Headline and Summary; Profile.csv also holds address and birth date, which are never read. */
+  static parseHeadlineAndSummary(profileCsv: string): { headline: string | null; summary: string | null } {
+    const [record] = parseCsvRecords(profileCsv).records;
+    return {
+      headline: ProfileImporter.optional(record?.Headline),
+      summary: ProfileImporter.optional(record?.Summary),
     };
   }
 

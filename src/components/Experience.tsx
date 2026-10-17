@@ -19,7 +19,11 @@ export function Experience({ positions }: ExperienceProps) {
             <div>
               <h3 className="timeline-title">{position.title}</h3>
               <p className="timeline-place">{[position.company, position.location].filter(Boolean).join(', ')}</p>
-              {position.description && <p className="timeline-text">{excerpt(position.description)}</p>}
+              {position.description && (
+                <p className="timeline-text" dir="auto">
+                  {excerpt(position.description)}
+                </p>
+              )}
             </div>
           </li>
         ))}

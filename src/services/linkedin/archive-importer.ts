@@ -29,12 +29,15 @@ export class LinkedInArchiveImporter {
   }
 
   private buildProfile(contents: ArchiveContents, existingProfile: LinkedInProfile | null): LinkedInProfile | null {
-    if (!contents.positions && !contents.education) {
+    if (!contents.positions && !contents.education && !contents.profile) {
       return null;
     }
     const parsed = this.profileImporter.parse(contents.positions ?? '', contents.education ?? '');
+    const about = contents.profile ? ProfileImporter.parseHeadlineAndSummary(contents.profile) : null;
     return {
       ...parsed,
+      headline: about ? about.headline : (existingProfile?.headline ?? null),
+      summary: about ? about.summary : (existingProfile?.summary ?? null),
       positions: contents.positions ? parsed.positions : (existingProfile?.positions ?? []),
       education: contents.education ? parsed.education : (existingProfile?.education ?? []),
     };

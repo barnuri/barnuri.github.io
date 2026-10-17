@@ -1,0 +1,204 @@
+{
+  "imported_at": "2026-10-17T18:02:25.776Z",
+  "headline": "Technology Leader at AI & Innovation Team - Check Point Software Technologies, Ltd",
+  "summary": null,
+  "positions": [
+    {
+      "company": "Check Point Software",
+      "title": "Technology Leader",
+      "description": "AI & Innovation Team\nDevelop and integrate AI technologies and solutions.\nDevelop AI Agents and tools for Check Point’s Copilot.\nDesign and implement server-side components.\nCollaborate with teams across the organization.",
+      "location": "Israel",
+      "startedOn": {
+        "year": 2025,
+        "month": 2
+      },
+      "finishedOn": null
+    },
+    {
+      "company": "Check Point Software",
+      "title": "Technology Leader",
+      "description": "CloudGuard Container Security solution provides a multi-layer cloud workload protection platform (CWPP, CNAPP).\n- Posture management, vulnerability management, runtime protection and more\n- Delivering Cloud-Native SaaS (AWS Based) and Kubernetes-native app",
+      "location": "Tel Aviv District, Israel",
+      "startedOn": {
+        "year": 2023,
+        "month": 12
+      },
+      "finishedOn": {
+        "year": 2025,
+        "month": 2
+      }
+    },
+    {
+      "company": "Check Point Software",
+      "title": "Software Engineer",
+      "description": "CloudGuard Container Security solution provides a multi-layer cloud workload protection platform (CWPP, CNAPP).\n- Posture management, vulnerability management, runtime protection and more\n- Delivering Cloud-Native SaaS (AWS Based) and Kubernetes-native app",
+      "location": "Tel Aviv District, Israel",
+      "startedOn": {
+        "year": 2021,
+        "month": 12
+      },
+      "finishedOn": {
+        "year": 2023,
+        "month": 12
+      }
+    },
+    {
+      "company": "KELA",
+      "title": "Software Engineer",
+      "description": "Responsible for the entire data collection and analysis processes.\nSkills & Tools: C#, .Net Core, python, MongoDB, ElasticSearch, NodeJS, Typescript, RabbitMQ, Redis, Docker, Jenkins, Kubernetes (K8s).\nDesign Patterns, Data Structures and +42 skills",
+      "location": "Tel Aviv District, Israel",
+      "startedOn": {
+        "year": 2020,
+        "month": 8
+      },
+      "finishedOn": {
+        "year": 2021,
+        "month": 12
+      }
+    },
+    {
+      "company": "CodeOasis LTD.",
+      "title": "Software Engineering Team Lead",
+      "description": "Leading a group of five developers in order to building and maintaining high scale products, Live and breathe technology, always at the forefront of technology, work with many customers, large and small companies.\nSkills & Tools: C#, .Net Core, NodeJS, Typescript, MSSQL, Redis, MySQL, MongoDB.",
+      "location": "Israel",
+      "startedOn": {
+        "year": 2019,
+        "month": 1
+      },
+      "finishedOn": {
+        "year": 2020,
+        "month": 8
+      }
+    },
+    {
+      "company": "CodeOasis LTD.",
+      "title": "Software Engineer",
+      "description": "",
+      "location": "Herzliya Area, Israel",
+      "startedOn": {
+        "year": 2018,
+        "month": 6
+      },
+      "finishedOn": {
+        "year": 2019,
+        "month": 1
+      }
+    },
+    {
+      "company": "Expo.co.il",
+      "title": "Full Stack Developer",
+      "description": "Projects: Financial software for business management, Internet sales system, software for events/plots management.\nSkills & Tools: C#, WinForms, CSS, Asp.net, Vb.Net, MSSQL.\nWeb Development, React and +12 skills",
+      "location": "Israel",
+      "startedOn": {
+        "year": 2017,
+        "month": 11
+      },
+      "finishedOn": {
+        "year": 2018,
+        "month": 6
+      }
+    },
+    {
+      "company": "Israel Defense Forces",
+      "title": "Software Engineer",
+      "description": "Developer in AKA: Development and maintenance of C#, Asp.net, SSIS systems. developing automate processes, interfaces between internal military databases, create reports from MSSQL database and generate PDF files, Excel.\nWeb Development, C# and +7 skills",
+      "location": "Israel",
+      "startedOn": {
+        "year": 2014,
+        "month": 11
+      },
+      "finishedOn": {
+        "year": 2017,
+        "month": 9
+      }
+    },
+    {
+      "company": "Sela Group",
+      "title": "Windows Phone Developer - Temporary job",
+      "description": "Projects: build apps for windows phone store with C#.\nSkills & Tools: C#.\nC#, Web Services and +5 skills",
+      "location": null,
+      "startedOn": {
+        "year": 2015,
+        "month": null
+      },
+      "finishedOn": {
+        "year": 2015,
+        "month": null
+      }
+    }
+  ],
+  "education": [
+    {
+      "school": "The Open University of Israel",
+      "degree": "Bachelor of Science - BS, Computer Science",
+      "notes": null,
+      "startedOn": {
+        "year": 2016,
+        "month": null
+      },
+      "finishedOn": {
+        "year": 2019,
+        "month": null
+      }
+    },
+    {
+      "school": "Weizmann Institute of Science",
+      "degree": "High School Diploma, Final project on analysis of network traffic - Network Analyzer – develop in Python",
+      "notes": "Grade: 100",
+      "startedOn": {
+        "year": 2013,
+        "month": null
+      },
+      "finishedOn": {
+        "year": 2014,
+        "month": null
+      }
+    },
+    {
+      "school": "Ben Yehuda High School",
+      "degree": "High School Diploma, Computer Science, Physics",
+      "notes": "Grade: 100",
+      "startedOn": {
+        "year": 2008,
+        "month": null
+      },
+      "finishedOn": {
+        "year": 2014,
+        "month": null
+      }
+    },
+    {
+      "school": "Shenkar - Engineering. Design. Art.",
+      "degree": "Computer Science",
+      "notes": null,
+      "startedOn": {
+        "year": 2010,
+        "month": null
+      },
+      "finishedOn": {
+        "year": 2010,
+        "month": null
+      }
+    },
+    {
+      "school": "Microsoft Innovate for Good",
+      "degree": null,
+      "notes": "Activities and societies: Microsoft Innovate for Good (I4G) Course – develop mobile asp with C#",
+      "startedOn": {
+        "year": 2015,
+        "month": null
+      },
+      "finishedOn": null
+    },
+    {
+      "school": "Microsoft Innovate for Good",
+      "degree": null,
+      "notes": "Microsoft Innovate for Good (I4G) Course – develop mobile asp with C#",
+      "startedOn": {
+        "year": 2013,
+        "month": null
+      },
+      "finishedOn": null
+    }
+  ]
+}
