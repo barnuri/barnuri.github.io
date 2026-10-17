@@ -28,6 +28,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Block raw LinkedIn exports
+        run: |
+          leaked=$(git ls-files | grep -iE '^imports/|LinkedInDataExport.*\.zip$|(^|/)(Messages|Connections|Invitations)\.csv$' | grep -vx 'imports/linkedin/README.md' || true)
+          if [ -n "$leaked" ]; then
+            echo "::error::Raw LinkedIn export files are committed: $leaked. Remove them, and from git history too. Only data/ may hold LinkedIn data."
+            exit 1
+          fi
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:

@@ -6,3 +6,7 @@ tasks.md
 .playwright-mcp
 /linkedin_posts.json
 /linkedin_posts.md
+/imports/*
+!/imports/linkedin/
+/imports/linkedin/*
+!/imports/linkedin/README.md

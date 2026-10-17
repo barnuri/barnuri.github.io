@@ -34,14 +34,15 @@ bun run typecheck
 Set credentials in the current shell session only. Never put them in a file.
 
 ```bash
-bun run linkedin fetch --output-dir data
-bun run linkedin import-export ~/Downloads/Shares.csv --output-dir data
-bun run linkedin import-profile ~/Downloads/LinkedIn-archive --output-dir data
+bun run linkedin import                       # reads the export zip from imports/linkedin/, writes data/
+bun run linkedin fetch --output-dir data      # Posts API, needs an approved r_member_social token
 ```
 
-`import-profile` reads `Positions.csv` and `Education.csv` from the unzipped full data archive and writes `data/linkedin_profile.json`. The page shows the Experience and Education sections only when that file exists. The LinkedIn API cannot read them, because LinkedIn restricts full profile fields to approved partners.
+To publish posts, experience and education, follow [imports/linkedin/README.md](imports/linkedin/README.md). You request your data from LinkedIn, drop the zip into `imports/linkedin/` and run `import`. Git ignores that folder, so the archive, which also holds messages and connections, never reaches this public repo. The pages workflow fails if a raw export is committed anyway.
 
-Both commands write `linkedin_posts.json` and `linkedin_posts.md` and print a summary. `fetch` exit codes: 2 for a missing or invalid token, 3 when LinkedIn refuses `r_member_social`, 4 for other API errors.
+`import-export SHARES_CSV` and `import-profile FOLDER` import a single extracted file or folder instead.
+
+The page shows the Experience and Education sections only when `data/linkedin_profile.json` exists. The LinkedIn API cannot read them, because LinkedIn restricts full profile fields to approved partners. `fetch` exit codes: 2 for a missing or invalid token, 3 when LinkedIn refuses `r_member_social`, 4 for other API errors.
 
 ### Get a LinkedIn token
 

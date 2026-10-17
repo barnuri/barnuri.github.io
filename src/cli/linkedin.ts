@@ -3,14 +3,17 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { LinkedInSettings } from '../configs/linkedin-settings.ts';
 import { EXIT_CODES } from '../consts/exit-codes.ts';
-import { GITHUB_SECRET_NAME, READ_POSTS_SCOPE } from '../consts/linkedin-api.ts';
-import { LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
+import { ARCHIVE_FILES, DEFAULT_IMPORT_DIR, GITHUB_SECRET_NAME, READ_POSTS_SCOPE } from '../consts/linkedin-api.ts';
+import { DATA_DIR, LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
 import { AuthenticationError } from '../errors/authentication-error.ts';
 import { ExportFormatError } from '../errors/export-format-error.ts';
 import { LinkedInApiError } from '../errors/linkedin-api-error.ts';
 import { MissingPermissionError } from '../errors/missing-permission-error.ts';
+import { LinkedInProfile } from '../schemas/linkedin/linkedin-profile.ts';
 import type { PostCollection } from '../schemas/linkedin/post-collection.ts';
 import { OAuthHelper } from '../services/auth/oauth-helper.ts';
+import { LinkedInArchiveImporter } from '../services/linkedin/archive-importer.ts';
+import { LinkedInArchiveReader } from '../services/linkedin/archive-reader.ts';
 import { ExportImporter } from '../services/linkedin/export-importer.ts';
 import { LinkedInClient } from '../services/linkedin/linkedin-client.ts';
 import { PostFetcher } from '../services/linkedin/post-fetcher.ts';
@@ -25,6 +28,8 @@ Commands:
   fetch [--output-dir DIR]                         Fetch your posts with the official Posts API.
   import-export SHARES_CSV [--output-dir DIR]      Import posts from the LinkedIn data export.
   import-profile EXPORT_DIR [--output-dir DIR]     Import experience and education (Positions.csv, Education.csv).
+  import [PATH] [--output-dir DIR]                 Import posts, experience and education from the LinkedIn export
+                                                   zip or folder. PATH defaults to imports/linkedin, DIR to data.
   auth-url --redirect-uri URL                      Print the OAuth authorization URL.
   exchange-code --code CODE --redirect-uri URL --repo OWNER/NAME
                                                    Exchange the code and store the token as a repo secret.`;
@@ -108,6 +113,53 @@ async function runImportProfile(exportDir: string | undefined, outputDir: string
   }
 }
 
+async function readExistingProfile(outputDir: string): Promise<LinkedInProfile | null> {
+  const file = Bun.file(join(outputDir, LINKEDIN_PROFILE_FILE_NAME));
+  if (!(await file.exists())) {
+    return null;
+  }
+  const parsed = LinkedInProfile.safeParse(await file.json());
+  return parsed.success ? parsed.data : null;
+}
+
+async function runImport(path: string, outputDir: string): Promise<number> {
+  try {
+    const { source, contents } = await new LinkedInArchiveReader().read(path);
+    const found = Object.entries(ARCHIVE_FILES)
+      .filter(([key]) => contents[key as keyof typeof contents] !== undefined)
+      .map(([, name]) => name);
+    console.log(`Read ${found.join(', ') || 'no usable files'} from ${source}.`);
+
+    const result = new LinkedInArchiveImporter().build(contents, await readExistingProfile(outputDir));
+    if (!result.posts && !result.profile) {
+      console.error(`${source} has none of ${Object.values(ARCHIVE_FILES).join(', ')}. Existing data is kept.`);
+      return EXIT_CODES.exportFormat;
+    }
+    if (result.posts) {
+      const { jsonPath } = await new PostWriter(outputDir).write(result.posts);
+      const visibility = Object.entries(result.postVisibility).map(([name, count]) => `${name}: ${count}`).join(', ');
+      console.log(`Wrote ${jsonPath} with ${result.posts.posts.length} posts. Visibility: ${visibility || 'none'}.`);
+    } else {
+      console.log(`${ARCHIVE_FILES.shares} not found. Existing LinkedIn posts are kept.`);
+    }
+    if (result.profile) {
+      await mkdir(outputDir, { recursive: true });
+      const profilePath = join(outputDir, LINKEDIN_PROFILE_FILE_NAME);
+      await Bun.write(profilePath, `${JSON.stringify(result.profile, null, 2)}\n`);
+      console.log(
+        `Wrote ${profilePath} with ${result.profile.positions.length} positions and ${result.profile.education.length} education entries.`,
+      );
+    }
+    return EXIT_CODES.ok;
+  } catch (err) {
+    if (err instanceof ExportFormatError) {
+      console.error(err.message);
+      return EXIT_CODES.exportFormat;
+    }
+    throw err;
+  }
+}
+
 function runAuthUrl(redirectUri: string): number {
   const state = crypto.randomUUID();
   const url = new OAuthHelper(LinkedInSettings.fromEnv()).authorizationUrl(redirectUri, state);
@@ -136,7 +188,7 @@ async function main(argv: string[]): Promise<number> {
     args: argv,
     allowPositionals: true,
     options: {
-      'output-dir': { type: 'string', default: '.' },
+      'output-dir': { type: 'string' },
       'redirect-uri': { type: 'string' },
       code: { type: 'string' },
       repo: { type: 'string' },
@@ -144,6 +196,7 @@ async function main(argv: string[]): Promise<number> {
   });
   const [command, argument] = positionals;
   const outputDir = values['output-dir'] ?? '.';
+  const importOutputDir = values['output-dir'] ?? DATA_DIR;
   const redirectUri = values['redirect-uri'];
 
   try {
@@ -152,6 +205,9 @@ async function main(argv: string[]): Promise<number> {
     }
     if (command === 'import-export') {
       return await runImportExport(argument, outputDir);
+    }
+    if (command === 'import') {
+      return await runImport(argument ?? DEFAULT_IMPORT_DIR, importOutputDir);
     }
     if (command === 'import-profile') {
       return await runImportProfile(argument, outputDir);

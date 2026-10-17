@@ -18,3 +18,11 @@ export const RETRYABLE_STATUS_CODES: ReadonlySet<number> = new Set([429, 500, 50
 export const postUrl = (urn: string): string => `https://www.linkedin.com/feed/update/${urn}/`;
 
 export const POST_SOURCES = ['api', 'export'] as const;
+
+export const ARCHIVE_FILES = {
+  shares: 'Shares.csv',
+  positions: 'Positions.csv',
+  education: 'Education.csv',
+} as const;
+export type ArchiveFileKey = keyof typeof ARCHIVE_FILES;
+export const DEFAULT_IMPORT_DIR = 'imports/linkedin';
