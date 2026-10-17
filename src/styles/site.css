@@ -304,6 +304,29 @@ a:hover { text-decoration-thickness: 2px; }
 .timeline-place { margin: 4px 0 0; }
 .timeline-text { margin: 8px 0 0; max-width: 70ch; color: var(--muted); white-space: pre-line; }
 
+.exp-list { margin: 0; padding: 0; list-style: none; }
+.exp-company { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 16px; padding: 18px 0; border-top: 1px solid var(--line); }
+.exp-company:first-child { border-top: 0; padding-top: 4px; }
+.exp-logo { width: 48px; height: 48px; border-radius: 10px; object-fit: contain; background: #fff; }
+.exp-logo-placeholder { display: grid; place-items: center; background: var(--tile-raised); border: 1px solid var(--line); color: var(--muted); font: 700 0.9375rem/1 var(--display); }
+.exp-body { min-width: 0; }
+.exp-company-name, .exp-title { margin: 0; font: 700 1.0625rem/1.3 var(--display); }
+.exp-line { margin: 2px 0 0; }
+.exp-meta { margin: 2px 0 0; color: var(--muted); font-size: 0.9375rem; }
+.exp-text { margin: 10px 0 0; max-width: 72ch; color: var(--muted); white-space: pre-line; }
+.exp-roles { margin: 14px 0 0; padding: 0; list-style: none; }
+.exp-role { position: relative; padding: 0 0 22px 24px; }
+.exp-role:last-child { padding-bottom: 0; }
+.exp-role::before { content: ''; position: absolute; left: 0; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: var(--l3); }
+.exp-role::after { content: ''; position: absolute; left: 4px; top: 20px; bottom: 2px; width: 1px; background: var(--line); }
+.exp-role:last-child::after { display: none; }
+.skills { margin-top: 12px; }
+.skill-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.skill { padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; background: var(--tile-raised); font-size: 0.8125rem; }
+.skill-more { margin-top: 8px; }
+.skill-more summary { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink); font-weight: 600; font-size: 0.9375rem; cursor: pointer; }
+.skill-more[open] summary { margin-bottom: 6px; }
+
 .empty-state { margin: 0; color: var(--muted); }
 .empty-state a { color: var(--ink); font-weight: 600; }
 

@@ -14,7 +14,14 @@ import {
   READ_POSTS_SCOPE,
   RECENT_ARCHIVE_HOURS,
 } from '../consts/linkedin-api.ts';
-import { DATA_DIR, LINKEDIN_MEDIA_DIR, LINKEDIN_MEDIA_PUBLIC_PREFIX, LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
+import {
+  DATA_DIR,
+  LINKEDIN_LOGO_DIR,
+  LINKEDIN_LOGO_PUBLIC_PREFIX,
+  LINKEDIN_MEDIA_DIR,
+  LINKEDIN_MEDIA_PUBLIC_PREFIX,
+  LINKEDIN_PROFILE_FILE_NAME,
+} from '../consts/paths.ts';
 import { AuthenticationError } from '../errors/authentication-error.ts';
 import { ExportFormatError } from '../errors/export-format-error.ts';
 import { LinkedInApiError } from '../errors/linkedin-api-error.ts';
@@ -229,7 +236,12 @@ async function runPosts(maxPosts: number, outputDir: string): Promise<number> {
 
 async function runProfile(outputDir: string): Promise<number> {
   try {
-    const scraped = await new LinkedInProfileScraper({ profileDir: BROWSER_PROFILE_DIR, vanityName: LINKEDIN_VANITY_NAME }).scrape();
+    const scraped = await new LinkedInProfileScraper({
+      profileDir: BROWSER_PROFILE_DIR,
+      vanityName: LINKEDIN_VANITY_NAME,
+      logoDir: LINKEDIN_LOGO_DIR,
+      logoPublicPrefix: LINKEDIN_LOGO_PUBLIC_PREFIX,
+    }).scrape();
     if (scraped.positions.length === 0 && scraped.education.length === 0) {
       console.error('Found no experience or education on your profile pages. Existing data is kept.');
       return EXIT_CODES.apiError;

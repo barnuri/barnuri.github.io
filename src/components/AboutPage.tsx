@@ -25,7 +25,7 @@ export function AboutPage({ profile, builtAt, stylesheet }: AboutPageProps) {
           )}
         </section>
         <Tile id="experience" title="Experience" span={6}>
-          <Experience positions={profile?.positions ?? []} />
+          <Experience positions={profile?.positions ?? []} now={new Date(builtAt)} />
         </Tile>
         <Tile id="education" title="Education" span={6}>
           <Education entries={profile?.education ?? []} />

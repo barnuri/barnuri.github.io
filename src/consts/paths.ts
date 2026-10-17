@@ -8,3 +8,5 @@ export const STATIC_ASSETS = ['favicon.ico', 'assets'] as const;
 export const STYLESHEET_PATH = 'src/styles/site.css';
 export const LINKEDIN_MEDIA_DIR = 'assets/linkedin';
 export const LINKEDIN_MEDIA_PUBLIC_PREFIX = '/assets/linkedin';
+export const LINKEDIN_LOGO_DIR = 'assets/linkedin/logos';
+export const LINKEDIN_LOGO_PUBLIC_PREFIX = '/assets/linkedin/logos';

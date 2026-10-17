@@ -68,7 +68,41 @@ const profile: LinkedInProfile = {
   imported_at: '2026-10-17T00:00:00.000Z',
   headline: 'Technology Leader at AI & Innovation Team',
   summary: null,
-  positions: [{ company: 'Check Point Software', title: 'Technology Leader', description: 'Builds agents', location: 'Israel', startedOn: { year: 2025, month: 2 }, finishedOn: null }],
+  positions: [
+    {
+      company: 'Check Point Software',
+      title: 'Technology Leader',
+      description: 'Builds agents',
+      location: 'Israel',
+      startedOn: { year: 2025, month: 2 },
+      finishedOn: null,
+      companyLogo: '/assets/linkedin/logos/check-point-software.jpg',
+      employmentType: 'Full-time',
+      skills: ['LangFlow', 'Python', 'LangChain', 'LangGraph', 'Atlas', 'C#', 'Docker', 'Kubernetes', 'Redis', 'SQL'],
+    },
+    {
+      company: 'Check Point Software',
+      title: 'Software Engineer',
+      description: '',
+      location: 'Tel Aviv District, Israel',
+      startedOn: { year: 2021, month: 12 },
+      finishedOn: { year: 2025, month: 1 },
+      companyLogo: '/assets/linkedin/logos/check-point-software.jpg',
+      employmentType: 'Full-time',
+      skills: [],
+    },
+    {
+      company: 'Expo.co.il',
+      title: 'Full Stack Developer',
+      description: '',
+      location: 'Israel',
+      startedOn: { year: 2017, month: 11 },
+      finishedOn: { year: 2018, month: 6 },
+      companyLogo: null,
+      employmentType: null,
+      skills: ['React'],
+    },
+  ],
   education: [{ school: 'The Open University of Israel', degree: 'BS, Computer Science', notes: null, startedOn: { year: 2016, month: null }, finishedOn: { year: 2019, month: null } }],
 };
 
@@ -132,8 +166,14 @@ describe('AboutPage', () => {
     const html = renderToStaticMarkup(<AboutPage profile={profile} {...shared} />);
 
     expect(html).toContain('Technology Leader at AI &amp; Innovation Team');
-    expect(html).toContain('Check Point Software, Israel');
-    expect(html).toContain('Feb 2025 – Present');
+    expect(html).toContain('class="exp-company-name">Check Point Software');
+    expect(html).toContain('Full-time · 4 yrs 11 mos');
+    expect(html).toContain('Feb 2025 – Present · 1 yr 9 mos');
+    expect(html.match(/class="exp-role"/g)).toHaveLength(2);
+    expect(html).toContain('src="/assets/linkedin/logos/check-point-software.jpg"');
+    expect(html).toContain('exp-logo-placeholder');
+    expect(html).toContain('Show all 10 skills');
+    expect(html).toContain('Expo.co.il');
     expect(html).toContain('2016 – 2019');
     expect(html).not.toContain('Read on LinkedIn');
   });

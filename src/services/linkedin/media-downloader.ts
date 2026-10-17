@@ -30,7 +30,7 @@ export class LinkedInMediaDownloader {
     const existing = await readdir(this.options.outputDir);
     const images: string[] = [];
     for (const [index, url] of post.imageUrls.slice(0, this.options.maxImagesPerPost).entries()) {
-      const saved = await this.save(url, `${post.activityId}-${index + 1}`, existing, null);
+      const saved = await this.saveFile(url, `${post.activityId}-${index + 1}`, existing, null);
       if (saved) {
         images.push(saved);
       }
@@ -38,13 +38,13 @@ export class LinkedInMediaDownloader {
     if (!post.video) {
       return { images, video: null };
     }
-    const poster = post.video.poster ? await this.save(post.video.poster, `${post.activityId}-poster`, existing, null) : null;
-    const src = post.video.src ? await this.save(post.video.src, `${post.activityId}-video`, existing, this.options.maxVideoBytes) : null;
+    const poster = post.video.poster ? await this.saveFile(post.video.poster, `${post.activityId}-poster`, existing, null) : null;
+    const src = post.video.src ? await this.saveFile(post.video.src, `${post.activityId}-video`, existing, this.options.maxVideoBytes) : null;
     return { images, video: { src, poster } };
   }
 
   /** Reuses a file saved by an earlier run, so the repo keeps stable file names and skips re-downloads. */
-  private async save(url: string, baseName: string, existing: readonly string[], maxBytes: number | null): Promise<string | null> {
+  async saveFile(url: string, baseName: string, existing: readonly string[], maxBytes: number | null): Promise<string | null> {
     const already = existing.find((name) => name.startsWith(`${baseName}.`));
     if (already) {
       return `${this.options.publicPrefix}/${already}`;

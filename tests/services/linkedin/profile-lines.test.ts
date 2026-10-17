@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { cleanDescription, parseDateRange, toEducation, toPosition } from '../../../src/services/linkedin/profile-lines.ts';
+import { cleanDescription, employmentTypeOf, parseDateRange, parseSkillsDialog, slugify, toEducation, toPosition } from '../../../src/services/linkedin/profile-lines.ts';
 import { ProfileImporter } from '../../../src/services/linkedin/profile-importer.ts';
 
 describe('parseDateRange', () => {
@@ -12,7 +12,7 @@ describe('parseDateRange', () => {
 
 describe('cleanDescription', () => {
   test('drops header lines, skills lines and see-more links, comparing normalized whitespace', () => {
-    const rest = 'Technology Leader\nAI  &  Innovation Team\nBuilds agents.\nSkills: Python, +3 skills\n…see more';
+    const rest = 'Technology Leader\nAI  &  Innovation Team\nBuilds agents.\nSkills: Python, +3 skills\nDesign Patterns, Data Structures and +42 skills\n…see more';
 
     expect(cleanDescription(rest, ['Technology Leader', 'AI & Innovation Team'])).toBe('Builds agents.');
   });
@@ -58,5 +58,33 @@ describe('ProfileImporter.parseHeadlineAndSummary', () => {
 
     expect(about).toEqual({ headline: 'Technology Leader', summary: 'Builds agents' });
     expect(JSON.stringify(about)).not.toContain('Secret street');
+  });
+});
+
+describe('employmentTypeOf', () => {
+  test('finds the employment type in a company line or group detail', () => {
+    expect(employmentTypeOf('KELA · Full-time', null)).toBe('Full-time');
+    expect(employmentTypeOf(null, 'Full-time · 4 yrs 11 mos')).toBe('Full-time');
+    expect(employmentTypeOf('Expo.co.il', null)).toBeNull();
+  });
+});
+
+describe('parseSkillsDialog', () => {
+  test('reads the skills between the title and the learn-more line', () => {
+    const text = 'Skills for Technology Leader at Check Point Software\nLangFlow\nPython\n\nLangGraph\nLearn more about these skills\nDiscover jobs\nLangFlow\n0 notifications';
+
+    expect(parseSkillsDialog(text)).toEqual(['LangFlow', 'Python', 'LangGraph']);
+  });
+
+  test('returns nothing for a dialog that is not a skills list', () => {
+    expect(parseSkillsDialog('0 notifications')).toEqual([]);
+  });
+});
+
+describe('slugify', () => {
+  test('makes a safe file name from a company name', () => {
+    expect(slugify('CodeOasis LTD.')).toBe('codeoasis-ltd');
+    expect(slugify('Expo.co.il')).toBe('expo-co-il');
+    expect(slugify('***')).toBe('company');
   });
 });

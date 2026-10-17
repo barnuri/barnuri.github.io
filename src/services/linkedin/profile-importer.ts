@@ -101,6 +101,9 @@ export class ProfileImporter {
       location: ProfileImporter.optional(record.Location),
       startedOn: ProfileImporter.parseMonthYear(record['Started On']),
       finishedOn: ProfileImporter.parseMonthYear(record['Finished On']),
+      companyLogo: null,
+      employmentType: null,
+      skills: [],
     };
   }
 
