@@ -1,18 +1,19 @@
-import { Document } from './Document.tsx';
+import { PAGES } from '../consts/site.ts';
+import { PageLayout } from './PageLayout.tsx';
 
 interface NotFoundPageProps {
+  readonly builtAt: string;
   readonly stylesheet: string;
 }
 
-export function NotFoundPage({ stylesheet }: NotFoundPageProps) {
+export function NotFoundPage({ builtAt, stylesheet }: NotFoundPageProps) {
   return (
-    <Document title="Page not found - Bar Nuri" description="This page does not exist." stylesheet={stylesheet}>
-      <main className="page not-found">
-        <h1>This page does not exist</h1>
-        <p className="lede">
-          The blog moved to LinkedIn. Go to the <a href="/">home page</a>.
-        </p>
-      </main>
-    </Document>
+    <PageLayout current={null} title="Page not found" builtAt={builtAt} stylesheet={stylesheet}>
+      <h1 className="page-title">This page does not exist</h1>
+      <p className="page-lede">
+        The old blog moved to LinkedIn. Go to the <a href={PAGES.home.href}>home page</a> or the{' '}
+        <a href={PAGES.about.href}>About page</a> for posts.
+      </p>
+    </PageLayout>
   );
 }

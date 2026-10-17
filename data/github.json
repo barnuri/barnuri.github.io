@@ -7,7 +7,7 @@
       "stars": 12,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-10-14T15:21:22Z"
+      "pushedAt": "2026-10-17T16:11:26Z"
     },
     {
       "name": "CSharp.OpenSource.LinqToKql",
@@ -34,7 +34,7 @@
       "stars": 5,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2023-03-05T10:44:37Z"
+      "pushedAt": "2026-10-17T18:05:11Z"
     },
     {
       "name": "ghx",
@@ -43,7 +43,7 @@
       "stars": 3,
       "language": "Go",
       "languageColor": "#00ADD8",
-      "pushedAt": "2026-10-15T21:55:46Z"
+      "pushedAt": "2026-10-17T17:46:42Z"
     },
     {
       "name": "claude-dashboard",
@@ -56,6 +56,15 @@
     }
   ],
   "recent": [
+    {
+      "name": "openapi-toolkit",
+      "description": "",
+      "url": "https://github.com/barnuri/openapi-toolkit",
+      "stars": 2,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-10-17T17:35:19Z"
+    },
     {
       "name": "dev-tools",
       "description": "",
@@ -100,19 +109,10 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-10-12T15:01:31Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-10-11T19:18:25Z"
     }
   ],
   "contributions": {
-    "total": 2916,
+    "total": 2937,
     "weeks": [
       [
         {
@@ -307,12 +307,12 @@
         },
         {
           "date": "2025-11-17",
-          "count": 21,
+          "count": 20,
           "level": 4
         },
         {
           "date": "2025-11-18",
-          "count": 16,
+          "count": 17,
           "level": 3
         },
         {
@@ -1792,12 +1792,12 @@
         },
         {
           "date": "2026-08-25",
-          "count": 7,
+          "count": 6,
           "level": 2
         },
         {
           "date": "2026-08-26",
-          "count": 6,
+          "count": 7,
           "level": 2
         },
         {
@@ -2071,14 +2071,79 @@
         },
         {
           "date": "2026-10-17",
-          "count": 0,
-          "level": 0
+          "count": 21,
+          "level": 4
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/vscode-extensions/pull/54",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-17T18:05:29Z",
+        "repo": {
+          "name": "barnuri/vscode-extensions",
+          "url": "https://github.com/barnuri/vscode-extensions"
+        },
+        "title": "Fix python-import-helper issues, perf and CVEs; upgrade all extensions",
+        "url": "https://github.com/barnuri/vscode-extensions/pull/54",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-10-17",
+        "kind": "commits",
+        "occurredAt": "2026-10-17T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/barnuri.github.io:2026-10-17",
+        "kind": "commits",
+        "occurredAt": "2026-10-17T07:00:00Z",
+        "repo": {
+          "name": "barnuri/barnuri.github.io",
+          "url": "https://github.com/barnuri/barnuri.github.io"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/barnuri.github.io/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/ghx:2026-10-17",
+        "kind": "commits",
+        "occurredAt": "2026-10-17T07:00:00Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/openapi-toolkit:2026-10-17",
+        "kind": "commits",
+        "occurredAt": "2026-10-17T07:00:00Z",
+        "repo": {
+          "name": "barnuri/openapi-toolkit",
+          "url": "https://github.com/barnuri/openapi-toolkit"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/openapi-toolkit/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "commits:barnuri/ghx:2026-10-16",
         "kind": "commits",
@@ -4680,6 +4745,61 @@
         "state": null
       }
     ],
-    "privateContributions": 2460
+    "privateContributions": 2473
+  },
+  "stats": {
+    "publicRepos": 40,
+    "stars": 44,
+    "followers": 6,
+    "languages": [
+      {
+        "name": "TypeScript",
+        "color": "#3178c6",
+        "share": 41.5
+      },
+      {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "share": 16.6
+      },
+      {
+        "name": "Shell",
+        "color": "#89e051",
+        "share": 15.1
+      },
+      {
+        "name": "Rust",
+        "color": "#dea584",
+        "share": 10.1
+      },
+      {
+        "name": "Swift",
+        "color": "#F05138",
+        "share": 7.6
+      },
+      {
+        "name": "C#",
+        "color": "#7355dd",
+        "share": 2.3
+      },
+      {
+        "name": "CSS",
+        "color": "#663399",
+        "share": 2.2
+      },
+      {
+        "name": "Python",
+        "color": "#3572A5",
+        "share": 1.7
+      }
+    ],
+    "year": {
+      "commits": 324,
+      "pullRequests": 41,
+      "reviews": 5,
+      "issues": 2,
+      "reposCreated": 18,
+      "contributedRepos": 23
+    }
   }
 }

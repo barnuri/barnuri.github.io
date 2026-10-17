@@ -6,6 +6,7 @@ import { GitHubData } from '../schemas/github/github-data.ts';
 import { mergeActivity, toActivityItems } from '../services/github/activity-data.ts';
 import { GitHubClient } from '../services/github/github-client.ts';
 import { selectRepos, toContributions } from '../services/github/profile-data.ts';
+import { toStats } from '../services/github/stats-data.ts';
 
 const MILLISECONDS_PER_DAY = 86_400_000;
 
@@ -45,6 +46,7 @@ const data: GitHubData = {
   ...selectRepos(login, profile.starred.nodes, profile.recent.nodes),
   contributions: toContributions(profile.contributionsCollection.contributionCalendar),
   activity: mergeActivity(savedActivity, freshActivity),
+  stats: toStats(profile, activityCollection),
 };
 
 await mkdir(DATA_DIR, { recursive: true });

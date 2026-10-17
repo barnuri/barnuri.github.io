@@ -1,13 +1,15 @@
-import { ACTIVITY_VISIBLE_COUNT } from '../consts/github.ts';
-import type { Activity } from '../schemas/github/activity.ts';
+import { FEED_PAGE_SIZE, GITHUB_LOGIN } from '../consts/site.ts';
 import type { ActivityState } from '../consts/github.ts';
 import type { ActivityItem } from '../schemas/github/activity-item.ts';
-import { formatDate, formatNumber } from '../services/site/format.ts';
-import { ShowMoreScript } from './ShowMoreScript.tsx';
-
-const LIST_ID = 'activity-list';
+import { sideOf } from '../services/site/activity-view.ts';
+import { formatNumber, formatShortDate } from '../services/site/format.ts';
 
 const STATE_LABELS: Record<ActivityState, string> = { OPEN: 'Open', MERGED: 'Merged', CLOSED: 'Closed' };
+const FILTERS = [
+  { key: 'all', label: 'All' },
+  { key: 'own', label: 'My repos' },
+  { key: 'ext', label: 'Contributions' },
+] as const;
 
 function Summary({ item }: { readonly item: ActivityItem }) {
   const repo = <a href={item.repo.url}>{item.repo.name}</a>;
@@ -32,51 +34,65 @@ function Summary({ item }: { readonly item: ActivityItem }) {
 }
 
 interface ActivityFeedProps {
-  readonly activity: Activity;
+  readonly id: string;
+  readonly items: readonly ActivityItem[];
+  readonly filterable?: boolean;
+  readonly emptyText: string;
 }
 
-export function ActivityFeed({ activity }: ActivityFeedProps) {
-  if (activity.items.length === 0) {
-    return null;
+export function ActivityFeed({ id, items, filterable = false, emptyText }: ActivityFeedProps) {
+  if (items.length === 0) {
+    return <p className="empty-state">{emptyText}</p>;
   }
-  const hiddenCount = activity.items.length - ACTIVITY_VISIBLE_COUNT;
   return (
-    <section className="repos" aria-labelledby="activity-feed-heading">
-      <h2 id="activity-feed-heading">Recent activity</h2>
-      <ol className="activity-list" id={LIST_ID}>
-        {activity.items.map((item, index) => (
-          <li key={item.id} className="activity-item" hidden={index >= ACTIVITY_VISIBLE_COUNT}>
-            <time dateTime={item.occurredAt}>{formatDate(item.occurredAt)}</time>
-            <div>
-              <p className="activity-summary">
+    <>
+      {filterable && (
+        <div className="chips" role="group" aria-label="Filter activity">
+          {FILTERS.map((filter) => (
+            <button
+              key={filter.key}
+              type="button"
+              className="chip"
+              data-filter-for={id}
+              data-filter={filter.key}
+              aria-pressed={filter.key === 'all'}
+              hidden
+            >
+              {filter.label}
+            </button>
+          ))}
+        </div>
+      )}
+      <ol id={id} className="feed" data-paged-list data-step={FEED_PAGE_SIZE} style={filterable ? { marginTop: 14 } : undefined}>
+        {items.map((item, index) => {
+          const side = sideOf(item, GITHUB_LOGIN);
+          return (
+            <li key={item.id} className="feed-item" data-item data-side={side} hidden={index >= FEED_PAGE_SIZE}>
+              <time className="feed-date" dateTime={item.occurredAt}>
+                {formatShortDate(item.occurredAt)}
+              </time>
+              <p className="feed-summary">
                 <Summary item={item} />
+                {item.title && (
+                  <span className="feed-title">
+                    <a href={item.url}>{item.title}</a>
+                    {item.state && <span className="feed-state">{STATE_LABELS[item.state]}</span>}
+                  </span>
+                )}
               </p>
-              {item.title && (
-                <p className="activity-title">
-                  <a href={item.url}>{item.title}</a>
-                  {item.state && <span className="activity-state">{STATE_LABELS[item.state]}</span>}
-                </p>
-              )}
-            </div>
-          </li>
-        ))}
+              <span className={`tag tag-${side}`}>{side === 'own' ? 'My repo' : 'Contribution'}</span>
+            </li>
+          );
+        })}
       </ol>
-      {hiddenCount > 0 && (
-        <>
-          <button type="button" className="show-more" data-list={LIST_ID} data-step={ACTIVITY_VISIBLE_COUNT} hidden>
-            Show more
-          </button>
-          <noscript>
-            <style>{'.activity-item[hidden] { display: grid; }'}</style>
-          </noscript>
-          <ShowMoreScript />
-        </>
+      <p className="feed-empty" data-empty-for={id} hidden>
+        {emptyText}
+      </p>
+      {items.length > FEED_PAGE_SIZE && (
+        <button type="button" className="more-button" data-more-for={id} hidden>
+          Show more
+        </button>
       )}
-      {activity.privateContributions > 0 && (
-        <p className="activity-private">
-          Plus {formatNumber(activity.privateContributions)} contributions in private repositories in the last year.
-        </p>
-      )}
-    </section>
+    </>
   );
 }

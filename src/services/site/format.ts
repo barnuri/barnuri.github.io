@@ -5,10 +5,16 @@ const HEX_COLOR = /^#[0-9a-f]{3,8}$/i;
 
 const dateFormat = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const monthFormat = new Intl.DateTimeFormat('en-US', { month: 'short', timeZone: 'UTC' });
+const shortDateFormat = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
 const numberFormat = new Intl.NumberFormat('en-US');
 
 export function formatDate(isoDate: string): string {
   return dateFormat.format(new Date(isoDate));
+}
+
+export function formatShortDate(isoDate: string, now: Date = new Date()): string {
+  const date = new Date(isoDate);
+  return date.getUTCFullYear() === now.getUTCFullYear() ? shortDateFormat.format(date) : formatDate(isoDate);
 }
 
 export function formatMonth(isoDate: string): string {

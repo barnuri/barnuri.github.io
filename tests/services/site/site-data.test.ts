@@ -13,7 +13,7 @@ const post = (id: string, publishedAt: string | null, text = `post ${id}`): Link
 });
 
 describe('selectLinkedInPosts', () => {
-  test('returns the four newest posts that have text', () => {
+  test('returns posts that have text, newest first', () => {
     const posts = [
       post('a', '2024-01-01T00:00:00.000Z'),
       post('b', '2026-05-05T00:00:00.000Z'),
@@ -24,7 +24,7 @@ describe('selectLinkedInPosts', () => {
     ];
     const collection = { source: 'api' as const, fetched_at: '2026-10-16T00:00:00.000Z', author_urn: null, posts, unavailable_fields: [] };
 
-    expect(selectLinkedInPosts(collection).map((item) => item.id)).toEqual(['b', 'd', 'c', 'a']);
+    expect(selectLinkedInPosts(collection).map((item) => item.id)).toEqual(['b', 'd', 'c', 'a', 'undated']);
   });
 
   test('returns nothing without a data file', () => {

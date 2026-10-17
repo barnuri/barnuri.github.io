@@ -12,6 +12,24 @@ export class GraphqlActivity extends ZodDto {
   @ZodField(z.number().int(), { description: 'Contributions in private repositories, count only.' })
   restrictedContributionsCount!: number;
 
+  @ZodField(z.number().int())
+  totalCommitContributions!: number;
+
+  @ZodField(z.number().int())
+  totalPullRequestContributions!: number;
+
+  @ZodField(z.number().int())
+  totalPullRequestReviewContributions!: number;
+
+  @ZodField(z.number().int())
+  totalIssueContributions!: number;
+
+  @ZodField(z.number().int())
+  totalRepositoryContributions!: number;
+
+  @ZodField(z.number().int())
+  totalRepositoriesWithContributedCommits!: number;
+
   @ZodField([CommitsByRepository])
   commitContributionsByRepository!: CommitsByRepository[];
 

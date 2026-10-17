@@ -8,6 +8,12 @@ const repository = (name: string, isPrivate = false) => ({ nameWithOwner: name, 
 
 const collection = (overrides: Partial<GraphqlActivity> = {}): GraphqlActivity => ({
   restrictedContributionsCount: 0,
+  totalCommitContributions: 0,
+  totalPullRequestContributions: 0,
+  totalPullRequestReviewContributions: 0,
+  totalIssueContributions: 0,
+  totalRepositoryContributions: 0,
+  totalRepositoriesWithContributedCommits: 0,
   commitContributionsByRepository: [],
   repositoryContributions: { nodes: [] },
   pullRequestContributions: { nodes: [] },

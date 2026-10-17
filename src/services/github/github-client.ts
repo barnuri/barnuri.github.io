@@ -13,6 +13,8 @@ export class GitHubClient {
     starred: repositories(first: 20, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false, orderBy: { field: STARGAZERS, direction: DESC }) { nodes { ${GitHubClient.REPO_FIELDS} } }
     recent: repositories(first: 20, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false, orderBy: { field: PUSHED_AT, direction: DESC }) { nodes { ${GitHubClient.REPO_FIELDS} } }
     contributionsCollection { contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } } }
+    owned: repositories(first: 100, ownerAffiliations: OWNER, privacy: PUBLIC, isFork: false) { totalCount nodes { stargazerCount languages(first: 10) { edges { size node { name color } } } } }
+    followers { totalCount }
   }
 }`;
   static readonly ENVELOPE_SCHEMA = z.object({
@@ -24,6 +26,12 @@ export class GitHubClient {
   user(login: $login) {
     contributionsCollection(from: $from) {
       restrictedContributionsCount
+      totalCommitContributions
+      totalPullRequestContributions
+      totalPullRequestReviewContributions
+      totalIssueContributions
+      totalRepositoryContributions
+      totalRepositoriesWithContributedCommits
       commitContributionsByRepository(maxRepositories: ${ACTIVITY_PAGE_SIZE}) {
         repository { ${GitHubClient.ACTIVITY_REPOSITORY_FIELDS} }
         contributions(first: ${ACTIVITY_PAGE_SIZE}, orderBy: { field: OCCURRED_AT, direction: DESC }) { nodes { occurredAt commitCount } }

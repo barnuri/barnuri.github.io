@@ -5,6 +5,8 @@ const profile = {
   starred: { nodes: [] },
   recent: { nodes: [] },
   contributionsCollection: { contributionCalendar: { totalContributions: 0, weeks: [] } },
+  owned: { totalCount: 0, nodes: [] },
+  followers: { totalCount: 0 },
 };
 
 const clientReturning = (status: number, body: unknown) => {
