@@ -6,3 +6,5 @@ export const LINKEDIN_PROFILE_PATH = `${DATA_DIR}/${LINKEDIN_PROFILE_FILE_NAME}`
 export const OUTPUT_DIR = 'dist';
 export const STATIC_ASSETS = ['favicon.ico', 'assets'] as const;
 export const STYLESHEET_PATH = 'src/styles/site.css';
+export const LINKEDIN_MEDIA_DIR = 'assets/linkedin';
+export const LINKEDIN_MEDIA_PUBLIC_PREFIX = '/assets/linkedin';

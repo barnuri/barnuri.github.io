@@ -80,8 +80,8 @@ export function HomePage({ github, linkedInPosts, builtAt, stylesheet }: HomePag
             </p>
           )}
         </Tile>
-        <Tile id="linkedin" title="Latest on LinkedIn" span={2} note={<a href={PAGES.about.href}>All posts</a>}>
-          <LinkedInPosts id="home-posts" posts={linkedInPosts.slice(0, HOME_POST_COUNT)} />
+        <Tile id="linkedin" title="Latest on LinkedIn" span={2} note={<a href={PAGES.posts.href}>All posts</a>}>
+          <LinkedInPosts id="home-posts" posts={linkedInPosts.slice(0, HOME_POST_COUNT)} compact />
         </Tile>
       </div>
     </PageLayout>

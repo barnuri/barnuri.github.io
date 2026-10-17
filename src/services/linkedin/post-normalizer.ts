@@ -35,6 +35,7 @@ const mediaItem = (kind: string, fields: Partial<Omit<MediaItem, 'kind'>> = {}):
   urn: fields.urn ?? null,
   url: fields.url ?? null,
   title: fields.title ?? null,
+  poster: fields.poster ?? null,
 });
 
 export function extractMedia(post: JsonObject): MediaItem[] {

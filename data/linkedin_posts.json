@@ -1,11 +1,11 @@
 {
   "source": "browser",
-  "fetched_at": "2026-10-17T18:01:23.865Z",
+  "fetched_at": "2026-10-17T19:07:37.648Z",
   "author_urn": null,
   "posts": [
     {
       "id": "urn:li:activity:7516617810928771072",
-      "text": "I juggle a work and a personal GitHub account, and `gh auth switch` kept leaving me on the wrong one, especially with several terminals and AI agents running at once.\n\nSo I built ghx: a thin wrapper around the GitHub CLI that picks the account from the folder you are in. Map folders, drop a `.ghx` file in a repo, or match the ssh host alias in your git remote. Every gh command works unchanged, and git push uses the same account.\n\nOne static binary for macOS, Linux and Windows. Open source:\n\nhttps://lnkd.in/dZFa_ZhE\n\n\nhashtag\n#GitHub \nhashtag\n#DeveloperTools \nhashtag\n#OpenSource \nhashtag\n#CLI",
+      "text": "I juggle a work and a personal GitHub account, and `gh auth switch` kept leaving me on the wrong one, especially with several terminals and AI agents running at once.\n\nSo I built ghx: a thin wrapper around the GitHub CLI that picks the account from the folder you are in. Map folders, drop a `.ghx` file in a repo, or match the ssh host alias in your git remote. Every gh command works unchanged, and git push uses the same account.\n\nOne static binary for macOS, Linux and Windows. Open source:\n\nhttps://lnkd.in/dZFa_ZhE\n\n\n#GitHub \n#DeveloperTools \n#OpenSource \n#CLI",
       "published_at": "2026-10-15T21:55:38.131Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7516617810928771072/",
       "visibility": null,
@@ -13,8 +13,9 @@
         {
           "kind": "video",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7516617810928771072-video.mp4",
+          "title": null,
+          "poster": "/assets/linkedin/7516617810928771072-poster.jpg"
         }
       ],
       "engagement": {
@@ -25,7 +26,7 @@
     },
     {
       "id": "urn:li:activity:7497656820765978624",
-      "text": "השבוע ניסיתי לשחק קצת עם herdr להבין על מה ההתלהבות, לפני שהתחלתי להשתמש בו חשבתי שזה סתם שאין בו כלום שום דבר מסובך לא ממש הבנתי את ההתלהבות אבל בעצם זה מה שהופך אותו לכלי חזק.\n\nואז התחלתי להשתמש בו — והבנתי שהכוח שלו הוא דווקא בפשטות: כאילו אין בו כלום, אבל יש בו הרבה.\n\nה־session לא נעלם רק כי החלון נסגר. אפשר לראות את כל הריצות של claude או כל harness אחר במקביל, על מסך אחד. ומערכת הפלאגינים כל כך פשוטה ופתוחה לשינויים, שכמעט בלי להתאמץ בניתי מנהל פרויקטים, ממשק Web, חיבור ל־Telegram ועדכון אוטומטי.\n\nזה מה שחזק ב־herdr: מעט מאוד רעש, והמון כוח.\n\nהרבה מאוד אנשים עברו להשתמש בעיקר בטרמינל אבל הטרמינל עצמו נשאר מאוד מיושן טכנולוגית זה מה ש herdr בה לפתור\n\nקישורים:\n\nherdr — https://herdr.dev\n\nProject Manager — https://lnkd.in/dZ9Ymyya\n\nHerdr Web — https://lnkd.in/dw4KQh-X\n\nTelegram Notifications — https://lnkd.in/d7zXyTzG\n\nAuto Update — https://lnkd.in/d3VmNUKh\n\n\nhashtag\n#herdr \nhashtag\n#AIAgents \nhashtag\n#DeveloperTools",
+      "text": "השבוע ניסיתי לשחק קצת עם herdr להבין על מה ההתלהבות, לפני שהתחלתי להשתמש בו חשבתי שזה סתם שאין בו כלום שום דבר מסובך לא ממש הבנתי את ההתלהבות אבל בעצם זה מה שהופך אותו לכלי חזק.\n\nואז התחלתי להשתמש בו — והבנתי שהכוח שלו הוא דווקא בפשטות: כאילו אין בו כלום, אבל יש בו הרבה.\n\nה־session לא נעלם רק כי החלון נסגר. אפשר לראות את כל הריצות של claude או כל harness אחר במקביל, על מסך אחד. ומערכת הפלאגינים כל כך פשוטה ופתוחה לשינויים, שכמעט בלי להתאמץ בניתי מנהל פרויקטים, ממשק Web, חיבור ל־Telegram ועדכון אוטומטי.\n\nזה מה שחזק ב־herdr: מעט מאוד רעש, והמון כוח.\n\nהרבה מאוד אנשים עברו להשתמש בעיקר בטרמינל אבל הטרמינל עצמו נשאר מאוד מיושן טכנולוגית זה מה ש herdr בה לפתור\n\nקישורים:\n\nherdr — https://herdr.dev\n\nProject Manager — https://lnkd.in/dZ9Ymyya\n\nHerdr Web — https://lnkd.in/dw4KQh-X\n\nTelegram Notifications — https://lnkd.in/d7zXyTzG\n\nAuto Update — https://lnkd.in/d3VmNUKh\n\n\n#herdr \n#AIAgents \n#DeveloperTools",
       "published_at": "2026-08-24T14:11:25.798Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7497656820765978624/",
       "visibility": null,
@@ -33,8 +34,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7497656820765978624-1.jpg",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -45,7 +47,7 @@
     },
     {
       "id": "urn:li:activity:7478797593632800769",
-      "text": "Ever lose track of how many Claude Code sessions you have running? 🤖\n\nIf you're like me, you've got Claude Code open in three terminals, across four projects, and no idea which one is still working, which one is waiting for your input, and how much all of it is costing you.\n\nSo I built Claude Sessions Dashboard — a local dashboard that shows every Claude Code session on your machine in one place:\n\n- 🔍 Live status for every session — running, waiting for ierminals and folders\n- 💰 Token usage & running cost, computed from each session's actual transcript against current Claude API pricing (including prompt-cache reads/writes)\n- ⚡ Kill any session or launch new headless ones right fro\n- ▶️ A Resume button that copies claude --resume <id> so you can pick any session up in a real terminal\n\nHow it works: Claude Code already writes a transcript of evects. A small Bun backend parses those incrementally,cross-references the live process table, and pushes updates to a React 19 + Mantine frontend over a WebSocket every ~2 seconds. It runs entirely on your machine — nothing is sent anywhere.\n\nIt can even install itself as a system service (launchd on t's always running with a watchdog.\n\n🎮 Try the live demo: https://lnkd.in/dHnKs6AB\n⭐ Source code: https://lnkd.in/d_chYjW6\n\n(The demo is the real UI wired to sample data, since GitHub Pages can't read your local sessions — run it locally for the real thing.)\n\nBuilt with Bun, React 19, Vite, Mantine, and TanStack Query\n\n\nhashtag\n#ClaudeCode \nhashtag\n#AI \nhashtag\n#DevTools \nhashtag\n#OpenSource \nhashtag\n#Bun \nhashtag\n#React",
+      "text": "Ever lose track of how many Claude Code sessions you have running? 🤖\n\nIf you're like me, you've got Claude Code open in three terminals, across four projects, and no idea which one is still working, which one is waiting for your input, and how much all of it is costing you.\n\nSo I built Claude Sessions Dashboard — a local dashboard that shows every Claude Code session on your machine in one place:\n\n- 🔍 Live status for every session — running, waiting for ierminals and folders\n- 💰 Token usage & running cost, computed from each session's actual transcript against current Claude API pricing (including prompt-cache reads/writes)\n- ⚡ Kill any session or launch new headless ones right fro\n- ▶️ A Resume button that copies claude --resume <id> so you can pick any session up in a real terminal\n\nHow it works: Claude Code already writes a transcript of evects. A small Bun backend parses those incrementally,cross-references the live process table, and pushes updates to a React 19 + Mantine frontend over a WebSocket every ~2 seconds. It runs entirely on your machine — nothing is sent anywhere.\n\nIt can even install itself as a system service (launchd on t's always running with a watchdog.\n\n🎮 Try the live demo: https://lnkd.in/dHnKs6AB\n⭐ Source code: https://lnkd.in/d_chYjW6\n\n(The demo is the real UI wired to sample data, since GitHub Pages can't read your local sessions — run it locally for the real thing.)\n\nBuilt with Bun, React 19, Vite, Mantine, and TanStack Query\n\n\n#ClaudeCode \n#AI \n#DevTools \n#OpenSource \n#Bun \n#React",
       "published_at": "2026-07-03T13:11:35.662Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7478797593632800769/",
       "visibility": null,
@@ -53,8 +55,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7478797593632800769-1.gif",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -65,7 +68,7 @@
     },
     {
       "id": "urn:li:activity:7458157448978206720",
-      "text": "Most companies already expose APIs through Swagger/OpenAPI. \nThe missing piece is usually turning them into AI-agent tools quickly.\n\nWith openapi-toolkit 2.9.0, you can generate a fully functional MCP server directly from an OpenAPI spec in seconds ⚡\n\nNo manual tool definitions. \nNo custom wrappers. \nNo rebuilding APIs specifically for AI agents.\n\nJust use your existing OpenAPI definition and generate:\n- MCP tools\n- Server endpoints\n- Type-safe clients\n- AI-ready integrations\n\nThis dramatically reduces the effort required to connect existing platforms and services to ChatGPT, Claude, Cursor, and other MCP-compatible clients.\n\nIf you're working with MCP and already have REST APIs, this can save a lot of setup time.\n\nRead more: \nhttps://lnkd.in/dFnMnhcR\n\n\nhashtag\n#MCP \nhashtag\n#ModelContextProtocol \nhashtag\n#OpenAPI \nhashtag\n#Swagger \nhashtag\n#APIs \nhashtag\n#AI \nhashtag\n#AIAgents \nhashtag\n#DeveloperTools \nhashtag\n#LLM \nhashtag\n#GenAI",
+      "text": "Most companies already expose APIs through Swagger/OpenAPI. \nThe missing piece is usually turning them into AI-agent tools quickly.\n\nWith openapi-toolkit 2.9.0, you can generate a fully functional MCP server directly from an OpenAPI spec in seconds ⚡\n\nNo manual tool definitions. \nNo custom wrappers. \nNo rebuilding APIs specifically for AI agents.\n\nJust use your existing OpenAPI definition and generate:\n- MCP tools\n- Server endpoints\n- Type-safe clients\n- AI-ready integrations\n\nThis dramatically reduces the effort required to connect existing platforms and services to ChatGPT, Claude, Cursor, and other MCP-compatible clients.\n\nIf you're working with MCP and already have REST APIs, this can save a lot of setup time.\n\nRead more: \nhttps://lnkd.in/dFnMnhcR\n\n\n#MCP \n#ModelContextProtocol \n#OpenAPI \n#Swagger \n#APIs \n#AI \n#AIAgents \n#DeveloperTools \n#LLM \n#GenAI",
       "published_at": "2026-05-07T14:15:01.701Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7458157448978206720/",
       "visibility": null,
@@ -73,8 +76,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7458157448978206720-1.jpg",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -85,7 +89,7 @@
     },
     {
       "id": "urn:li:activity:7457055192782544896",
-      "text": "LangTalks היה כנס ממש טוב — מאוד hands-on, פחות הייפ ויותר איך דברים באמת עובדים בפרודקשן.\nהמציאות היא שאתה לא בונה agent —\nאתה בונה מערכת של agents,\nעם אחד שמנהל, אחרים שמבצעים,\nוהמשחק האמיתי זה איך אתה שולט על כל הדבר הזה\nה־orchestrator + harness זה בעצם אותו סיפור —\nמישהו שמנהל את העבודה, וסביבה שמאפשרת לו לא להתפרק\nהקטע שמתחיל להיות מעניין:\nאתה עובד מולו כמו מול ג׳וניור אמיתי\nלא API, לא prompt חד פעמי —\nאלא תקשורת רגילה לגמרי:\nSlack, GitHub, מיילים, טיקטים\nאתה נותן כיוון, פותח משימות, עושה review, מתקן\nוהוא כבר מפרק, מפעיל agents, ומחזיר תוצאה\nאפשר גם לשלב agents של אחרים,\nאבל עדיין להשאיר את האנשים המנוסים על ה-plan וה-review\nכלומר:\nagents עושים execution\nאנשים נשארים על החלטות\nאם זה בנוי טוב — זה מרגיש חלק\nאם לא — זה מתפרק מהר 😅\nוהדבר הכי שווה בכנס —\nקהילה שכבר עמוק בתוך זה ומשתפת מה באמת עובד\nמי שעובד על הדברים האלה ביום-יום — זה קיצור דרך רציני והכל בעברית\n\n\nhttps://lnkd.in/di4fnZN9\n\nhttps://langtalks.ai/\n\n\nhashtag\n#AI \nhashtag\n#Agents \nhashtag\n#LLM \nhashtag\n#Engineering \nhashtag\n#LangTalks",
+      "text": "LangTalks היה כנס ממש טוב — מאוד hands-on, פחות הייפ ויותר איך דברים באמת עובדים בפרודקשן.\nהמציאות היא שאתה לא בונה agent —\nאתה בונה מערכת של agents,\nעם אחד שמנהל, אחרים שמבצעים,\nוהמשחק האמיתי זה איך אתה שולט על כל הדבר הזה\nה־orchestrator + harness זה בעצם אותו סיפור —\nמישהו שמנהל את העבודה, וסביבה שמאפשרת לו לא להתפרק\nהקטע שמתחיל להיות מעניין:\nאתה עובד מולו כמו מול ג׳וניור אמיתי\nלא API, לא prompt חד פעמי —\nאלא תקשורת רגילה לגמרי:\nSlack, GitHub, מיילים, טיקטים\nאתה נותן כיוון, פותח משימות, עושה review, מתקן\nוהוא כבר מפרק, מפעיל agents, ומחזיר תוצאה\nאפשר גם לשלב agents של אחרים,\nאבל עדיין להשאיר את האנשים המנוסים על ה-plan וה-review\nכלומר:\nagents עושים execution\nאנשים נשארים על החלטות\nאם זה בנוי טוב — זה מרגיש חלק\nאם לא — זה מתפרק מהר 😅\nוהדבר הכי שווה בכנס —\nקהילה שכבר עמוק בתוך זה ומשתפת מה באמת עובד\nמי שעובד על הדברים האלה ביום-יום — זה קיצור דרך רציני והכל בעברית\n\n\nhttps://lnkd.in/di4fnZN9\n\nhttps://langtalks.ai/\n\n\n#AI \n#Agents \n#LLM \n#Engineering \n#LangTalks",
       "published_at": "2026-05-04T13:15:03.345Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7457055192782544896/",
       "visibility": null,
@@ -93,8 +97,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7457055192782544896-1.jpg",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -113,8 +118,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7450462886193164290-1.jpg",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -133,8 +139,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7449726048327532544-1.jpg",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -153,8 +160,9 @@
         {
           "kind": "image",
           "urn": null,
-          "url": null,
-          "title": null
+          "url": "/assets/linkedin/7442253255356600320-1.jpg",
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -178,7 +186,7 @@
     },
     {
       "id": "urn:li:activity:7385683667756474368",
-      "text": "🚀 Just launched Web Terminal - A powerful browser-based terminal with modern web technologies!\nEver wished you could access your terminal from anywhere? I've built a comprehensive web-based terminal application that brings the power of the command line to your browser with a sleek, modern interface.\n✨ Key Features:\n• Full terminal emulation powered by xterm.js\n• Multi-tab support for managing multiple sessions\n• Dark/light theme switching\n• OAuth authentication (Google & GitHub)\n• Session persistence and reconnection\n• Mobile-friendly virtual keyboard\n• Configurable security and access controls\n🛠️ Tech Stack:\nBuilt with a modern, production-ready stack:\n• Backend: NestJS + TypeScript + Socket.IO\n• Frontend: React 18 + Vite + TypeScript\n• Terminal: xterm.js + node-pty\n• Authentication: Passport.js + JWT\n🎥 See it in action: Check out the demo video in the README to see all features in action!\nThe project includes comprehensive authentication, session management, and mobile UI patterns - perfect for teams needing secure, remote terminal access or developers wanting to showcase terminal applications.\n🔗 GitHub: https://lnkd.in/dQW-8ENu\n\nhashtag\n#WebDevelopment \nhashtag\n#Terminal \nhashtag\n#NestJS \nhashtag\n#React \nhashtag\n#TypeScript \nhashtag\n#OpenSource \nhashtag\n#WebSockets \nhashtag\n#DevTools",
+      "text": "🚀 Just launched Web Terminal - A powerful browser-based terminal with modern web technologies!\nEver wished you could access your terminal from anywhere? I've built a comprehensive web-based terminal application that brings the power of the command line to your browser with a sleek, modern interface.\n✨ Key Features:\n• Full terminal emulation powered by xterm.js\n• Multi-tab support for managing multiple sessions\n• Dark/light theme switching\n• OAuth authentication (Google & GitHub)\n• Session persistence and reconnection\n• Mobile-friendly virtual keyboard\n• Configurable security and access controls\n🛠️ Tech Stack:\nBuilt with a modern, production-ready stack:\n• Backend: NestJS + TypeScript + Socket.IO\n• Frontend: React 18 + Vite + TypeScript\n• Terminal: xterm.js + node-pty\n• Authentication: Passport.js + JWT\n🎥 See it in action: Check out the demo video in the README to see all features in action!\nThe project includes comprehensive authentication, session management, and mobile UI patterns - perfect for teams needing secure, remote terminal access or developers wanting to showcase terminal applications.\n🔗 GitHub: https://lnkd.in/dQW-8ENu\n\n#WebDevelopment \n#Terminal \n#NestJS \n#React \n#TypeScript \n#OpenSource \n#WebSockets \n#DevTools",
       "published_at": "2025-10-19T14:30:05.760Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7385683667756474368/",
       "visibility": null,
@@ -187,7 +195,8 @@
           "kind": "video",
           "urn": null,
           "url": null,
-          "title": null
+          "title": null,
+          "poster": "/assets/linkedin/7385683667756474368-poster.jpg"
         }
       ],
       "engagement": {
@@ -198,7 +207,7 @@
     },
     {
       "id": "urn:li:activity:7331706354564251649",
-      "text": "🚀 Join Our Team at Check Point Software Technologies!\nWe're expanding our global cybersecurity team and seeking passionate professionals.\nExplore open roles and apply today:\n https://lnkd.in/dfU_Ka4D\n\n\nhashtag\n#CheckPointCareers \nhashtag\n#CyberSecurityJobs \nhashtag\n#WeAreHiring",
+      "text": "🚀 Join Our Team at Check Point Software Technologies!\nWe're expanding our global cybersecurity team and seeking passionate professionals.\nExplore open roles and apply today:\n https://lnkd.in/dfU_Ka4D\n\n\n#CheckPointCareers \n#CyberSecurityJobs \n#WeAreHiring",
       "published_at": "2025-05-23T15:43:31.445Z",
       "url": "https://www.linkedin.com/feed/update/urn:li:activity:7331706354564251649/",
       "visibility": null,
@@ -207,7 +216,8 @@
           "kind": "article",
           "urn": null,
           "url": "https://careers.checkpoint.com/index.php?m=cpcareers&a=search",
-          "title": null
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -227,7 +237,8 @@
           "kind": "article",
           "urn": null,
           "url": "https://barnuri.github.io/blog/openapi-toolkit/#/",
-          "title": null
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {
@@ -247,7 +258,8 @@
           "kind": "article",
           "urn": null,
           "url": "https://barnuri.github.io/blog/LinqToKql/#/",
-          "title": null
+          "title": null,
+          "poster": null
         }
       ],
       "engagement": {

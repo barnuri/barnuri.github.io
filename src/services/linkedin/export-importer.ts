@@ -42,11 +42,11 @@ export class ExportImporter {
     const media: MediaItem[] = [];
     const sharedUrl = record.SharedUrl?.trim();
     if (sharedUrl) {
-      media.push({ kind: 'article', urn: null, url: sharedUrl, title: null });
+      media.push({ kind: 'article', urn: null, url: sharedUrl, title: null, poster: null });
     }
     const mediaUrl = record.MediaUrl?.trim();
     if (mediaUrl) {
-      media.push({ kind: 'media', urn: null, url: mediaUrl, title: null });
+      media.push({ kind: 'media', urn: null, url: mediaUrl, title: null, poster: null });
     }
     return {
       id: ExportImporter.urnFromLink(link),

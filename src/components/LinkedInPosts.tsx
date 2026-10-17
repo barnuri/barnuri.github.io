@@ -1,16 +1,18 @@
 import { LINKEDIN_URL, POSTS_PAGE_SIZE } from '../consts/site.ts';
 import type { LinkedInPost } from '../schemas/linkedin/linkedin-post.ts';
 import { excerpt, formatDate, formatNumber } from '../services/site/format.ts';
+import { PostMedia } from './PostMedia.tsx';
 
 interface LinkedInPostsProps {
   readonly id: string;
   readonly posts: readonly LinkedInPost[];
   readonly paged?: boolean;
+  readonly compact?: boolean;
 }
 
 const plural = (count: number, word: string): string => `${formatNumber(count)} ${word}${count === 1 ? '' : 's'}`;
 
-export function LinkedInPosts({ id, posts, paged = false }: LinkedInPostsProps) {
+export function LinkedInPosts({ id, posts, paged = false, compact = false }: LinkedInPostsProps) {
   if (posts.length === 0) {
     return (
       <p className="empty-state">
@@ -27,6 +29,7 @@ export function LinkedInPosts({ id, posts, paged = false }: LinkedInPostsProps) 
             <p className="post-text" dir="auto">
               {excerpt(post.text)}
             </p>
+            <PostMedia post={post} compact={compact} />
             <p className="post-meta">
               {post.engagement.likes !== null && <span>{plural(post.engagement.likes, 'reaction')}</span>}
               {post.engagement.comments !== null && <span>{plural(post.engagement.comments, 'comment')}</span>}

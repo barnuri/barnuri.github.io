@@ -13,6 +13,7 @@ export const PAGES = {
   home: { href: '/', label: 'Home', file: 'index.html' },
   projects: { href: '/projects/', label: 'Projects', file: 'projects/index.html' },
   contributions: { href: '/contributions/', label: 'Contributions', file: 'contributions/index.html' },
+  posts: { href: '/posts/', label: 'Posts', file: 'posts/index.html' },
   about: { href: '/about/', label: 'About', file: 'about/index.html' },
 } as const;
 
@@ -20,5 +21,5 @@ export type PageKey = keyof typeof PAGES;
 
 export const FEED_PAGE_SIZE = 10;
 export const HOME_POST_COUNT = 3;
-export const POSTS_PAGE_SIZE = 5;
+export const POSTS_PAGE_SIZE = 10;
 export const TOP_REPO_COUNT = 6;

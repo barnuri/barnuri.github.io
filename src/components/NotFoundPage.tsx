@@ -12,7 +12,7 @@ export function NotFoundPage({ builtAt, stylesheet }: NotFoundPageProps) {
       <h1 className="page-title">This page does not exist</h1>
       <p className="page-lede">
         The old blog moved to LinkedIn. Go to the <a href={PAGES.home.href}>home page</a> or the{' '}
-        <a href={PAGES.about.href}>About page</a> for posts.
+        <a href={PAGES.posts.href}>Posts page</a>.
       </p>
     </PageLayout>
   );

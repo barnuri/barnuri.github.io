@@ -9,9 +9,12 @@ export class MediaItem extends ZodDto {
   @ZodField(z.string().nullable().default(null))
   urn!: string | null;
 
-  @ZodField(z.string().nullable().default(null))
+  @ZodField(z.string().nullable().default(null), { description: 'Site path for downloaded media, or an external link.' })
   url!: string | null;
 
   @ZodField(z.string().nullable().default(null))
   title!: string | null;
+
+  @ZodField(z.string().nullable().default(null), { description: 'Site path of the video preview frame.' })
+  poster!: string | null;
 }

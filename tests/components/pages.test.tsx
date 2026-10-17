@@ -3,6 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { AboutPage } from '../../src/components/AboutPage.tsx';
 import { ContributionsPage } from '../../src/components/ContributionsPage.tsx';
 import { HomePage } from '../../src/components/HomePage.tsx';
+import { PostsPage } from '../../src/components/PostsPage.tsx';
 import { ProjectsPage } from '../../src/components/ProjectsPage.tsx';
 import type { ActivityItem } from '../../src/schemas/github/activity-item.ts';
 import type { GitHubData } from '../../src/schemas/github/github-data.ts';
@@ -127,20 +128,40 @@ describe('ContributionsPage', () => {
 });
 
 describe('AboutPage', () => {
-  test('shows headline, experience, education and paged posts', () => {
-    const html = renderToStaticMarkup(<AboutPage profile={profile} posts={[post]} {...shared} />);
+  test('shows headline, experience and education without posts', () => {
+    const html = renderToStaticMarkup(<AboutPage profile={profile} {...shared} />);
 
     expect(html).toContain('Technology Leader at AI &amp; Innovation Team');
     expect(html).toContain('Check Point Software, Israel');
     expect(html).toContain('Feb 2025 – Present');
     expect(html).toContain('2016 – 2019');
-    expect(html).toContain('id="about-posts"');
+    expect(html).not.toContain('Read on LinkedIn');
   });
 
   test('shows empty states that point to LinkedIn without profile data', () => {
-    const html = renderToStaticMarkup(<AboutPage profile={null} posts={[]} {...shared} />);
+    const html = renderToStaticMarkup(<AboutPage profile={null} {...shared} />);
 
     expect(html).toContain('Experience is not imported yet');
-    expect(html).toContain('No posts imported yet');
+  });
+});
+
+describe('PostsPage', () => {
+  test('lists every post with totals and marks Posts in the nav', () => {
+    const html = renderToStaticMarkup(<PostsPage posts={[post, { ...post, id: 'urn:li:activity:2', engagement: { likes: 4, comments: null, shares: null } }]} {...shared} />);
+
+    expect(html).toMatch(/aria-current="page"[^>]*>Posts/);
+    expect(html).toContain('id="all-posts-list"');
+    expect(html.match(/Read on LinkedIn/g)).toHaveLength(2);
+    expect(html).toContain('54');
+  });
+
+  test('shows an empty state without posts', () => {
+    expect(renderToStaticMarkup(<PostsPage posts={[]} {...shared} />)).toContain('No posts imported yet');
+  });
+});
+
+describe('HomePage posts link', () => {
+  test('points All posts to the Posts page', () => {
+    expect(home()).toMatch(/href="\/posts\/"[^>]*>All posts/);
   });
 });

@@ -14,13 +14,13 @@ import {
   READ_POSTS_SCOPE,
   RECENT_ARCHIVE_HOURS,
 } from '../consts/linkedin-api.ts';
-import { DATA_DIR, LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
+import { DATA_DIR, LINKEDIN_MEDIA_DIR, LINKEDIN_MEDIA_PUBLIC_PREFIX, LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
 import { AuthenticationError } from '../errors/authentication-error.ts';
 import { ExportFormatError } from '../errors/export-format-error.ts';
 import { LinkedInApiError } from '../errors/linkedin-api-error.ts';
 import { MissingPermissionError } from '../errors/missing-permission-error.ts';
 import { LinkedInProfile } from '../schemas/linkedin/linkedin-profile.ts';
-import type { PostCollection } from '../schemas/linkedin/post-collection.ts';
+import { PostCollection } from '../schemas/linkedin/post-collection.ts';
 import { OAuthHelper } from '../services/auth/oauth-helper.ts';
 import { LinkedInActivityScraper } from '../services/linkedin/activity-scraper.ts';
 import { LinkedInArchiveImporter } from '../services/linkedin/archive-importer.ts';
@@ -31,6 +31,7 @@ import { isRecentArchive } from '../services/linkedin/export-page.ts';
 import { ExportImporter } from '../services/linkedin/export-importer.ts';
 import { LinkedInClient } from '../services/linkedin/linkedin-client.ts';
 import { PostFetcher } from '../services/linkedin/post-fetcher.ts';
+import { mergePostCollections } from '../services/linkedin/post-merge.ts';
 import { ProfileImporter } from '../services/linkedin/profile-importer.ts';
 import { PostWriter } from '../services/output/post-writer.ts';
 
@@ -206,12 +207,20 @@ async function runPosts(maxPosts: number, outputDir: string): Promise<number> {
       profileDir: BROWSER_PROFILE_DIR,
       vanityName: LINKEDIN_VANITY_NAME,
       maxPosts,
+      mediaDir: LINKEDIN_MEDIA_DIR,
+      mediaPublicPrefix: LINKEDIN_MEDIA_PUBLIC_PREFIX,
     }).scrape();
     if (collection.posts.length === 0) {
       console.error('Found no posts on the activity page. Existing LinkedIn posts are kept.');
       return EXIT_CODES.apiError;
     }
-    return await writeAndReport(collection, outputDir);
+    const savedFile = Bun.file(join(outputDir, PostWriter.JSON_FILE_NAME));
+    const saved = (await savedFile.exists()) ? PostCollection.safeParse(await savedFile.json()) : null;
+    const merged = mergePostCollections(saved?.success ? saved.data : null, collection);
+    if (merged.posts.length > collection.posts.length) {
+      console.log(`Kept ${merged.posts.length - collection.posts.length} saved posts that did not load this time.`);
+    }
+    return await writeAndReport(merged, outputDir);
   } catch (err) {
     console.error(`Reading posts stopped: ${err instanceof Error ? err.message : String(err)}`);
     return EXIT_CODES.apiError;

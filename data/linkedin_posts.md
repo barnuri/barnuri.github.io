@@ -1,6 +1,6 @@
 # LinkedIn posts
 
-13 posts, source: browser, fetched 2026-10-17 18:01 UTC.
+13 posts, source: browser, fetched 2026-10-17 19:07 UTC.
 
 ## 2026-10-15
 
@@ -13,17 +13,13 @@ One static binary for macOS, Linux and Windows. Open source:
 https://lnkd.in/dZFa_ZhE
 
 
-hashtag
 #GitHub 
-hashtag
 #DeveloperTools 
-hashtag
 #OpenSource 
-hashtag
 #CLI
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7516617810928771072/)
-- video: 
+- video: /assets/linkedin/7516617810928771072-video.mp4
 
 9 likes
 
@@ -52,15 +48,12 @@ Telegram Notifications — https://lnkd.in/d7zXyTzG
 Auto Update — https://lnkd.in/d3VmNUKh
 
 
-hashtag
 #herdr 
-hashtag
 #AIAgents 
-hashtag
 #DeveloperTools
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7497656820765978624/)
-- image: 
+- image: /assets/linkedin/7497656820765978624-1.jpg
 
 50 likes, 8 comments
 
@@ -89,21 +82,15 @@ It can even install itself as a system service (launchd on t's always running wi
 Built with Bun, React 19, Vite, Mantine, and TanStack Query
 
 
-hashtag
 #ClaudeCode 
-hashtag
 #AI 
-hashtag
 #DevTools 
-hashtag
 #OpenSource 
-hashtag
 #Bun 
-hashtag
 #React
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7478797593632800769/)
-- image: 
+- image: /assets/linkedin/7478797593632800769-1.gif
 
 24 likes
 
@@ -132,29 +119,19 @@ Read more:
 https://lnkd.in/dFnMnhcR
 
 
-hashtag
 #MCP 
-hashtag
 #ModelContextProtocol 
-hashtag
 #OpenAPI 
-hashtag
 #Swagger 
-hashtag
 #APIs 
-hashtag
 #AI 
-hashtag
 #AIAgents 
-hashtag
 #DeveloperTools 
-hashtag
 #LLM 
-hashtag
 #GenAI
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7458157448978206720/)
-- image: 
+- image: /assets/linkedin/7458157448978206720-1.jpg
 
 4 likes
 
@@ -191,19 +168,14 @@ https://lnkd.in/di4fnZN9
 https://langtalks.ai/
 
 
-hashtag
 #AI 
-hashtag
 #Agents 
-hashtag
 #LLM 
-hashtag
 #Engineering 
-hashtag
 #LangTalks
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7457055192782544896/)
-- image: 
+- image: /assets/linkedin/7457055192782544896-1.jpg
 
 16 likes
 
@@ -212,7 +184,7 @@ hashtag
 The data on niche dominance vs. broad appeal is stark. Products that own a specific vertical before expanding show 3.5x better retention. The "no" list isn't a limitation on your roadmap, it's the definition of your competitive advantage. Linear proved this at scale.
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7450462886193164290/)
-- image: 
+- image: /assets/linkedin/7450462886193164290-1.jpg
 
 2 likes
 
@@ -221,7 +193,7 @@ The data on niche dominance vs. broad appeal is stark. Products that own a speci
 The ROI numbers alone justify this approach. When context is built in, your specification error rate drops and velocity climbs. This is exactly the operational leverage teams need.
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7449726048327532544/)
-- image: 
+- image: /assets/linkedin/7449726048327532544-1.jpg
 
 1 likes
 
@@ -230,7 +202,7 @@ The ROI numbers alone justify this approach. When context is built in, your spec
 The pattern is clear in the data: context-aware systems show 3-4x higher accuracy and user adoption rates compared to stateless alternatives, yet adoption remains low because teams underestimate how much effort goes into maintaining that context quality. It's not about having memory, it's about having clean, reliable, actionable memory.
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7442253255356600320/)
-- image: 
+- image: /assets/linkedin/7442253255356600320-1.jpg
 
 1 likes
 
@@ -264,21 +236,13 @@ Built with a modern, production-ready stack:
 The project includes comprehensive authentication, session management, and mobile UI patterns - perfect for teams needing secure, remote terminal access or developers wanting to showcase terminal applications.
 🔗 GitHub: https://lnkd.in/dQW-8ENu
 
-hashtag
 #WebDevelopment 
-hashtag
 #Terminal 
-hashtag
 #NestJS 
-hashtag
 #React 
-hashtag
 #TypeScript 
-hashtag
 #OpenSource 
-hashtag
 #WebSockets 
-hashtag
 #DevTools
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7385683667756474368/)
@@ -294,11 +258,8 @@ Explore open roles and apply today:
  https://lnkd.in/dfU_Ka4D
 
 
-hashtag
 #CheckPointCareers 
-hashtag
 #CyberSecurityJobs 
-hashtag
 #WeAreHiring
 
 [Open on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7331706354564251649/)
