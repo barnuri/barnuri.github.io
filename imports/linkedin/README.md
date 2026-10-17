@@ -2,7 +2,35 @@
 
 Put the zip LinkedIn emails you in this folder. Git ignores everything here except this file, so the export never reaches the public repo. Only the cleaned `data/linkedin_posts.json` and `data/linkedin_profile.json` get committed.
 
-## 1. Request the export
+## Fastest way: let the script do it
+
+```bash
+bun run linkedin export
+```
+
+The script opens a visible Chromium window on LinkedIn's **Download your data** page. Log in there yourself; the script never sees or saves your password, and keeps no session after it closes. Then it:
+
+1. Downloads the archive if LinkedIn has one ready.
+2. Otherwise selects Profile, Positions, Education and Shares, clicks **Request archive**, and checks every minute for up to 20 minutes until the archive is ready.
+3. Saves the zip in this folder and runs the import.
+
+If LinkedIn asks for your password again, enter it in the window. If the script can't find a button, it tells you what to click and waits.
+
+When this folder already has a zip from the last 24 hours, the script skips the browser and only imports it.
+
+| Option | Effect |
+|---|---|
+| `--force` | Opens the browser even when a recent zip exists |
+| `--full` | Requests the larger archive instead of the four categories |
+| `--wait-minutes N` | Waits N minutes for the archive, default 20 |
+
+Shares (your posts) can take up to 48 hours. The first run usually gets profile, positions and education. Run `bun run linkedin export --force` again after LinkedIn emails you that the rest is ready.
+
+LinkedIn's User Agreement does not allow automated access, so running the script carries a risk to your account. The manual steps below give the same result.
+
+## Manual way
+
+### 1. Request the export
 
 You need a computer. LinkedIn does not offer the export on mobile.
 
@@ -16,7 +44,7 @@ You need a computer. LinkedIn does not offer the export on mobile.
 
 You can also select the larger archive instead. It arrives within 24 hours.
 
-## 2. Download it
+### 2. Download it
 
 LinkedIn sends one email per archive:
 
@@ -27,11 +55,11 @@ LinkedIn sends one email per archive:
 
 Each download link works for 72 hours. Download the zip from each email.
 
-## 3. Drop it here
+### 3. Drop it here
 
 Move each zip into this folder. Don't unzip or rename it. When several zips are here, the import takes each file from the newest zip that has it.
 
-## 4. Import it
+### 4. Import it
 
 Ask Claude to "import my LinkedIn export", or run:
 

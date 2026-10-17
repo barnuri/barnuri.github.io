@@ -3,7 +3,14 @@ import { join } from 'node:path';
 import { parseArgs } from 'node:util';
 import { LinkedInSettings } from '../configs/linkedin-settings.ts';
 import { EXIT_CODES } from '../consts/exit-codes.ts';
-import { ARCHIVE_FILES, DEFAULT_IMPORT_DIR, GITHUB_SECRET_NAME, READ_POSTS_SCOPE } from '../consts/linkedin-api.ts';
+import {
+  ARCHIVE_FILES,
+  DEFAULT_EXPORT_WAIT_MINUTES,
+  DEFAULT_IMPORT_DIR,
+  GITHUB_SECRET_NAME,
+  READ_POSTS_SCOPE,
+  RECENT_ARCHIVE_HOURS,
+} from '../consts/linkedin-api.ts';
 import { DATA_DIR, LINKEDIN_PROFILE_FILE_NAME } from '../consts/paths.ts';
 import { AuthenticationError } from '../errors/authentication-error.ts';
 import { ExportFormatError } from '../errors/export-format-error.ts';
@@ -14,6 +21,8 @@ import type { PostCollection } from '../schemas/linkedin/post-collection.ts';
 import { OAuthHelper } from '../services/auth/oauth-helper.ts';
 import { LinkedInArchiveImporter } from '../services/linkedin/archive-importer.ts';
 import { LinkedInArchiveReader } from '../services/linkedin/archive-reader.ts';
+import { LinkedInExportAutomation } from '../services/linkedin/export-automation.ts';
+import { isRecentArchive } from '../services/linkedin/export-page.ts';
 import { ExportImporter } from '../services/linkedin/export-importer.ts';
 import { LinkedInClient } from '../services/linkedin/linkedin-client.ts';
 import { PostFetcher } from '../services/linkedin/post-fetcher.ts';
@@ -30,6 +39,9 @@ Commands:
   import-profile EXPORT_DIR [--output-dir DIR]     Import experience and education (Positions.csv, Education.csv).
   import [PATH] [--output-dir DIR]                 Import posts, experience and education from the LinkedIn export
                                                    zip or folder. PATH defaults to imports/linkedin, DIR to data.
+  export [--full] [--wait-minutes N] [--force]     Open LinkedIn "Download your data" in a visible browser, request and
+                                                   download the archive into imports/linkedin, then import it. Skips
+                                                   the browser when a zip from the last 24 hours is already there.
   auth-url --redirect-uri URL                      Print the OAuth authorization URL.
   exchange-code --code CODE --redirect-uri URL --repo OWNER/NAME
                                                    Exchange the code and store the token as a repo secret.`;
@@ -160,6 +172,23 @@ async function runImport(path: string, outputDir: string): Promise<number> {
   }
 }
 
+async function runExport(options: { fullArchive: boolean; waitMinutes: number; force: boolean }): Promise<number> {
+  const recent = await LinkedInArchiveReader.newestZip(DEFAULT_IMPORT_DIR);
+  if (!options.force && recent && isRecentArchive(recent.modified, new Date(), RECENT_ARCHIVE_HOURS)) {
+    console.log(`Using ${recent.path}, downloaded ${recent.modified.toISOString()}. Pass --force to download a new archive.`);
+    return runImport(DEFAULT_IMPORT_DIR, DATA_DIR);
+  }
+  const saved = await new LinkedInExportAutomation({
+    importDir: DEFAULT_IMPORT_DIR,
+    waitMinutes: options.waitMinutes,
+    fullArchive: options.fullArchive,
+  }).run();
+  if (!saved) {
+    return EXIT_CODES.ok;
+  }
+  return runImport(DEFAULT_IMPORT_DIR, DATA_DIR);
+}
+
 function runAuthUrl(redirectUri: string): number {
   const state = crypto.randomUUID();
   const url = new OAuthHelper(LinkedInSettings.fromEnv()).authorizationUrl(redirectUri, state);
@@ -192,6 +221,9 @@ async function main(argv: string[]): Promise<number> {
       'redirect-uri': { type: 'string' },
       code: { type: 'string' },
       repo: { type: 'string' },
+      full: { type: 'boolean', default: false },
+      force: { type: 'boolean', default: false },
+      'wait-minutes': { type: 'string' },
     },
   });
   const [command, argument] = positionals;
@@ -205,6 +237,14 @@ async function main(argv: string[]): Promise<number> {
     }
     if (command === 'import-export') {
       return await runImportExport(argument, outputDir);
+    }
+    if (command === 'export') {
+      const waitMinutes = Number(values['wait-minutes'] ?? DEFAULT_EXPORT_WAIT_MINUTES);
+      if (!Number.isFinite(waitMinutes) || waitMinutes < 0) {
+        console.error('--wait-minutes must be a number of minutes, 0 or more.');
+        return EXIT_CODES.usage;
+      }
+      return await runExport({ fullArchive: values.full ?? false, waitMinutes, force: values.force ?? false });
     }
     if (command === 'import') {
       return await runImport(argument ?? DEFAULT_IMPORT_DIR, importOutputDir);

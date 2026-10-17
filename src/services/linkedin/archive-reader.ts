@@ -81,11 +81,21 @@ export class LinkedInArchiveReader {
     return contents;
   }
 
+  static async newestZip(folder: string): Promise<{ path: string; modified: Date } | null> {
+    const [newest] = await LinkedInArchiveReader.datedZips(folder);
+    return newest ? { path: newest.path, modified: new Date(newest.modified) } : null;
+  }
+
   private static async zipsNewestFirst(folder: string): Promise<string[]> {
-    const zips = (await readdir(folder)).filter((name) => name.toLowerCase().endsWith(LinkedInArchiveReader.ZIP_EXTENSION));
+    return (await LinkedInArchiveReader.datedZips(folder)).map((zip) => zip.path);
+  }
+
+  private static async datedZips(folder: string): Promise<{ path: string; modified: number }[]> {
+    const names = await readdir(folder).catch(() => [] as string[]);
+    const zips = names.filter((name) => name.toLowerCase().endsWith(LinkedInArchiveReader.ZIP_EXTENSION));
     const dated = await Promise.all(
       zips.map(async (name) => ({ path: join(folder, name), modified: (await stat(join(folder, name))).mtimeMs })),
     );
-    return dated.toSorted((a, b) => b.modified - a.modified).map((zip) => zip.path);
+    return dated.toSorted((a, b) => b.modified - a.modified);
   }
 }

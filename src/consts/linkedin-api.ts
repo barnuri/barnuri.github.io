@@ -26,3 +26,10 @@ export const ARCHIVE_FILES = {
 } as const;
 export type ArchiveFileKey = keyof typeof ARCHIVE_FILES;
 export const DEFAULT_IMPORT_DIR = 'imports/linkedin';
+
+export const EXPORT_PAGE_URL = 'https://www.linkedin.com/mypreferences/d/download-my-data';
+export const LOGIN_PATH_PREFIXES = ['/login', '/uas/', '/checkpoint/', '/authwall', '/signup'] as const;
+export const EXPORT_PAGE_PATH = '/mypreferences/d/download-my-data';
+export const EXPORT_CATEGORY_LABELS = [/^profile$/i, /^positions$/i, /^education$/i, /^(shares|posts)$/i] as const;
+export const DEFAULT_EXPORT_WAIT_MINUTES = 20;
+export const RECENT_ARCHIVE_HOURS = 24;
