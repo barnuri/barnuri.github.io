@@ -34,7 +34,7 @@
       "stars": 5,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-10-17T18:05:11Z"
+      "pushedAt": "2026-10-17T20:19:03Z"
     },
     {
       "name": "ghx",
@@ -56,6 +56,15 @@
     }
   ],
   "recent": [
+    {
+      "name": "voice-notes",
+      "description": "",
+      "url": "https://github.com/barnuri/voice-notes",
+      "stars": 0,
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "pushedAt": "2026-10-18T07:32:13Z"
+    },
     {
       "name": "openapi-toolkit",
       "description": "",
@@ -100,57 +109,11 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-10-12T15:01:33Z"
-    },
-    {
-      "name": "hono-decorators",
-      "description": "",
-      "url": "https://github.com/barnuri/hono-decorators",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-10-12T15:01:31Z"
     }
   ],
   "contributions": {
-    "total": 2937,
+    "total": 2938,
     "weeks": [
-      [
-        {
-          "date": "2025-10-12",
-          "count": 24,
-          "level": 4
-        },
-        {
-          "date": "2025-10-13",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-10-14",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-10-15",
-          "count": 25,
-          "level": 4
-        },
-        {
-          "date": "2025-10-16",
-          "count": 24,
-          "level": 4
-        },
-        {
-          "date": "2025-10-17",
-          "count": 3,
-          "level": 1
-        },
-        {
-          "date": "2025-10-18",
-          "count": 3,
-          "level": 1
-        }
-      ],
       [
         {
           "date": "2025-10-19",
@@ -160,12 +123,12 @@
         {
           "date": "2025-10-20",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2025-10-21",
           "count": 18,
-          "level": 3
+          "level": 4
         },
         {
           "date": "2025-10-22",
@@ -249,7 +212,7 @@
         {
           "date": "2025-11-06",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2025-11-07",
@@ -307,12 +270,12 @@
         },
         {
           "date": "2025-11-17",
-          "count": 20,
+          "count": 21,
           "level": 4
         },
         {
           "date": "2025-11-18",
-          "count": 17,
+          "count": 16,
           "level": 3
         },
         {
@@ -619,7 +582,7 @@
         {
           "date": "2026-01-15",
           "count": 18,
-          "level": 3
+          "level": 4
         },
         {
           "date": "2026-01-16",
@@ -641,7 +604,7 @@
         {
           "date": "2026-01-19",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-01-20",
@@ -730,7 +693,7 @@
         {
           "date": "2026-02-05",
           "count": 18,
-          "level": 3
+          "level": 4
         },
         {
           "date": "2026-02-06",
@@ -1085,7 +1048,7 @@
         {
           "date": "2026-04-13",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-04-14",
@@ -1122,7 +1085,7 @@
         {
           "date": "2026-04-20",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-04-21",
@@ -1258,7 +1221,7 @@
         {
           "date": "2026-05-16",
           "count": 18,
-          "level": 3
+          "level": 4
         }
       ],
       [
@@ -1623,7 +1586,7 @@
         {
           "date": "2026-07-24",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-07-25",
@@ -1709,7 +1672,7 @@
         {
           "date": "2026-08-09",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-08-10",
@@ -1792,12 +1755,12 @@
         },
         {
           "date": "2026-08-25",
-          "count": 6,
+          "count": 7,
           "level": 2
         },
         {
           "date": "2026-08-26",
-          "count": 7,
+          "count": 6,
           "level": 2
         },
         {
@@ -1877,7 +1840,7 @@
         {
           "date": "2026-09-10",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-09-11",
@@ -2014,13 +1977,13 @@
         },
         {
           "date": "2026-10-06",
-          "count": 14,
+          "count": 11,
           "level": 3
         },
         {
           "date": "2026-10-07",
-          "count": 21,
-          "level": 4
+          "count": 15,
+          "level": 3
         },
         {
           "date": "2026-10-08",
@@ -2071,14 +2034,34 @@
         },
         {
           "date": "2026-10-17",
-          "count": 21,
+          "count": 26,
           "level": 4
+        }
+      ],
+      [
+        {
+          "date": "2026-10-18",
+          "count": 5,
+          "level": 2
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/voice-notes:2026-10-18",
+        "kind": "commits",
+        "occurredAt": "2026-10-18T07:00:00Z",
+        "repo": {
+          "name": "barnuri/voice-notes",
+          "url": "https://github.com/barnuri/voice-notes"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/voice-notes/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "pull_request:https://github.com/barnuri/vscode-extensions/pull/54",
         "kind": "pull_request",
@@ -2090,7 +2073,7 @@
         "title": "Fix python-import-helper issues, perf and CVEs; upgrade all extensions",
         "url": "https://github.com/barnuri/vscode-extensions/pull/54",
         "count": null,
-        "state": "OPEN"
+        "state": "MERGED"
       },
       {
         "id": "commits:barnuri/herdr-web:2026-10-17",
@@ -2115,7 +2098,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/barnuri.github.io/commits",
-        "count": 3,
+        "count": 6,
         "state": null
       },
       {
@@ -2142,6 +2125,19 @@
         "title": null,
         "url": "https://github.com/barnuri/openapi-toolkit/commits",
         "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/vscode-extensions:2026-10-17",
+        "kind": "commits",
+        "occurredAt": "2026-10-17T07:00:00Z",
+        "repo": {
+          "name": "barnuri/vscode-extensions",
+          "url": "https://github.com/barnuri/vscode-extensions"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/vscode-extensions/commits",
+        "count": 2,
         "state": null
       },
       {
@@ -2402,6 +2398,19 @@
         "title": null,
         "url": "https://github.com/barnuri/harness-skills/commits",
         "count": 4,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/voice-notes",
+        "kind": "repository",
+        "occurredAt": "2026-10-06T12:51:56Z",
+        "repo": {
+          "name": "barnuri/voice-notes",
+          "url": "https://github.com/barnuri/voice-notes"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/voice-notes",
+        "count": null,
         "state": null
       },
       {
@@ -4745,61 +4754,61 @@
         "state": null
       }
     ],
-    "privateContributions": 2473
+    "privateContributions": 2464
   },
   "stats": {
-    "publicRepos": 40,
+    "publicRepos": 41,
     "stars": 44,
     "followers": 6,
     "languages": [
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 41.5
+        "share": 40.3
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 16.6
+        "share": 17
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 15.1
-      },
-      {
-        "name": "Rust",
-        "color": "#dea584",
-        "share": 10.1
+        "share": 14.3
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 7.6
+        "share": 9.8
       },
       {
-        "name": "C#",
-        "color": "#7355dd",
-        "share": 2.3
+        "name": "Rust",
+        "color": "#dea584",
+        "share": 9.5
       },
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 2.2
+        "share": 2.3
+      },
+      {
+        "name": "C#",
+        "color": "#7355dd",
+        "share": 2.1
       },
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.7
+        "share": 1.6
       }
     ],
     "year": {
-      "commits": 324,
+      "commits": 330,
       "pullRequests": 41,
       "reviews": 5,
       "issues": 2,
-      "reposCreated": 18,
-      "contributedRepos": 23
+      "reposCreated": 19,
+      "contributedRepos": 25
     }
   }
 }
