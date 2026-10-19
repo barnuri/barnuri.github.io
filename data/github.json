@@ -4,10 +4,10 @@
       "name": "herdr-web",
       "description": "Mobile-first web UI plugin for herdr — drive your coding agents from a phone, with notifications",
       "url": "https://github.com/barnuri/herdr-web",
-      "stars": 12,
+      "stars": 13,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-10-17T16:11:26Z"
+      "pushedAt": "2026-10-18T13:54:06Z"
     },
     {
       "name": "CSharp.OpenSource.LinqToKql",
@@ -57,13 +57,22 @@
   ],
   "recent": [
     {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-10-18T08:22:45Z"
+    },
+    {
       "name": "voice-notes",
       "description": "",
       "url": "https://github.com/barnuri/voice-notes",
       "stars": 0,
       "language": "Swift",
       "languageColor": "#F05138",
-      "pushedAt": "2026-10-18T07:32:13Z"
+      "pushedAt": "2026-10-18T08:06:42Z"
     },
     {
       "name": "openapi-toolkit",
@@ -100,19 +109,10 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-10-14T14:14:41Z"
-    },
-    {
-      "name": "zod-decorators",
-      "description": "",
-      "url": "https://github.com/barnuri/zod-decorators",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-10-12T15:01:33Z"
     }
   ],
   "contributions": {
-    "total": 2938,
+    "total": 2872,
     "weeks": [
       [
         {
@@ -2041,8 +2041,13 @@
       [
         {
           "date": "2026-10-18",
-          "count": 5,
-          "level": 2
+          "count": 18,
+          "level": 4
+        },
+        {
+          "date": "2026-10-19",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
@@ -2059,7 +2064,33 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/voice-notes/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-10-18",
+        "kind": "commits",
+        "occurredAt": "2026-10-18T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
         "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-10-18",
+        "kind": "commits",
+        "occurredAt": "2026-10-18T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 3,
         "state": null
       },
       {
@@ -4754,47 +4785,47 @@
         "state": null
       }
     ],
-    "privateContributions": 2464
+    "privateContributions": 2469
   },
   "stats": {
     "publicRepos": 41,
-    "stars": 44,
+    "stars": 45,
     "followers": 6,
     "languages": [
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 40.3
+        "share": 39.1
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 17
+        "share": 16.6
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 14.3
-      },
-      {
-        "name": "Swift",
-        "color": "#F05138",
-        "share": 9.8
+        "share": 13.8
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 9.5
+        "share": 10.1
+      },
+      {
+        "name": "Swift",
+        "color": "#F05138",
+        "share": 9.6
+      },
+      {
+        "name": "C#",
+        "color": "#7355dd",
+        "share": 4
       },
       {
         "name": "CSS",
         "color": "#663399",
         "share": 2.3
-      },
-      {
-        "name": "C#",
-        "color": "#7355dd",
-        "share": 2.1
       },
       {
         "name": "Python",
@@ -4803,7 +4834,7 @@
       }
     ],
     "year": {
-      "commits": 330,
+      "commits": 335,
       "pullRequests": 41,
       "reviews": 5,
       "issues": 2,
