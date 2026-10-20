@@ -57,6 +57,15 @@
   ],
   "recent": [
     {
+      "name": "harness-skills",
+      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
+      "url": "https://github.com/barnuri/harness-skills",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-10-19T13:31:56Z"
+    },
+    {
       "name": "llm-hub",
       "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
       "url": "https://github.com/barnuri/llm-hub",
@@ -100,19 +109,10 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-10-15T17:50:42Z"
-    },
-    {
-      "name": "harness-skills",
-      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
-      "url": "https://github.com/barnuri/harness-skills",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-10-14T14:14:41Z"
     }
   ],
   "contributions": {
-    "total": 2872,
+    "total": 2886,
     "weeks": [
       [
         {
@@ -2046,14 +2046,45 @@
         },
         {
           "date": "2026-10-19",
-          "count": 0,
-          "level": 0
+          "count": 9,
+          "level": 2
+        },
+        {
+          "date": "2026-10-20",
+          "count": 5,
+          "level": 2
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4144",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-19T17:18:01Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(update-skills): don't select barrel support modules as channel skills",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/4144",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-19",
+        "kind": "commits",
+        "occurredAt": "2026-10-19T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 2,
+        "state": null
+      },
       {
         "id": "commits:barnuri/voice-notes:2026-10-18",
         "kind": "commits",
@@ -3079,7 +3110,7 @@
         "title": "fix(discord): connect the Gateway through Node's env proxy",
         "url": "https://github.com/nanocoai/nanoclaw/pull/3923",
         "count": null,
-        "state": "OPEN"
+        "state": "CLOSED"
       },
       {
         "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/3922",
@@ -4785,7 +4816,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2469
+    "privateContributions": 2437
   },
   "stats": {
     "publicRepos": 41,
@@ -4805,7 +4836,7 @@
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 13.8
+        "share": 13.9
       },
       {
         "name": "Rust",
@@ -4834,8 +4865,8 @@
       }
     ],
     "year": {
-      "commits": 335,
-      "pullRequests": 41,
+      "commits": 337,
+      "pullRequests": 42,
       "reviews": 5,
       "issues": 2,
       "reposCreated": 19,
