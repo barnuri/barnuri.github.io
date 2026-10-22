@@ -40,7 +40,7 @@
       "name": "ghx",
       "description": "Use the right GitHub account in every folder: a thin per-directory profile wrapper for the gh CLI",
       "url": "https://github.com/barnuri/ghx",
-      "stars": 3,
+      "stars": 4,
       "language": "Go",
       "languageColor": "#00ADD8",
       "pushedAt": "2026-10-17T17:46:42Z"
@@ -56,6 +56,15 @@
     }
   ],
   "recent": [
+    {
+      "name": "herdr-notifications",
+      "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
+      "url": "https://github.com/barnuri/herdr-notifications",
+      "stars": 1,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-10-21T10:32:41Z"
+    },
     {
       "name": "harness-skills",
       "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
@@ -100,19 +109,10 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-10-15T17:50:46Z"
-    },
-    {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-10-15T17:50:42Z"
     }
   ],
   "contributions": {
-    "total": 2892,
+    "total": 2908,
     "weeks": [
       [
         {
@@ -2056,7 +2056,12 @@
         },
         {
           "date": "2026-10-21",
-          "count": 6,
+          "count": 17,
+          "level": 3
+        },
+        {
+          "date": "2026-10-22",
+          "count": 5,
           "level": 2
         }
       ]
@@ -2064,6 +2069,32 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4180",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-22T06:41:49Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "feat(skills): add /add-model-use-cases for role-named group models",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/4180",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-10-21",
+        "kind": "commits",
+        "occurredAt": "2026-10-21T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4144",
         "kind": "pull_request",
@@ -2075,7 +2106,7 @@
         "title": "fix(update-skills): don't select barrel support modules as channel skills",
         "url": "https://github.com/nanocoai/nanoclaw/pull/4144",
         "count": null,
-        "state": "OPEN"
+        "state": "CLOSED"
       },
       {
         "id": "commits:barnuri/harness-skills:2026-10-19",
@@ -4821,11 +4852,11 @@
         "state": null
       }
     ],
-    "privateContributions": 2439
+    "privateContributions": 2435
   },
   "stats": {
     "publicRepos": 41,
-    "stars": 45,
+    "stars": 46,
     "followers": 6,
     "languages": [
       {
@@ -4836,12 +4867,12 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 16.6
+        "share": 16.7
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 13.9
+        "share": 13.8
       },
       {
         "name": "Rust",
@@ -4870,8 +4901,8 @@
       }
     ],
     "year": {
-      "commits": 337,
-      "pullRequests": 42,
+      "commits": 338,
+      "pullRequests": 43,
       "reviews": 5,
       "issues": 2,
       "reposCreated": 19,
