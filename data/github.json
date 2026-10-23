@@ -7,7 +7,7 @@
       "stars": 13,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-10-18T13:54:06Z"
+      "pushedAt": "2026-10-22T21:54:19Z"
     },
     {
       "name": "CSharp.OpenSource.LinqToKql",
@@ -57,6 +57,15 @@
   ],
   "recent": [
     {
+      "name": "harness-skills",
+      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
+      "url": "https://github.com/barnuri/harness-skills",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-10-22T19:48:24Z"
+    },
+    {
       "name": "herdr-notifications",
       "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
       "url": "https://github.com/barnuri/herdr-notifications",
@@ -64,15 +73,6 @@
       "language": "JavaScript",
       "languageColor": "#f1e05a",
       "pushedAt": "2026-10-21T10:32:41Z"
-    },
-    {
-      "name": "harness-skills",
-      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
-      "url": "https://github.com/barnuri/harness-skills",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-10-19T13:31:56Z"
     },
     {
       "name": "llm-hub",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2908,
+    "total": 2966,
     "weeks": [
       [
         {
@@ -2061,14 +2061,110 @@
         },
         {
           "date": "2026-10-22",
-          "count": 5,
-          "level": 2
+          "count": 50,
+          "level": 4
+        },
+        {
+          "date": "2026-10-23",
+          "count": 13,
+          "level": 3
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/herdr-web:2026-10-23",
+        "kind": "commits",
+        "occurredAt": "2026-10-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:tea-calculator/tea-calculator.github.io:2026-10-23",
+        "kind": "commits",
+        "occurredAt": "2026-10-23T07:00:00Z",
+        "repo": {
+          "name": "tea-calculator/tea-calculator.github.io",
+          "url": "https://github.com/tea-calculator/tea-calculator.github.io"
+        },
+        "title": null,
+        "url": "https://github.com/tea-calculator/tea-calculator.github.io/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/herdrdev/herdr/pull/5500",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-23T02:26:06Z",
+        "repo": {
+          "name": "herdrdev/herdr",
+          "url": "https://github.com/herdrdev/herdr"
+        },
+        "title": "feat: add opt-in pane display transforms with unicode bidi",
+        "url": "https://github.com/herdrdev/herdr/pull/5500",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/herdr/pull/1",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-22T22:31:36Z",
+        "repo": {
+          "name": "barnuri/herdr",
+          "url": "https://github.com/barnuri/herdr"
+        },
+        "title": "feat: add opt-in pane display transforms with unicode bidi",
+        "url": "https://github.com/barnuri/herdr/pull/1",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "repository:barnuri/herdr",
+        "kind": "repository",
+        "occurredAt": "2026-10-22T22:29:31Z",
+        "repo": {
+          "name": "barnuri/herdr",
+          "url": "https://github.com/barnuri/herdr"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:tea-calculator/tea-calculator.github.io:2026-10-22",
+        "kind": "commits",
+        "occurredAt": "2026-10-22T07:00:00Z",
+        "repo": {
+          "name": "tea-calculator/tea-calculator.github.io",
+          "url": "https://github.com/tea-calculator/tea-calculator.github.io"
+        },
+        "title": null,
+        "url": "https://github.com/tea-calculator/tea-calculator.github.io/commits",
+        "count": 20,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-22",
+        "kind": "commits",
+        "occurredAt": "2026-10-22T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 2,
+        "state": null
+      },
       {
         "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4180",
         "kind": "pull_request",
@@ -4852,7 +4948,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2435
+    "privateContributions": 2457
   },
   "stats": {
     "publicRepos": 41,
@@ -4877,36 +4973,36 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 10.1
+        "share": 10
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 9.6
+        "share": 9.5
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 4
+        "share": 3.9
       },
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 2.3
+        "share": 2.2
       },
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.6
+        "share": 1.8
       }
     ],
     "year": {
-      "commits": 338,
-      "pullRequests": 43,
+      "commits": 360,
+      "pullRequests": 44,
       "reviews": 5,
       "issues": 2,
-      "reposCreated": 19,
-      "contributedRepos": 25
+      "reposCreated": 20,
+      "contributedRepos": 26
     }
   }
 }
