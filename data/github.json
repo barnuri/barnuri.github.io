@@ -43,7 +43,7 @@
       "stars": 4,
       "language": "Go",
       "languageColor": "#00ADD8",
-      "pushedAt": "2026-10-17T17:46:42Z"
+      "pushedAt": "2026-10-23T14:14:04Z"
     },
     {
       "name": "claude-dashboard",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2966,
+    "total": 2969,
     "weeks": [
       [
         {
@@ -2066,8 +2066,13 @@
         },
         {
           "date": "2026-10-23",
-          "count": 13,
+          "count": 16,
           "level": 3
+        },
+        {
+          "date": "2026-10-24",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
@@ -2097,6 +2102,19 @@
         },
         "title": null,
         "url": "https://github.com/tea-calculator/tea-calculator.github.io/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/ghx:2026-10-23",
+        "kind": "commits",
+        "occurredAt": "2026-10-23T07:00:00Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx/commits",
         "count": 1,
         "state": null
       },
@@ -2108,10 +2126,10 @@
           "name": "herdrdev/herdr",
           "url": "https://github.com/herdrdev/herdr"
         },
-        "title": "feat: add opt-in pane display transforms with unicode bidi",
+        "title": "feat: render RTL text in panes with unicode bidi and a host BDSM handshake",
         "url": "https://github.com/herdrdev/herdr/pull/5500",
         "count": null,
-        "state": "CLOSED"
+        "state": "OPEN"
       },
       {
         "id": "pull_request:https://github.com/barnuri/herdr/pull/1",
@@ -2121,7 +2139,7 @@
           "name": "barnuri/herdr",
           "url": "https://github.com/barnuri/herdr"
         },
-        "title": "feat: add opt-in pane display transforms with unicode bidi",
+        "title": "feat: render RTL text in panes with unicode bidi and a host BDSM handshake",
         "url": "https://github.com/barnuri/herdr/pull/1",
         "count": null,
         "state": "OPEN"
@@ -4948,7 +4966,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2457
+    "privateContributions": 2416
   },
   "stats": {
     "publicRepos": 41,
