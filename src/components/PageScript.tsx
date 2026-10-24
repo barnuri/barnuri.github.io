@@ -52,6 +52,68 @@ const SCRIPT = `(() => {
     }
     render();
   }
+
+  const zoomables = [...document.querySelectorAll('img[data-zoom]')];
+  if (zoomables.length > 0) {
+    const box = document.createElement('dialog');
+    box.className = 'lightbox';
+    box.setAttribute('aria-label', 'Image viewer');
+    box.innerHTML = '<img class="lightbox-image" alt="">'
+      + '<button type="button" class="lightbox-close" aria-label="Close image">&times;</button>'
+      + '<button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous image">&lsaquo;</button>'
+      + '<button type="button" class="lightbox-nav lightbox-next" aria-label="Next image">&rsaquo;</button>'
+      + '<p class="lightbox-count" aria-live="polite"></p>';
+    document.body.append(box);
+    const image = box.querySelector('.lightbox-image');
+    const prev = box.querySelector('.lightbox-prev');
+    const next = box.querySelector('.lightbox-next');
+    const count = box.querySelector('.lightbox-count');
+    let group = [];
+    let index = 0;
+    let opener = null;
+    const show = () => {
+      const source = group[index];
+      image.src = source.currentSrc || source.src;
+      image.alt = source.alt;
+      const many = group.length > 1;
+      prev.hidden = !many;
+      next.hidden = !many;
+      count.hidden = !many;
+      count.textContent = (index + 1) + ' / ' + group.length;
+    };
+    const step = (delta) => { index = (index + delta + group.length) % group.length; show(); };
+    const open = (source) => {
+      group = zoomables.filter((item) => item.dataset.zoom === source.dataset.zoom);
+      index = group.indexOf(source);
+      opener = source;
+      show();
+      box.showModal();
+      document.body.classList.add('lightbox-open');
+    };
+    for (const source of zoomables) {
+      source.tabIndex = 0;
+      source.setAttribute('role', 'button');
+      source.setAttribute('aria-label', 'View full size: ' + source.alt);
+      source.addEventListener('click', () => open(source));
+      source.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); open(source); }
+      });
+    }
+    prev.addEventListener('click', () => step(-1));
+    next.addEventListener('click', () => step(1));
+    box.querySelector('.lightbox-close').addEventListener('click', () => box.close());
+    box.addEventListener('click', (event) => { if (event.target === box) { box.close(); } });
+    box.addEventListener('keydown', (event) => {
+      if (group.length < 2) { return; }
+      if (event.key === 'ArrowLeft') { step(-1); }
+      if (event.key === 'ArrowRight') { step(1); }
+    });
+    box.addEventListener('close', () => {
+      document.body.classList.remove('lightbox-open');
+      image.removeAttribute('src');
+      opener?.focus();
+    });
+  }
 })();`;
 
 export function PageScript() {

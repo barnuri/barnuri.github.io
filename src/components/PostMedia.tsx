@@ -23,6 +23,7 @@ export function PostMedia({ post, compact = false }: PostMediaProps) {
           alt={`Image ${index + 1} in the LinkedIn post${when}`}
           loading="lazy"
           decoding="async"
+          data-zoom={post.url}
         />
       ))}
       {video?.url && !compact && (
