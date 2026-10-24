@@ -24,7 +24,7 @@ export function Document({ title, description, stylesheet, children }: DocumentP
         <meta name="description" content={description} />
         <meta name="color-scheme" content="dark light" />
         <ThemeHeadScript />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/assets/img/profile.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href={FONTS_URL} />

@@ -9,7 +9,7 @@ interface ProfileIntroProps {
 export function ProfileIntro({ lede }: ProfileIntroProps) {
   return (
     <div className="profile">
-      <img className="avatar" src="/assets/img/profile-384.jpg" width={384} height={384} alt={`Portrait of ${SITE_NAME}`} />
+      <img className="avatar" src="/assets/img/profile.png" width={384} height={384} alt={`Portrait of ${SITE_NAME}`} />
       <div>
         <h1 className="profile-name">{SITE_NAME}</h1>
         <p className="profile-lede">{lede}</p>
