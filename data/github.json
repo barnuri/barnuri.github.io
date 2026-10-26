@@ -57,6 +57,15 @@
   ],
   "recent": [
     {
+      "name": "dev-tools",
+      "description": "",
+      "url": "https://github.com/barnuri/dev-tools",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-10-25T10:50:14Z"
+    },
+    {
       "name": "orch-skill",
       "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
       "url": "https://github.com/barnuri/orch-skill",
@@ -100,19 +109,10 @@
       "language": "Swift",
       "languageColor": "#F05138",
       "pushedAt": "2026-10-18T08:06:42Z"
-    },
-    {
-      "name": "openapi-toolkit",
-      "description": "",
-      "url": "https://github.com/barnuri/openapi-toolkit",
-      "stars": 2,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-10-17T17:35:19Z"
     }
   ],
   "contributions": {
-    "total": 2988,
+    "total": 2878,
     "weeks": [
       [
         {
@@ -2041,8 +2041,13 @@
       [
         {
           "date": "2026-10-25",
-          "count": 11,
-          "level": 3
+          "count": 21,
+          "level": 4
+        },
+        {
+          "date": "2026-10-26",
+          "count": 1,
+          "level": 1
         }
       ]
     ]
@@ -2060,6 +2065,19 @@
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
         "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-10-25",
+        "kind": "commits",
+        "occurredAt": "2026-10-25T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 5,
         "state": null
       },
       {
@@ -4988,7 +5006,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2428
+    "privateContributions": 2434
   },
   "stats": {
     "publicRepos": 41,
@@ -5003,7 +5021,7 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 16.6
+        "share": 16.7
       },
       {
         "name": "Shell",
@@ -5037,7 +5055,7 @@
       }
     ],
     "year": {
-      "commits": 365,
+      "commits": 370,
       "pullRequests": 46,
       "reviews": 5,
       "issues": 2,
