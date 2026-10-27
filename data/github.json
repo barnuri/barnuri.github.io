@@ -57,13 +57,22 @@
   ],
   "recent": [
     {
+      "name": "harness-skills",
+      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
+      "url": "https://github.com/barnuri/harness-skills",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-10-26T16:38:16Z"
+    },
+    {
       "name": "dev-tools",
       "description": "",
       "url": "https://github.com/barnuri/dev-tools",
       "stars": 0,
       "language": "Shell",
       "languageColor": "#89e051",
-      "pushedAt": "2026-10-25T10:50:14Z"
+      "pushedAt": "2026-10-26T13:38:12Z"
     },
     {
       "name": "orch-skill",
@@ -73,15 +82,6 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-10-25T07:58:41Z"
-    },
-    {
-      "name": "harness-skills",
-      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
-      "url": "https://github.com/barnuri/harness-skills",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-10-22T19:48:24Z"
     },
     {
       "name": "herdr-notifications",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2878,
+    "total": 2884,
     "weeks": [
       [
         {
@@ -2046,14 +2046,45 @@
         },
         {
           "date": "2026-10-26",
-          "count": 1,
-          "level": 1
+          "count": 7,
+          "level": 2
+        },
+        {
+          "date": "2026-10-27",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/dev-tools:2026-10-26",
+        "kind": "commits",
+        "occurredAt": "2026-10-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-skills:2026-10-26",
+        "kind": "commits",
+        "occurredAt": "2026-10-26T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-skills",
+          "url": "https://github.com/barnuri/harness-skills"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-skills/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "commits:barnuri/orch-skill:2026-10-25",
         "kind": "commits",
@@ -5006,7 +5037,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2434
+    "privateContributions": 2408
   },
   "stats": {
     "publicRepos": 41,
@@ -5016,7 +5047,7 @@
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 39
+        "share": 38.9
       },
       {
         "name": "JavaScript",
@@ -5031,7 +5062,7 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 10
+        "share": 9.9
       },
       {
         "name": "Swift",
@@ -5046,16 +5077,16 @@
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 2.3
+        "share": 2.2
       },
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.8
+        "share": 2
       }
     ],
     "year": {
-      "commits": 370,
+      "commits": 375,
       "pullRequests": 46,
       "reviews": 5,
       "issues": 2,
