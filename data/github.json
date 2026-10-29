@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2891,
+    "total": 2902,
     "weeks": [
       [
         {
@@ -2051,11 +2051,16 @@
         },
         {
           "date": "2026-10-27",
-          "count": 3,
+          "count": 4,
           "level": 1
         },
         {
           "date": "2026-10-28",
+          "count": 10,
+          "level": 3
+        },
+        {
+          "date": "2026-10-29",
           "count": 0,
           "level": 0
         }
@@ -2064,6 +2069,19 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4235",
+        "kind": "pull_request",
+        "occurredAt": "2026-10-28T15:39:34Z",
+        "repo": {
+          "name": "nanocoai/nanoclaw",
+          "url": "https://github.com/nanocoai/nanoclaw"
+        },
+        "title": "fix(scheduling): start a scheduled run at its due time, not on the next sweep tick",
+        "url": "https://github.com/nanocoai/nanoclaw/pull/4235",
+        "count": null,
+        "state": "OPEN"
+      },
       {
         "id": "commits:barnuri/dev-tools:2026-10-26",
         "kind": "commits",
@@ -5042,7 +5060,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2403
+    "privateContributions": 2399
   },
   "stats": {
     "publicRepos": 41,
@@ -5092,7 +5110,7 @@
     ],
     "year": {
       "commits": 375,
-      "pullRequests": 46,
+      "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
       "reposCreated": 20,
