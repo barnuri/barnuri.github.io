@@ -57,6 +57,42 @@
   ],
   "recent": [
     {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-01T09:45:55Z"
+    },
+    {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-10-31T23:10:11Z"
+    },
+    {
+      "name": "zod-decorators",
+      "description": "",
+      "url": "https://github.com/barnuri/zod-decorators",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-10-31T22:09:25Z"
+    },
+    {
+      "name": "hono-decorators",
+      "description": "",
+      "url": "https://github.com/barnuri/hono-decorators",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-10-31T22:09:21Z"
+    },
+    {
       "name": "harness-skills",
       "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
       "url": "https://github.com/barnuri/harness-skills",
@@ -73,84 +109,11 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-10-26T13:38:12Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-10-25T07:58:41Z"
-    },
-    {
-      "name": "herdr-notifications",
-      "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
-      "url": "https://github.com/barnuri/herdr-notifications",
-      "stars": 1,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-10-21T10:32:41Z"
-    },
-    {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-10-18T08:22:45Z"
-    },
-    {
-      "name": "voice-notes",
-      "description": "",
-      "url": "https://github.com/barnuri/voice-notes",
-      "stars": 0,
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "pushedAt": "2026-10-18T08:06:42Z"
     }
   ],
   "contributions": {
-    "total": 2902,
+    "total": 2984,
     "weeks": [
-      [
-        {
-          "date": "2025-10-26",
-          "count": 27,
-          "level": 4
-        },
-        {
-          "date": "2025-10-27",
-          "count": 12,
-          "level": 3
-        },
-        {
-          "date": "2025-10-28",
-          "count": 14,
-          "level": 3
-        },
-        {
-          "date": "2025-10-29",
-          "count": 10,
-          "level": 3
-        },
-        {
-          "date": "2025-10-30",
-          "count": 9,
-          "level": 2
-        },
-        {
-          "date": "2025-10-31",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-11-01",
-          "count": 0,
-          "level": 0
-        }
-      ],
       [
         {
           "date": "2025-11-02",
@@ -1908,12 +1871,12 @@
         },
         {
           "date": "2026-09-30",
-          "count": 31,
+          "count": 36,
           "level": 4
         },
         {
           "date": "2026-10-01",
-          "count": 25,
+          "count": 26,
           "level": 4
         },
         {
@@ -2071,14 +2034,99 @@
         },
         {
           "date": "2026-10-31",
-          "count": 0,
-          "level": 0
+          "count": 63,
+          "level": 4
+        }
+      ],
+      [
+        {
+          "date": "2026-11-01",
+          "count": 13,
+          "level": 3
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-01",
+        "kind": "commits",
+        "occurredAt": "2026-11-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 9,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-01",
+        "kind": "commits",
+        "occurredAt": "2026-11-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/zod-decorators:2026-11-01",
+        "kind": "commits",
+        "occurredAt": "2026-11-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/zod-decorators",
+          "url": "https://github.com/barnuri/zod-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/zod-decorators/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/hono-decorators:2026-11-01",
+        "kind": "commits",
+        "occurredAt": "2026-11-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/hono-decorators",
+          "url": "https://github.com/barnuri/hono-decorators"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/hono-decorators/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-10-31",
+        "kind": "commits",
+        "occurredAt": "2026-10-31T07:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-10-31",
+        "kind": "commits",
+        "occurredAt": "2026-10-31T07:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 3,
+        "state": null
+      },
       {
         "id": "pull_request:https://github.com/nanocoai/nanoclaw/pull/4235",
         "kind": "pull_request",
@@ -2947,7 +2995,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 1,
+        "count": 2,
         "state": null
       },
       {
@@ -3012,7 +3060,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 4,
+        "count": 9,
         "state": null
       },
       {
@@ -5070,7 +5118,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2380
+    "privateContributions": 2436
   },
   "stats": {
     "publicRepos": 41,
@@ -5080,46 +5128,46 @@
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 38.9
-      },
-      {
-        "name": "JavaScript",
-        "color": "#f1e05a",
-        "share": 16.7
-      },
-      {
-        "name": "Shell",
-        "color": "#89e051",
-        "share": 14
+        "share": 36.6
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 9.9
+        "share": 17.8
+      },
+      {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "share": 14.8
+      },
+      {
+        "name": "Shell",
+        "color": "#89e051",
+        "share": 12.4
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 9.4
+        "share": 8.3
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 3.9
+        "share": 3.5
       },
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 2.2
+        "share": 2.4
       },
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 2
+        "share": 1.7
       }
     ],
     "year": {
-      "commits": 375,
+      "commits": 401,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
