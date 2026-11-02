@@ -7,7 +7,7 @@
       "stars": 13,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-10-22T21:54:19Z"
+      "pushedAt": "2026-11-01T16:09:00Z"
     },
     {
       "name": "CSharp.OpenSource.LinqToKql",
@@ -57,13 +57,13 @@
   ],
   "recent": [
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
+      "name": "orch-skill",
+      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
+      "url": "https://github.com/barnuri/orch-skill",
       "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-01T09:45:55Z"
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-02T10:44:37Z"
     },
     {
       "name": "harness-status-line",
@@ -72,7 +72,16 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-10-31T23:10:11Z"
+      "pushedAt": "2026-11-02T10:44:34Z"
+    },
+    {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-02T10:20:01Z"
     },
     {
       "name": "zod-decorators",
@@ -100,19 +109,10 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-10-26T16:38:16Z"
-    },
-    {
-      "name": "dev-tools",
-      "description": "",
-      "url": "https://github.com/barnuri/dev-tools",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-10-26T13:38:12Z"
     }
   ],
   "contributions": {
-    "total": 2984,
+    "total": 2930,
     "weeks": [
       [
         {
@@ -2041,14 +2041,58 @@
       [
         {
           "date": "2026-11-01",
-          "count": 13,
-          "level": 3
+          "count": 26,
+          "level": 4
+        },
+        {
+          "date": "2026-11-02",
+          "count": 5,
+          "level": 2
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-02",
+        "kind": "commits",
+        "occurredAt": "2026-11-02T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-02",
+        "kind": "commits",
+        "occurredAt": "2026-11-02T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-02",
+        "kind": "commits",
+        "occurredAt": "2026-11-02T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 2,
+        "state": null
+      },
       {
         "id": "commits:barnuri/llm-hub:2026-11-01",
         "kind": "commits",
@@ -2059,7 +2103,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 9,
+        "count": 10,
         "state": null
       },
       {
@@ -2099,6 +2143,19 @@
         "title": null,
         "url": "https://github.com/barnuri/hono-decorators/commits",
         "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-11-01",
+        "kind": "commits",
+        "occurredAt": "2026-11-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 2,
         "state": null
       },
       {
@@ -5118,7 +5175,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2436
+    "privateContributions": 2446
   },
   "stats": {
     "publicRepos": 41,
@@ -5128,46 +5185,46 @@
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 36.6
+        "share": 34.4
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 17.8
+        "share": 23.3
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 14.8
+        "share": 13.6
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 12.4
+        "share": 11.7
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 8.3
+        "share": 7.6
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 3.5
+        "share": 3.2
       },
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 2.4
+        "share": 2.3
       },
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.7
+        "share": 1.6
       }
     ],
     "year": {
-      "commits": 401,
+      "commits": 409,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
