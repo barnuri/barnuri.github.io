@@ -57,13 +57,13 @@
   ],
   "recent": [
     {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
       "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-02T10:44:37Z"
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-02T14:01:25Z"
     },
     {
       "name": "harness-status-line",
@@ -72,16 +72,16 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-02T10:44:34Z"
+      "pushedAt": "2026-11-02T11:44:44Z"
     },
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
+      "name": "orch-skill",
+      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
+      "url": "https://github.com/barnuri/orch-skill",
       "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-02T10:20:01Z"
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-02T10:44:37Z"
     },
     {
       "name": "zod-decorators",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2930,
+    "total": 2940,
     "weeks": [
       [
         {
@@ -2046,8 +2046,13 @@
         },
         {
           "date": "2026-11-02",
-          "count": 5,
-          "level": 2
+          "count": 15,
+          "level": 3
+        },
+        {
+          "date": "2026-11-03",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
@@ -2064,7 +2069,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 1,
+        "count": 9,
         "state": null
       },
       {
@@ -2077,7 +2082,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/harness-status-line/commits",
-        "count": 2,
+        "count": 3,
         "state": null
       },
       {
@@ -5175,7 +5180,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2446
+    "privateContributions": 2431
   },
   "stats": {
     "publicRepos": 41,
@@ -5190,27 +5195,27 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 23.3
+        "share": 23.9
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 13.6
+        "share": 13.4
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 11.7
+        "share": 11.5
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 7.6
+        "share": 7.4
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 3.2
+        "share": 3.1
       },
       {
         "name": "CSS",
@@ -5224,7 +5229,7 @@
       }
     ],
     "year": {
-      "commits": 409,
+      "commits": 418,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
