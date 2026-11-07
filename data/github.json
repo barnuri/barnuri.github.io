@@ -10,6 +10,15 @@
       "pushedAt": "2026-11-01T16:09:00Z"
     },
     {
+      "name": "ghx",
+      "description": "Use the right GitHub account in every folder: a thin per-directory profile wrapper for the gh CLI",
+      "url": "https://github.com/barnuri/ghx",
+      "stars": 7,
+      "language": "Go",
+      "languageColor": "#00ADD8",
+      "pushedAt": "2026-10-23T14:14:04Z"
+    },
+    {
       "name": "CSharp.OpenSource.LinqToKql",
       "description": "",
       "url": "https://github.com/barnuri/CSharp.OpenSource.LinqToKql",
@@ -26,15 +35,6 @@
       "language": "Swift",
       "languageColor": "#F05138",
       "pushedAt": "2026-07-03T09:45:12Z"
-    },
-    {
-      "name": "ghx",
-      "description": "Use the right GitHub account in every folder: a thin per-directory profile wrapper for the gh CLI",
-      "url": "https://github.com/barnuri/ghx",
-      "stars": 5,
-      "language": "Go",
-      "languageColor": "#00ADD8",
-      "pushedAt": "2026-10-23T14:14:04Z"
     },
     {
       "name": "vscode-extensions",
@@ -2066,6 +2066,11 @@
         },
         {
           "date": "2026-11-06",
+          "count": 0,
+          "level": 0
+        },
+        {
+          "date": "2026-11-07",
           "count": 0,
           "level": 0
         }
@@ -5273,11 +5278,11 @@
         "state": null
       }
     ],
-    "privateContributions": 2380
+    "privateContributions": 2376
   },
   "stats": {
     "publicRepos": 41,
-    "stars": 49,
+    "stars": 51,
     "followers": 6,
     "languages": [
       {
