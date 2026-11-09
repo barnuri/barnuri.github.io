@@ -4,7 +4,7 @@
       "name": "herdr-web",
       "description": "Mobile-first web UI plugin for herdr — drive your coding agents from a phone, with notifications",
       "url": "https://github.com/barnuri/herdr-web",
-      "stars": 15,
+      "stars": 16,
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-11-01T16:09:00Z"
@@ -57,6 +57,24 @@
   ],
   "recent": [
     {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-08T22:19:19Z"
+    },
+    {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-08T18:49:52Z"
+    },
+    {
       "name": "harness-skills",
       "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
       "url": "https://github.com/barnuri/harness-skills",
@@ -66,15 +84,6 @@
       "pushedAt": "2026-11-04T13:41:30Z"
     },
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-04T13:26:55Z"
-    },
-    {
       "name": "herdr-notifications",
       "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
       "url": "https://github.com/barnuri/herdr-notifications",
@@ -82,15 +91,6 @@
       "language": "JavaScript",
       "languageColor": "#f1e05a",
       "pushedAt": "2026-11-04T12:40:21Z"
-    },
-    {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-04T12:39:34Z"
     },
     {
       "name": "dev-tools",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2986,
+    "total": 2914,
     "weeks": [
       [
         {
@@ -128,12 +128,12 @@
         {
           "date": "2025-11-11",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2025-11-12",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2025-11-13",
@@ -207,7 +207,7 @@
         {
           "date": "2025-11-26",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2025-11-27",
@@ -540,7 +540,7 @@
         {
           "date": "2026-01-28",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-01-29",
@@ -604,7 +604,7 @@
         {
           "date": "2026-02-09",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-02-10",
@@ -747,7 +747,7 @@
         {
           "date": "2026-03-08",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-03-09",
@@ -1043,7 +1043,7 @@
         {
           "date": "2026-05-03",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-05-04",
@@ -1549,7 +1549,7 @@
         {
           "date": "2026-08-07",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-08-08",
@@ -1581,7 +1581,7 @@
         {
           "date": "2026-08-13",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-08-14",
@@ -1936,7 +1936,7 @@
         {
           "date": "2026-10-19",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-10-20",
@@ -2041,7 +2041,12 @@
       [
         {
           "date": "2026-11-08",
-          "count": 1,
+          "count": 23,
+          "level": 4
+        },
+        {
+          "date": "2026-11-09",
+          "count": 2,
           "level": 1
         }
       ]
@@ -2049,6 +2054,45 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-09",
+        "kind": "commits",
+        "occurredAt": "2026-11-09T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-08",
+        "kind": "commits",
+        "occurredAt": "2026-11-08T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-08",
+        "kind": "commits",
+        "occurredAt": "2026-11-08T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 12,
+        "state": null
+      },
       {
         "id": "commits:barnuri/llm-hub:2026-11-04",
         "kind": "commits",
@@ -5248,11 +5292,11 @@
         "state": null
       }
     ],
-    "privateContributions": 2377
+    "privateContributions": 2385
   },
   "stats": {
     "publicRepos": 41,
-    "stars": 51,
+    "stars": 52,
     "followers": 6,
     "languages": [
       {
@@ -5263,27 +5307,27 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 24.3
+        "share": 25
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 13.3
+        "share": 13
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 11.3
+        "share": 11.1
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 7.4
+        "share": 7.2
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 3.1
+        "share": 3
       },
       {
         "name": "CSS",
@@ -5297,7 +5341,7 @@
       }
     ],
     "year": {
-      "commits": 438,
+      "commits": 454,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
