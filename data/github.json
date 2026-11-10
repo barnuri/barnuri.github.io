@@ -16,7 +16,7 @@
       "stars": 7,
       "language": "Go",
       "languageColor": "#00ADD8",
-      "pushedAt": "2026-10-23T14:14:04Z"
+      "pushedAt": "2026-11-09T19:43:29Z"
     },
     {
       "name": "CSharp.OpenSource.LinqToKql",
@@ -57,13 +57,13 @@
   ],
   "recent": [
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-08T22:19:19Z"
+      "name": "herdr-notifications",
+      "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
+      "url": "https://github.com/barnuri/herdr-notifications",
+      "stars": 1,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-10T08:00:24Z"
     },
     {
       "name": "harness-status-line",
@@ -72,7 +72,16 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-08T18:49:52Z"
+      "pushedAt": "2026-11-10T06:48:19Z"
+    },
+    {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-10T06:48:17Z"
     },
     {
       "name": "harness-skills",
@@ -82,15 +91,6 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-11-04T13:41:30Z"
-    },
-    {
-      "name": "herdr-notifications",
-      "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
-      "url": "https://github.com/barnuri/herdr-notifications",
-      "stars": 1,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-04T12:40:21Z"
     },
     {
       "name": "dev-tools",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2914,
+    "total": 2925,
     "weeks": [
       [
         {
@@ -128,12 +128,12 @@
         {
           "date": "2025-11-11",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2025-11-12",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2025-11-13",
@@ -207,7 +207,7 @@
         {
           "date": "2025-11-26",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2025-11-27",
@@ -540,7 +540,7 @@
         {
           "date": "2026-01-28",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-01-29",
@@ -604,7 +604,7 @@
         {
           "date": "2026-02-09",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-02-10",
@@ -747,7 +747,7 @@
         {
           "date": "2026-03-08",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-03-09",
@@ -1043,7 +1043,7 @@
         {
           "date": "2026-05-03",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-05-04",
@@ -1549,7 +1549,7 @@
         {
           "date": "2026-08-07",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-08-08",
@@ -1581,7 +1581,7 @@
         {
           "date": "2026-08-13",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-08-14",
@@ -1936,7 +1936,7 @@
         {
           "date": "2026-10-19",
           "count": 9,
-          "level": 2
+          "level": 3
         },
         {
           "date": "2026-10-20",
@@ -2024,29 +2024,34 @@
         },
         {
           "date": "2026-11-05",
-          "count": 5,
+          "count": 6,
           "level": 2
         },
         {
           "date": "2026-11-06",
-          "count": 0,
-          "level": 0
+          "count": 2,
+          "level": 1
         },
         {
           "date": "2026-11-07",
-          "count": 0,
-          "level": 0
+          "count": 3,
+          "level": 1
         }
       ],
       [
         {
           "date": "2026-11-08",
-          "count": 23,
+          "count": 24,
           "level": 4
         },
         {
           "date": "2026-11-09",
-          "count": 2,
+          "count": 3,
+          "level": 1
+        },
+        {
+          "date": "2026-11-10",
+          "count": 3,
           "level": 1
         }
       ]
@@ -2054,6 +2059,45 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-10",
+        "kind": "commits",
+        "occurredAt": "2026-11-10T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-10",
+        "kind": "commits",
+        "occurredAt": "2026-11-10T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-11-10",
+        "kind": "commits",
+        "occurredAt": "2026-11-10T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "commits:barnuri/llm-hub:2026-11-09",
         "kind": "commits",
@@ -2064,6 +2108,19 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/ghx:2026-11-09",
+        "kind": "commits",
+        "occurredAt": "2026-11-09T08:00:00Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx/commits",
         "count": 1,
         "state": null
       },
@@ -5292,7 +5349,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2385
+    "privateContributions": 2392
   },
   "stats": {
     "publicRepos": 41,
@@ -5307,12 +5364,12 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 25
+        "share": 24.9
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 13
+        "share": 13.1
       },
       {
         "name": "Shell",
@@ -5337,11 +5394,11 @@
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.7
+        "share": 1.6
       }
     ],
     "year": {
-      "commits": 454,
+      "commits": 458,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
