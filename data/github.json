@@ -57,6 +57,15 @@
   ],
   "recent": [
     {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-10T20:17:14Z"
+    },
+    {
       "name": "herdr-notifications",
       "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
       "url": "https://github.com/barnuri/herdr-notifications",
@@ -64,15 +73,6 @@
       "language": "JavaScript",
       "languageColor": "#f1e05a",
       "pushedAt": "2026-11-10T08:00:24Z"
-    },
-    {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-10T06:48:19Z"
     },
     {
       "name": "llm-hub",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 2925,
+    "total": 2937,
     "weeks": [
       [
         {
@@ -2046,12 +2046,17 @@
         },
         {
           "date": "2026-11-09",
-          "count": 3,
-          "level": 1
+          "count": 4,
+          "level": 2
         },
         {
           "date": "2026-11-10",
-          "count": 3,
+          "count": 12,
+          "level": 3
+        },
+        {
+          "date": "2026-11-11",
+          "count": 2,
           "level": 1
         }
       ]
@@ -2082,7 +2087,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/harness-status-line/commits",
-        "count": 1,
+        "count": 2,
         "state": null
       },
       {
@@ -5349,7 +5354,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2392
+    "privateContributions": 2377
   },
   "stats": {
     "publicRepos": 41,
@@ -5359,7 +5364,7 @@
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 34.2
+        "share": 34.3
       },
       {
         "name": "Rust",
@@ -5369,12 +5374,12 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 13.1
+        "share": 13
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 11.1
+        "share": 11
       },
       {
         "name": "Swift",
@@ -5398,7 +5403,7 @@
       }
     ],
     "year": {
-      "commits": 458,
+      "commits": 459,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
