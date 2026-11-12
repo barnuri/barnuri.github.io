@@ -57,6 +57,24 @@
   ],
   "recent": [
     {
+      "name": "herdr-mods",
+      "description": "Run Claude Code style mods for opencode in herdr panes",
+      "url": "https://github.com/barnuri/herdr-mods",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-12T09:36:16Z"
+    },
+    {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-11T17:11:38Z"
+    },
+    {
       "name": "harness-status-line",
       "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
       "url": "https://github.com/barnuri/harness-status-line",
@@ -75,15 +93,6 @@
       "pushedAt": "2026-11-10T08:00:24Z"
     },
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-10T06:48:17Z"
-    },
-    {
       "name": "harness-skills",
       "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
       "url": "https://github.com/barnuri/harness-skills",
@@ -100,19 +109,10 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-11-04T09:49:39Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-02T10:44:37Z"
     }
   ],
   "contributions": {
-    "total": 2937,
+    "total": 2964,
     "weeks": [
       [
         {
@@ -2041,7 +2041,7 @@
       [
         {
           "date": "2026-11-08",
-          "count": 24,
+          "count": 25,
           "level": 4
         },
         {
@@ -2051,19 +2051,76 @@
         },
         {
           "date": "2026-11-10",
-          "count": 12,
+          "count": 13,
           "level": 3
         },
         {
           "date": "2026-11-11",
-          "count": 2,
-          "level": 1
+          "count": 23,
+          "level": 4
+        },
+        {
+          "date": "2026-11-12",
+          "count": 4,
+          "level": 2
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/herdr-mods:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-mods",
+          "url": "https://github.com/barnuri/herdr-mods"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-mods/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-mods",
+        "kind": "repository",
+        "occurredAt": "2026-11-11T21:37:42Z",
+        "repo": {
+          "name": "barnuri/herdr-mods",
+          "url": "https://github.com/barnuri/herdr-mods"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-mods",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-11",
+        "kind": "commits",
+        "occurredAt": "2026-11-11T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 8,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-mods:2026-11-11",
+        "kind": "commits",
+        "occurredAt": "2026-11-11T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-mods",
+          "url": "https://github.com/barnuri/herdr-mods"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-mods/commits",
+        "count": 2,
+        "state": null
+      },
       {
         "id": "commits:barnuri/llm-hub:2026-11-10",
         "kind": "commits",
@@ -2074,7 +2131,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 1,
+        "count": 2,
         "state": null
       },
       {
@@ -5354,42 +5411,42 @@
         "state": null
       }
     ],
-    "privateContributions": 2377
+    "privateContributions": 2379
   },
   "stats": {
-    "publicRepos": 41,
+    "publicRepos": 42,
     "stars": 52,
     "followers": 6,
     "languages": [
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 34.3
+        "share": 34.1
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 24.9
+        "share": 27.7
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 13
+        "share": 12.1
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 11
+        "share": 10.3
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 7.2
+        "share": 6.7
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 3
+        "share": 2.8
       },
       {
         "name": "CSS",
@@ -5399,16 +5456,16 @@
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.6
+        "share": 1.5
       }
     ],
     "year": {
-      "commits": 459,
+      "commits": 474,
       "pullRequests": 47,
       "reviews": 5,
       "issues": 2,
-      "reposCreated": 20,
-      "contributedRepos": 26
+      "reposCreated": 21,
+      "contributedRepos": 27
     }
   }
 }
