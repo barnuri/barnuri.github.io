@@ -7,7 +7,7 @@
       "stars": 16,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-01T16:09:00Z"
+      "pushedAt": "2026-11-12T21:47:55Z"
     },
     {
       "name": "ghx",
@@ -19,6 +19,15 @@
       "pushedAt": "2026-11-09T19:43:29Z"
     },
     {
+      "name": "win-dock",
+      "description": "WinDock a replacement for mac dock",
+      "url": "https://github.com/barnuri/win-dock",
+      "stars": 7,
+      "language": "Swift",
+      "languageColor": "#F05138",
+      "pushedAt": "2026-07-03T09:45:12Z"
+    },
+    {
       "name": "CSharp.OpenSource.LinqToKql",
       "description": "",
       "url": "https://github.com/barnuri/CSharp.OpenSource.LinqToKql",
@@ -26,15 +35,6 @@
       "language": "C#",
       "languageColor": "#7355dd",
       "pushedAt": "2025-01-27T13:38:46Z"
-    },
-    {
-      "name": "win-dock",
-      "description": "WinDock a replacement for mac dock",
-      "url": "https://github.com/barnuri/win-dock",
-      "stars": 6,
-      "language": "Swift",
-      "languageColor": "#F05138",
-      "pushedAt": "2026-07-03T09:45:12Z"
     },
     {
       "name": "vscode-extensions",
@@ -57,13 +57,22 @@
   ],
   "recent": [
     {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-13T10:35:13Z"
+    },
+    {
       "name": "herdr-mods",
       "description": "Run Claude Code style mods for opencode in herdr panes",
       "url": "https://github.com/barnuri/herdr-mods",
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-12T09:36:16Z"
+      "pushedAt": "2026-11-13T07:13:53Z"
     },
     {
       "name": "llm-hub",
@@ -72,16 +81,25 @@
       "stars": 0,
       "language": "Rust",
       "languageColor": "#dea584",
-      "pushedAt": "2026-11-11T17:11:38Z"
+      "pushedAt": "2026-11-12T21:45:51Z"
     },
     {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
+      "name": "orch-skill",
+      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
+      "url": "https://github.com/barnuri/orch-skill",
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-10T20:17:14Z"
+      "pushedAt": "2026-11-12T21:35:44Z"
+    },
+    {
+      "name": "dev-tools",
+      "description": "",
+      "url": "https://github.com/barnuri/dev-tools",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-11-12T14:45:00Z"
     },
     {
       "name": "herdr-notifications",
@@ -91,28 +109,10 @@
       "language": "JavaScript",
       "languageColor": "#f1e05a",
       "pushedAt": "2026-11-10T08:00:24Z"
-    },
-    {
-      "name": "harness-skills",
-      "description": "Harness-neutral agent skills and subagents for Claude Code, GitHub Copilot CLI, opencode, pi, Codex CLI, and Cursor: code-gen, code review, design docs, RCAs, handoffs",
-      "url": "https://github.com/barnuri/harness-skills",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-11-04T13:41:30Z"
-    },
-    {
-      "name": "dev-tools",
-      "description": "",
-      "url": "https://github.com/barnuri/dev-tools",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-11-04T09:49:39Z"
     }
   ],
   "contributions": {
-    "total": 2964,
+    "total": 2992,
     "weeks": [
       [
         {
@@ -128,12 +128,12 @@
         {
           "date": "2025-11-11",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2025-11-12",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2025-11-13",
@@ -207,7 +207,7 @@
         {
           "date": "2025-11-26",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2025-11-27",
@@ -540,7 +540,7 @@
         {
           "date": "2026-01-28",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-01-29",
@@ -604,7 +604,7 @@
         {
           "date": "2026-02-09",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-02-10",
@@ -747,7 +747,7 @@
         {
           "date": "2026-03-08",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-03-09",
@@ -1043,7 +1043,7 @@
         {
           "date": "2026-05-03",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-05-04",
@@ -1549,7 +1549,7 @@
         {
           "date": "2026-08-07",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-08-08",
@@ -1581,7 +1581,7 @@
         {
           "date": "2026-08-13",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-08-14",
@@ -1936,7 +1936,7 @@
         {
           "date": "2026-10-19",
           "count": 9,
-          "level": 3
+          "level": 2
         },
         {
           "date": "2026-10-20",
@@ -2056,12 +2056,17 @@
         },
         {
           "date": "2026-11-11",
-          "count": 23,
+          "count": 27,
           "level": 4
         },
         {
           "date": "2026-11-12",
-          "count": 4,
+          "count": 22,
+          "level": 4
+        },
+        {
+          "date": "2026-11-13",
+          "count": 6,
           "level": 2
         }
       ]
@@ -2069,6 +2074,58 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-13",
+        "kind": "commits",
+        "occurredAt": "2026-11-13T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-mods:2026-11-13",
+        "kind": "commits",
+        "occurredAt": "2026-11-13T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-mods",
+          "url": "https://github.com/barnuri/herdr-mods"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-mods/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/anomalyco/opencode/pull/63562",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-12T15:55:42Z",
+        "repo": {
+          "name": "anomalyco/opencode",
+          "url": "https://github.com/anomalyco/opencode"
+        },
+        "title": "feat(tui): mention skills with a mid-prompt slash",
+        "url": "https://github.com/anomalyco/opencode/pull/63562",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "repository:barnuri/opencode",
+        "kind": "repository",
+        "occurredAt": "2026-11-12T15:45:13Z",
+        "repo": {
+          "name": "barnuri/opencode",
+          "url": "https://github.com/barnuri/opencode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/opencode",
+        "count": null,
+        "state": null
+      },
       {
         "id": "commits:barnuri/herdr-mods:2026-11-12",
         "kind": "commits",
@@ -2079,7 +2136,72 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/herdr-mods/commits",
-        "count": 4,
+        "count": 7,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 3,
         "state": null
       },
       {
@@ -2119,6 +2241,19 @@
         "title": null,
         "url": "https://github.com/barnuri/herdr-mods/commits",
         "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-11",
+        "kind": "commits",
+        "occurredAt": "2026-11-11T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -5411,42 +5546,42 @@
         "state": null
       }
     ],
-    "privateContributions": 2379
+    "privateContributions": 2376
   },
   "stats": {
     "publicRepos": 42,
-    "stars": 52,
+    "stars": 53,
     "followers": 6,
     "languages": [
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 34.1
+        "share": 35.1
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 27.7
+        "share": 27.6
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 12.1
+        "share": 11.6
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 10.3
+        "share": 10.4
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 6.7
+        "share": 6.4
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 2.8
+        "share": 2.7
       },
       {
         "name": "CSS",
@@ -5460,11 +5595,11 @@
       }
     ],
     "year": {
-      "commits": 474,
-      "pullRequests": 47,
+      "commits": 494,
+      "pullRequests": 48,
       "reviews": 5,
       "issues": 2,
-      "reposCreated": 21,
+      "reposCreated": 22,
       "contributedRepos": 27
     }
   }
