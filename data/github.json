@@ -57,6 +57,33 @@
   ],
   "recent": [
     {
+      "name": "herdr-folders",
+      "description": "herdr plugin: terminals and agents grouped by folder, git status, bulk close, git changes panel",
+      "url": "https://github.com/barnuri/herdr-folders",
+      "stars": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-13T13:58:59Z"
+    },
+    {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-13T13:28:44Z"
+    },
+    {
+      "name": "orch-skill",
+      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
+      "url": "https://github.com/barnuri/orch-skill",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-13T13:20:05Z"
+    },
+    {
       "name": "harness-status-line",
       "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
       "url": "https://github.com/barnuri/harness-status-line",
@@ -75,24 +102,6 @@
       "pushedAt": "2026-11-13T07:13:53Z"
     },
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-12T21:45:51Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-12T21:35:44Z"
-    },
-    {
       "name": "dev-tools",
       "description": "",
       "url": "https://github.com/barnuri/dev-tools",
@@ -100,19 +109,10 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-11-12T14:45:00Z"
-    },
-    {
-      "name": "herdr-notifications",
-      "description": "herdr plugin: Telegram notifications when an agent goes idle, gets blocked, or finishes",
-      "url": "https://github.com/barnuri/herdr-notifications",
-      "stars": 1,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-10T08:00:24Z"
     }
   ],
   "contributions": {
-    "total": 2992,
+    "total": 3001,
     "weeks": [
       [
         {
@@ -2066,14 +2066,32 @@
         },
         {
           "date": "2026-11-13",
-          "count": 6,
-          "level": 2
+          "count": 15,
+          "level": 3
+        },
+        {
+          "date": "2026-11-14",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "repository:barnuri/herdr-folders",
+        "kind": "repository",
+        "occurredAt": "2026-11-13T13:58:53Z",
+        "repo": {
+          "name": "barnuri/herdr-folders",
+          "url": "https://github.com/barnuri/herdr-folders"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-folders",
+        "count": null,
+        "state": null
+      },
       {
         "id": "commits:barnuri/harness-status-line:2026-11-13",
         "kind": "commits",
@@ -2098,6 +2116,45 @@
         "title": null,
         "url": "https://github.com/barnuri/herdr-mods/commits",
         "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-13",
+        "kind": "commits",
+        "occurredAt": "2026-11-13T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-13",
+        "kind": "commits",
+        "occurredAt": "2026-11-13T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-folders:2026-11-13",
+        "kind": "commits",
+        "occurredAt": "2026-11-13T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-folders",
+          "url": "https://github.com/barnuri/herdr-folders"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-folders/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -5546,27 +5603,27 @@
         "state": null
       }
     ],
-    "privateContributions": 2376
+    "privateContributions": 2361
   },
   "stats": {
-    "publicRepos": 42,
+    "publicRepos": 43,
     "stars": 53,
     "followers": 6,
     "languages": [
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 35.1
+        "share": 34.7
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 27.6
+        "share": 27.4
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 11.6
+        "share": 12.5
       },
       {
         "name": "Shell",
@@ -5576,12 +5633,12 @@
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 6.4
+        "share": 6.3
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 2.7
+        "share": 2.6
       },
       {
         "name": "CSS",
@@ -5591,16 +5648,16 @@
       {
         "name": "Python",
         "color": "#3572A5",
-        "share": 1.5
+        "share": 1.4
       }
     ],
     "year": {
-      "commits": 494,
+      "commits": 501,
       "pullRequests": 48,
       "reviews": 5,
       "issues": 2,
-      "reposCreated": 22,
-      "contributedRepos": 27
+      "reposCreated": 23,
+      "contributedRepos": 28
     }
   }
 }
