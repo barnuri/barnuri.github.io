@@ -7,7 +7,7 @@
       "stars": 16,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-12T21:47:55Z"
+      "pushedAt": "2026-11-15T08:12:07Z"
     },
     {
       "name": "ghx",
@@ -57,13 +57,49 @@
   ],
   "recent": [
     {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-15T08:11:59Z"
+    },
+    {
       "name": "herdr-folders",
       "description": "herdr plugin: terminals and agents grouped by folder, git status, bulk close, git changes panel",
       "url": "https://github.com/barnuri/herdr-folders",
       "stars": 0,
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-13T13:58:59Z"
+      "pushedAt": "2026-11-15T07:40:51Z"
+    },
+    {
+      "name": "herdr-mods",
+      "description": "Run Claude Code style mods for opencode in herdr panes",
+      "url": "https://github.com/barnuri/herdr-mods",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-15T06:44:40Z"
+    },
+    {
+      "name": "harness-bridge",
+      "description": "Use your Claude Code setup (plugins, skills, agents, commands, MCP) from opencode and pi - via symlinks, without duplicating files",
+      "url": "https://github.com/barnuri/harness-bridge",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-11-14T18:51:34Z"
+    },
+    {
+      "name": "orch-skill",
+      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
+      "url": "https://github.com/barnuri/orch-skill",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-14T17:23:51Z"
     },
     {
       "name": "llm-hub",
@@ -73,84 +109,11 @@
       "language": "Rust",
       "languageColor": "#dea584",
       "pushedAt": "2026-11-13T13:28:44Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-13T13:20:05Z"
-    },
-    {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-13T10:35:13Z"
-    },
-    {
-      "name": "herdr-mods",
-      "description": "Run Claude Code style mods for opencode in herdr panes",
-      "url": "https://github.com/barnuri/herdr-mods",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-13T07:13:53Z"
-    },
-    {
-      "name": "dev-tools",
-      "description": "",
-      "url": "https://github.com/barnuri/dev-tools",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-11-12T14:45:00Z"
     }
   ],
   "contributions": {
-    "total": 3001,
+    "total": 3041,
     "weeks": [
-      [
-        {
-          "date": "2025-11-09",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-11-10",
-          "count": 26,
-          "level": 4
-        },
-        {
-          "date": "2025-11-11",
-          "count": 9,
-          "level": 2
-        },
-        {
-          "date": "2025-11-12",
-          "count": 9,
-          "level": 2
-        },
-        {
-          "date": "2025-11-13",
-          "count": 16,
-          "level": 3
-        },
-        {
-          "date": "2025-11-14",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-11-15",
-          "count": 0,
-          "level": 0
-        }
-      ],
       [
         {
           "date": "2025-11-16",
@@ -2061,7 +2024,7 @@
         },
         {
           "date": "2026-11-12",
-          "count": 22,
+          "count": 23,
           "level": 4
         },
         {
@@ -2071,14 +2034,125 @@
         },
         {
           "date": "2026-11-14",
-          "count": 0,
-          "level": 0
+          "count": 30,
+          "level": 4
+        }
+      ],
+      [
+        {
+          "date": "2026-11-15",
+          "count": 9,
+          "level": 2
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-15",
+        "kind": "commits",
+        "occurredAt": "2026-11-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-11-15",
+        "kind": "commits",
+        "occurredAt": "2026-11-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-folders:2026-11-15",
+        "kind": "commits",
+        "occurredAt": "2026-11-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-folders",
+          "url": "https://github.com/barnuri/herdr-folders"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-folders/commits",
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-mods:2026-11-15",
+        "kind": "commits",
+        "occurredAt": "2026-11-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-mods",
+          "url": "https://github.com/barnuri/herdr-mods"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-mods/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-14",
+        "kind": "commits",
+        "occurredAt": "2026-11-14T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-14",
+        "kind": "commits",
+        "occurredAt": "2026-11-14T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-folders:2026-11-14",
+        "kind": "commits",
+        "occurredAt": "2026-11-14T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-folders",
+          "url": "https://github.com/barnuri/herdr-folders"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-folders/commits",
+        "count": 23,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-bridge:2026-11-14",
+        "kind": "commits",
+        "occurredAt": "2026-11-14T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "repository:barnuri/herdr-folders",
         "kind": "repository",
@@ -2259,6 +2333,19 @@
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
         "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-bridge:2026-11-12",
+        "kind": "commits",
+        "occurredAt": "2026-11-12T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-bridge",
+          "url": "https://github.com/barnuri/harness-bridge"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-bridge/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -5603,7 +5690,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2361
+    "privateContributions": 2365
   },
   "stats": {
     "publicRepos": 43,
@@ -5618,22 +5705,22 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 27.4
+        "share": 27.1
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 12.5
+        "share": 13.1
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 10.4
+        "share": 10.3
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 6.3
+        "share": 6.2
       },
       {
         "name": "C#",
@@ -5652,7 +5739,7 @@
       }
     ],
     "year": {
-      "commits": 501,
+      "commits": 537,
       "pullRequests": 48,
       "reviews": 5,
       "issues": 2,
