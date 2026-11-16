@@ -4,10 +4,10 @@
       "name": "herdr-web",
       "description": "Mobile-first web UI plugin for herdr — drive your coding agents from a phone, with notifications",
       "url": "https://github.com/barnuri/herdr-web",
-      "stars": 16,
+      "stars": 17,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-15T08:12:07Z"
+      "pushedAt": "2026-11-16T07:25:50Z"
     },
     {
       "name": "ghx",
@@ -16,7 +16,7 @@
       "stars": 7,
       "language": "Go",
       "languageColor": "#00ADD8",
-      "pushedAt": "2026-11-09T19:43:29Z"
+      "pushedAt": "2026-11-16T07:28:12Z"
     },
     {
       "name": "win-dock",
@@ -25,7 +25,7 @@
       "stars": 7,
       "language": "Swift",
       "languageColor": "#F05138",
-      "pushedAt": "2026-07-03T09:45:12Z"
+      "pushedAt": "2026-11-16T07:26:03Z"
     },
     {
       "name": "CSharp.OpenSource.LinqToKql",
@@ -57,13 +57,13 @@
   ],
   "recent": [
     {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
+      "name": "homebrew-brew",
+      "description": "",
+      "url": "https://github.com/barnuri/homebrew-brew",
       "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-15T08:11:59Z"
+      "language": "Ruby",
+      "languageColor": "#701516",
+      "pushedAt": "2026-11-16T07:30:32Z"
     },
     {
       "name": "herdr-folders",
@@ -72,7 +72,25 @@
       "stars": 0,
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-15T07:40:51Z"
+      "pushedAt": "2026-11-16T07:25:47Z"
+    },
+    {
+      "name": "dev-tools",
+      "description": "",
+      "url": "https://github.com/barnuri/dev-tools",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-11-16T07:25:42Z"
+    },
+    {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-16T07:03:02Z"
     },
     {
       "name": "herdr-mods",
@@ -81,7 +99,7 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-15T06:44:40Z"
+      "pushedAt": "2026-11-16T07:02:30Z"
     },
     {
       "name": "harness-bridge",
@@ -91,28 +109,10 @@
       "language": "Shell",
       "languageColor": "#89e051",
       "pushedAt": "2026-11-14T18:51:34Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-14T17:23:51Z"
-    },
-    {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-13T13:28:44Z"
     }
   ],
   "contributions": {
-    "total": 3041,
+    "total": 3000,
     "weeks": [
       [
         {
@@ -434,7 +434,7 @@
         {
           "date": "2026-01-15",
           "count": 18,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-01-16",
@@ -545,7 +545,7 @@
         {
           "date": "2026-02-05",
           "count": 18,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-02-06",
@@ -1073,7 +1073,7 @@
         {
           "date": "2026-05-16",
           "count": 18,
-          "level": 4
+          "level": 3
         }
       ],
       [
@@ -1316,7 +1316,7 @@
         },
         {
           "date": "2026-07-01",
-          "count": 5,
+          "count": 7,
           "level": 2
         },
         {
@@ -1326,7 +1326,7 @@
         },
         {
           "date": "2026-07-03",
-          "count": 17,
+          "count": 18,
           "level": 3
         },
         {
@@ -1894,7 +1894,7 @@
         {
           "date": "2026-10-18",
           "count": 18,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-10-19",
@@ -2041,14 +2041,97 @@
       [
         {
           "date": "2026-11-15",
-          "count": 9,
-          "level": 2
+          "count": 12,
+          "level": 3
+        },
+        {
+          "date": "2026-11-16",
+          "count": 13,
+          "level": 3
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-16",
+        "kind": "commits",
+        "occurredAt": "2026-11-16T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-11-16",
+        "kind": "commits",
+        "occurredAt": "2026-11-16T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/win-dock:2026-11-16",
+        "kind": "commits",
+        "occurredAt": "2026-11-16T08:00:00Z",
+        "repo": {
+          "name": "barnuri/win-dock",
+          "url": "https://github.com/barnuri/win-dock"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/win-dock/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-folders:2026-11-16",
+        "kind": "commits",
+        "occurredAt": "2026-11-16T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-folders",
+          "url": "https://github.com/barnuri/herdr-folders"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-folders/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-mods:2026-11-16",
+        "kind": "commits",
+        "occurredAt": "2026-11-16T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-mods",
+          "url": "https://github.com/barnuri/herdr-mods"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-mods/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/ghx:2026-11-16",
+        "kind": "commits",
+        "occurredAt": "2026-11-16T08:00:00Z",
+        "repo": {
+          "name": "barnuri/ghx",
+          "url": "https://github.com/barnuri/ghx"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/ghx/commits",
+        "count": 1,
+        "state": null
+      },
       {
         "id": "commits:barnuri/harness-status-line:2026-11-15",
         "kind": "commits",
@@ -2098,6 +2181,19 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/herdr-mods/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-11-15",
+        "kind": "commits",
+        "occurredAt": "2026-11-15T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
         "count": 1,
         "state": null
       },
@@ -4962,6 +5058,19 @@
         "state": null
       },
       {
+        "id": "commits:barnuri/homebrew-brew:2026-07-03",
+        "kind": "commits",
+        "occurredAt": "2026-07-03T07:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 1,
+        "state": null
+      },
+      {
         "id": "commits:barnuri/win-dock:2026-07-01",
         "kind": "commits",
         "occurredAt": "2026-07-01T07:00:00Z",
@@ -4972,6 +5081,19 @@
         "title": null,
         "url": "https://github.com/barnuri/win-dock/commits",
         "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/homebrew-brew:2026-07-01",
+        "kind": "commits",
+        "occurredAt": "2026-07-01T07:00:00Z",
+        "repo": {
+          "name": "barnuri/homebrew-brew",
+          "url": "https://github.com/barnuri/homebrew-brew"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/homebrew-brew/commits",
+        "count": 2,
         "state": null
       },
       {
@@ -5690,11 +5812,11 @@
         "state": null
       }
     ],
-    "privateContributions": 2365
+    "privateContributions": 2372
   },
   "stats": {
     "publicRepos": 43,
-    "stars": 53,
+    "stars": 54,
     "followers": 6,
     "languages": [
       {
@@ -5705,22 +5827,22 @@
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 27.1
+        "share": 26.8
       },
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 13.1
+        "share": 13.3
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 10.3
+        "share": 10.2
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 6.2
+        "share": 6.4
       },
       {
         "name": "C#",
@@ -5730,7 +5852,7 @@
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 2.3
+        "share": 2.2
       },
       {
         "name": "Python",
@@ -5739,7 +5861,7 @@
       }
     ],
     "year": {
-      "commits": 537,
+      "commits": 549,
       "pullRequests": 48,
       "reviews": 5,
       "issues": 2,
