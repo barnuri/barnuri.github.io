@@ -57,6 +57,15 @@
   ],
   "recent": [
     {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-17T10:01:23Z"
+    },
+    {
       "name": "homebrew-brew",
       "description": "",
       "url": "https://github.com/barnuri/homebrew-brew",
@@ -100,19 +109,10 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-11-16T07:02:30Z"
-    },
-    {
-      "name": "harness-bridge",
-      "description": "Use your Claude Code setup (plugins, skills, agents, commands, MCP) from opencode and pi - via symlinks, without duplicating files",
-      "url": "https://github.com/barnuri/harness-bridge",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-11-14T18:51:34Z"
     }
   ],
   "contributions": {
-    "total": 3000,
+    "total": 3010,
     "weeks": [
       [
         {
@@ -2046,14 +2046,32 @@
         },
         {
           "date": "2026-11-16",
-          "count": 13,
-          "level": 3
+          "count": 20,
+          "level": 4
+        },
+        {
+          "date": "2026-11-17",
+          "count": 3,
+          "level": 1
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-17",
+        "kind": "commits",
+        "occurredAt": "2026-11-17T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 3,
+        "state": null
+      },
       {
         "id": "commits:barnuri/harness-status-line:2026-11-16",
         "kind": "commits",
@@ -5812,7 +5830,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2372
+    "privateContributions": 2377
   },
   "stats": {
     "publicRepos": 43,
@@ -5837,7 +5855,7 @@
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 10.2
+        "share": 10.3
       },
       {
         "name": "Swift",
@@ -5861,7 +5879,7 @@
       }
     ],
     "year": {
-      "commits": 549,
+      "commits": 552,
       "pullRequests": 48,
       "reviews": 5,
       "issues": 2,
