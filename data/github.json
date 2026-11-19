@@ -7,7 +7,7 @@
       "stars": 17,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-16T07:25:50Z"
+      "pushedAt": "2026-11-18T11:50:12Z"
     },
     {
       "name": "ghx",
@@ -63,7 +63,7 @@
       "stars": 0,
       "language": "Rust",
       "languageColor": "#dea584",
-      "pushedAt": "2026-11-17T14:25:23Z"
+      "pushedAt": "2026-11-19T11:30:49Z"
     },
     {
       "name": "orch-skill",
@@ -72,16 +72,34 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-17T13:45:50Z"
+      "pushedAt": "2026-11-19T10:09:18Z"
     },
     {
-      "name": "homebrew-brew",
-      "description": "",
-      "url": "https://github.com/barnuri/homebrew-brew",
+      "name": "herdr-vscode",
+      "description": "VS Code-style layout and mods for herdr-app",
+      "url": "https://github.com/barnuri/herdr-vscode",
       "stars": 0,
-      "language": "Ruby",
-      "languageColor": "#701516",
-      "pushedAt": "2026-11-16T07:30:32Z"
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-18T19:12:20Z"
+    },
+    {
+      "name": "herdr-hc-attach",
+      "description": "",
+      "url": "https://github.com/barnuri/herdr-hc-attach",
+      "stars": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-18T18:22:32Z"
+    },
+    {
+      "name": "herdr-mods",
+      "description": "Run Claude Code style mods for opencode in herdr panes",
+      "url": "https://github.com/barnuri/herdr-mods",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-18T15:33:47Z"
     },
     {
       "name": "herdr-folders",
@@ -90,29 +108,11 @@
       "stars": 0,
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-16T07:25:47Z"
-    },
-    {
-      "name": "dev-tools",
-      "description": "",
-      "url": "https://github.com/barnuri/dev-tools",
-      "stars": 0,
-      "language": "Shell",
-      "languageColor": "#89e051",
-      "pushedAt": "2026-11-16T07:25:42Z"
-    },
-    {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-16T07:03:02Z"
+      "pushedAt": "2026-11-18T13:14:18Z"
     }
   ],
   "contributions": {
-    "total": 3269,
+    "total": 3352,
     "weeks": [
       [
         {
@@ -2046,17 +2046,22 @@
         },
         {
           "date": "2026-11-16",
-          "count": 238,
+          "count": 239,
           "level": 4
         },
         {
           "date": "2026-11-17",
-          "count": 28,
+          "count": 30,
           "level": 4
         },
         {
           "date": "2026-11-18",
-          "count": 9,
+          "count": 82,
+          "level": 4
+        },
+        {
+          "date": "2026-11-19",
+          "count": 7,
           "level": 2
         }
       ]
@@ -2064,6 +2069,344 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/12",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-19T10:34:07Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Merge Copilot's split choices so Smart Auto review keeps every tool call",
+        "url": "https://github.com/barnuri/llm-hub/pull/12",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/11",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-19T09:30:41Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Record why Smart Auto picks a model and let a model named in the prompt win routing",
+        "url": "https://github.com/barnuri/llm-hub/pull/11",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-19",
+        "kind": "commits",
+        "occurredAt": "2026-11-19T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-19",
+        "kind": "commits",
+        "occurredAt": "2026-11-19T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/herdrdev/herdr-app/pull/1239",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T20:35:10Z",
+        "repo": {
+          "name": "herdrdev/herdr-app",
+          "url": "https://github.com/herdrdev/herdr-app"
+        },
+        "title": "feat: let mods scroll script editors by row and decorate whole lines",
+        "url": "https://github.com/herdrdev/herdr-app/pull/1239",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/herdrdev/herdr-app/pull/1237",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T20:19:46Z",
+        "repo": {
+          "name": "herdrdev/herdr-app",
+          "url": "https://github.com/herdrdev/herdr-app"
+        },
+        "title": "feat: pass line and column of terminal file links to mod link handlers",
+        "url": "https://github.com/herdrdev/herdr-app/pull/1237",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/10",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T19:52:44Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Fix 4 extension bugs and add shadow rules, request state in complete, every-route and config phases, and HTTP hooks",
+        "url": "https://github.com/barnuri/llm-hub/pull/10",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/9",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T18:52:57Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add a binary-size check that needs a written reason for growth over 2%",
+        "url": "https://github.com/barnuri/llm-hub/pull/9",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/8",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T18:47:57Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Require the llm-hub-perf result in the PR body for request-path changes",
+        "url": "https://github.com/barnuri/llm-hub/pull/8",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/7",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T18:46:55Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add the llm-hub-perf skill: bench script, baseline and candidate optimizations",
+        "url": "https://github.com/barnuri/llm-hub/pull/7",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/6",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T18:45:33Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Upgrade GitHub actions to their latest major versions",
+        "url": "https://github.com/barnuri/llm-hub/pull/6",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/5",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T17:50:54Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add extensions: a rules file, Rust extensions, and llm-hub as a library",
+        "url": "https://github.com/barnuri/llm-hub/pull/5",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/4",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T17:37:41Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Build the macOS arm64 release on the Intel runner",
+        "url": "https://github.com/barnuri/llm-hub/pull/4",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/3",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T17:12:20Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Propose an extension model: rules files, HTTP hooks and Rust extensions",
+        "url": "https://github.com/barnuri/llm-hub/pull/3",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/2",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T16:54:47Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Use only official GitHub actions in CI",
+        "url": "https://github.com/barnuri/llm-hub/pull/2",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/1",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-18T15:48:34Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Let the upstream judge Responses context size when no fallback remains, and rename Copilot's context error code",
+        "url": "https://github.com/barnuri/llm-hub/pull/1",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "repository:barnuri/herdr-vscode",
+        "kind": "repository",
+        "occurredAt": "2026-11-18T14:02:53Z",
+        "repo": {
+          "name": "barnuri/herdr-vscode",
+          "url": "https://github.com/barnuri/herdr-vscode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-vscode",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "repository:barnuri/herdr-hc-attach",
+        "kind": "repository",
+        "occurredAt": "2026-11-18T11:50:14Z",
+        "repo": {
+          "name": "barnuri/herdr-hc-attach",
+          "url": "https://github.com/barnuri/herdr-hc-attach"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-hc-attach",
+        "count": null,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 12,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 12,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-web:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-web",
+          "url": "https://github.com/barnuri/herdr-web"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-web/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-folders:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-folders",
+          "url": "https://github.com/barnuri/herdr-folders"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-folders/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-vscode:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-vscode",
+          "url": "https://github.com/barnuri/herdr-vscode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-vscode/commits",
+        "count": 30,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-notifications:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-notifications",
+          "url": "https://github.com/barnuri/herdr-notifications"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-notifications/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-hc-attach:2026-11-18",
+        "kind": "commits",
+        "occurredAt": "2026-11-18T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-hc-attach",
+          "url": "https://github.com/barnuri/herdr-hc-attach"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-hc-attach/commits",
+        "count": 5,
+        "state": null
+      },
       {
         "id": "pull_request:https://github.com/herdrdev/herdr-app/pull/1199",
         "kind": "pull_request",
@@ -2130,6 +2473,19 @@
         "state": null
       },
       {
+        "id": "commits:barnuri/herdr-hc-attach:2026-11-17",
+        "kind": "commits",
+        "occurredAt": "2026-11-17T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-hc-attach",
+          "url": "https://github.com/barnuri/herdr-hc-attach"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-hc-attach/commits",
+        "count": 1,
+        "state": null
+      },
+      {
         "id": "commits:barnuri/harness-status-line:2026-11-16",
         "kind": "commits",
         "occurredAt": "2026-11-16T08:00:00Z",
@@ -2191,7 +2547,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/herdr-mods/commits",
-        "count": 2,
+        "count": 3,
         "state": null
       },
       {
@@ -5913,61 +6269,61 @@
         "state": null
       }
     ],
-    "privateContributions": 2376
+    "privateContributions": 2358
   },
   "stats": {
-    "publicRepos": 43,
+    "publicRepos": 45,
     "stars": 54,
     "followers": 6,
     "languages": [
       {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "share": 48.6
+      },
+      {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 55.4
+        "share": 30.8
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 18.9
-      },
-      {
-        "name": "JavaScript",
-        "color": "#f1e05a",
-        "share": 9.5
+        "share": 11.8
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 4.5
+        "share": 2.4
       },
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 3.7
+        "share": 2
       },
       {
         "name": "CSS",
         "color": "#663399",
-        "share": 3
+        "share": 1.6
       },
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 1.8
+        "share": 1
       },
       {
-        "name": "Python",
-        "color": "#3572A5",
-        "share": 1.2
+        "name": "HTML",
+        "color": "#e34c26",
+        "share": 0.6
       }
     ],
     "year": {
-      "commits": 791,
-      "pullRequests": 47,
+      "commits": 860,
+      "pullRequests": 61,
       "reviews": 5,
       "issues": 3,
-      "reposCreated": 23,
-      "contributedRepos": 28
+      "reposCreated": 25,
+      "contributedRepos": 30
     }
   }
 }
