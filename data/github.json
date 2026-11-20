@@ -4,7 +4,7 @@
       "name": "herdr-web",
       "description": "Mobile-first web UI plugin for herdr — drive your coding agents from a phone, with notifications",
       "url": "https://github.com/barnuri/herdr-web",
-      "stars": 17,
+      "stars": 18,
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-11-18T11:50:12Z"
@@ -63,7 +63,7 @@
       "stars": 0,
       "language": "Rust",
       "languageColor": "#dea584",
-      "pushedAt": "2026-11-19T11:30:49Z"
+      "pushedAt": "2026-11-20T11:10:52Z"
     },
     {
       "name": "orch-skill",
@@ -72,7 +72,16 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-19T10:09:18Z"
+      "pushedAt": "2026-11-19T18:47:25Z"
+    },
+    {
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-19T14:49:17Z"
     },
     {
       "name": "herdr-vscode",
@@ -81,7 +90,7 @@
       "stars": 0,
       "language": "JavaScript",
       "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-18T19:12:20Z"
+      "pushedAt": "2026-11-19T14:33:11Z"
     },
     {
       "name": "herdr-hc-attach",
@@ -100,19 +109,10 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-11-18T15:33:47Z"
-    },
-    {
-      "name": "herdr-folders",
-      "description": "herdr plugin: terminals and agents grouped by folder, git status, bulk close, git changes panel",
-      "url": "https://github.com/barnuri/herdr-folders",
-      "stars": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-18T13:14:18Z"
     }
   ],
   "contributions": {
-    "total": 3352,
+    "total": 3376,
     "weeks": [
       [
         {
@@ -2061,14 +2061,58 @@
         },
         {
           "date": "2026-11-19",
-          "count": 7,
-          "level": 2
+          "count": 30,
+          "level": 4
+        },
+        {
+          "date": "2026-11-20",
+          "count": 1,
+          "level": 1
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/15",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T10:15:19Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Insights: top three per list, best free, best value, cost per call",
+        "url": "https://github.com/barnuri/llm-hub/pull/15",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/14",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-19T18:00:20Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Repair or send the draft when a Smart Auto reviewer rejects it",
+        "url": "https://github.com/barnuri/llm-hub/pull/14",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/13",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-19T14:31:58Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Let opencode compact: Smart Auto limits from active rules, upstream 413 as context overflow",
+        "url": "https://github.com/barnuri/llm-hub/pull/13",
+        "count": null,
+        "state": "MERGED"
+      },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/12",
         "kind": "pull_request",
@@ -2105,7 +2149,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 1,
+        "count": 8,
         "state": null
       },
       {
@@ -2118,7 +2162,33 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 2,
+        "count": 4,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-19",
+        "kind": "commits",
+        "occurredAt": "2026-11-19T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-vscode:2026-11-19",
+        "kind": "commits",
+        "occurredAt": "2026-11-19T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-vscode",
+          "url": "https://github.com/barnuri/herdr-vscode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-vscode/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -6269,22 +6339,22 @@
         "state": null
       }
     ],
-    "privateContributions": 2358
+    "privateContributions": 2351
   },
   "stats": {
     "publicRepos": 45,
-    "stars": 54,
+    "stars": 55,
     "followers": 6,
     "languages": [
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 48.6
+        "share": 48.9
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 30.8
+        "share": 30.6
       },
       {
         "name": "Rust",
@@ -6294,7 +6364,7 @@
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 2.4
+        "share": 2.3
       },
       {
         "name": "Shell",
@@ -6309,7 +6379,7 @@
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 1
+        "share": 0.9
       },
       {
         "name": "HTML",
@@ -6318,11 +6388,11 @@
       }
     ],
     "year": {
-      "commits": 860,
-      "pullRequests": 61,
+      "commits": 871,
+      "pullRequests": 63,
       "reviews": 5,
       "issues": 3,
-      "reposCreated": 25,
+      "reposCreated": 24,
       "contributedRepos": 30
     }
   }
