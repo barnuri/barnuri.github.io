@@ -63,7 +63,7 @@
       "stars": 0,
       "language": "Rust",
       "languageColor": "#dea584",
-      "pushedAt": "2026-11-20T11:10:52Z"
+      "pushedAt": "2026-11-20T14:19:51Z"
     },
     {
       "name": "orch-skill",
@@ -72,7 +72,7 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-19T18:47:25Z"
+      "pushedAt": "2026-11-20T12:17:27Z"
     },
     {
       "name": "harness-status-line",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 3376,
+    "total": 3386,
     "weeks": [
       [
         {
@@ -2066,14 +2066,97 @@
         },
         {
           "date": "2026-11-20",
-          "count": 1,
-          "level": 1
+          "count": 11,
+          "level": 3
+        },
+        {
+          "date": "2026-11-21",
+          "count": 0,
+          "level": 0
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/20",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T13:59:47Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Media: skip mode with a system reminder; caption calls carry only the media",
+        "url": "https://github.com/barnuri/llm-hub/pull/20",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/19",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T12:48:31Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Fall back on broken successes, honor rate limit resets, bound the chain with a deadline",
+        "url": "https://github.com/barnuri/llm-hub/pull/19",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/18",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T12:44:30Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Group errors by a normalized signature and resolve a whole group",
+        "url": "https://github.com/barnuri/llm-hub/pull/18",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/17",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T12:44:12Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Media fallback: images, audio and files as text for text-only models",
+        "url": "https://github.com/barnuri/llm-hub/pull/17",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/16",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T12:37:30Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Insights AI analysis, media fallback for text-only models, fallback resilience, error groups",
+        "url": "https://github.com/barnuri/llm-hub/pull/16",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/orch-skill/pull/1",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-20T12:12:41Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": "chats: sub projects instead of per-chat subfolders, plus a migration",
+        "url": "https://github.com/barnuri/orch-skill/pull/1",
+        "count": null,
+        "state": "MERGED"
+      },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/15",
         "kind": "pull_request",
@@ -2082,10 +2165,36 @@
           "name": "barnuri/llm-hub",
           "url": "https://github.com/barnuri/llm-hub"
         },
-        "title": "Insights: top three per list, best free, best value, cost per call",
+        "title": "Insights: deterministic quality-aware ranking, top three lists, verified outcomes and sessions",
         "url": "https://github.com/barnuri/llm-hub/pull/15",
         "count": null,
-        "state": "OPEN"
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-20",
+        "kind": "commits",
+        "occurredAt": "2026-11-20T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-20",
+        "kind": "commits",
+        "occurredAt": "2026-11-20T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 3,
+        "state": null
       },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/14",
@@ -6339,7 +6448,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2351
+    "privateContributions": 2333
   },
   "stats": {
     "publicRepos": 45,
@@ -6349,17 +6458,17 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 48.9
+        "share": 48.2
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 30.6
+        "share": 30.5
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 11.8
+        "share": 12.7
       },
       {
         "name": "Swift",
@@ -6388,8 +6497,8 @@
       }
     ],
     "year": {
-      "commits": 871,
-      "pullRequests": 63,
+      "commits": 875,
+      "pullRequests": 68,
       "reviews": 5,
       "issues": 3,
       "reposCreated": 24,
