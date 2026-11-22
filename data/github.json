@@ -57,13 +57,31 @@
   ],
   "recent": [
     {
+      "name": "herdr-vscode",
+      "description": "VS Code-style layout and mods for herdr-app",
+      "url": "https://github.com/barnuri/herdr-vscode",
+      "stars": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-22T10:55:01Z"
+    },
+    {
+      "name": "herdr-hc-attach",
+      "description": "",
+      "url": "https://github.com/barnuri/herdr-hc-attach",
+      "stars": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-22T10:25:10Z"
+    },
+    {
       "name": "llm-hub",
       "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
       "url": "https://github.com/barnuri/llm-hub",
       "stars": 0,
       "language": "Rust",
       "languageColor": "#dea584",
-      "pushedAt": "2026-11-20T14:19:51Z"
+      "pushedAt": "2026-11-22T10:06:45Z"
     },
     {
       "name": "orch-skill",
@@ -72,7 +90,7 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-20T12:17:27Z"
+      "pushedAt": "2026-11-22T08:20:57Z"
     },
     {
       "name": "harness-status-line",
@@ -82,24 +100,6 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-11-19T14:49:17Z"
-    },
-    {
-      "name": "herdr-vscode",
-      "description": "VS Code-style layout and mods for herdr-app",
-      "url": "https://github.com/barnuri/herdr-vscode",
-      "stars": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-19T14:33:11Z"
-    },
-    {
-      "name": "herdr-hc-attach",
-      "description": "",
-      "url": "https://github.com/barnuri/herdr-hc-attach",
-      "stars": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-18T18:22:32Z"
     },
     {
       "name": "herdr-mods",
@@ -112,45 +112,8 @@
     }
   ],
   "contributions": {
-    "total": 3386,
+    "total": 3413,
     "weeks": [
-      [
-        {
-          "date": "2025-11-16",
-          "count": 2,
-          "level": 1
-        },
-        {
-          "date": "2025-11-17",
-          "count": 21,
-          "level": 4
-        },
-        {
-          "date": "2025-11-18",
-          "count": 16,
-          "level": 3
-        },
-        {
-          "date": "2025-11-19",
-          "count": 19,
-          "level": 4
-        },
-        {
-          "date": "2025-11-20",
-          "count": 19,
-          "level": 4
-        },
-        {
-          "date": "2025-11-21",
-          "count": 0,
-          "level": 0
-        },
-        {
-          "date": "2025-11-22",
-          "count": 0,
-          "level": 0
-        }
-      ],
       [
         {
           "date": "2025-11-23",
@@ -2066,19 +2029,169 @@
         },
         {
           "date": "2026-11-20",
-          "count": 11,
+          "count": 12,
           "level": 3
         },
         {
           "date": "2026-11-21",
-          "count": 0,
-          "level": 0
+          "count": 6,
+          "level": 2
+        }
+      ],
+      [
+        {
+          "date": "2026-11-22",
+          "count": 20,
+          "level": 4
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-22",
+        "kind": "commits",
+        "occurredAt": "2026-11-22T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-22",
+        "kind": "commits",
+        "occurredAt": "2026-11-22T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-vscode:2026-11-22",
+        "kind": "commits",
+        "occurredAt": "2026-11-22T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-vscode",
+          "url": "https://github.com/barnuri/herdr-vscode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-vscode/commits",
+        "count": 2,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-hc-attach:2026-11-22",
+        "kind": "commits",
+        "occurredAt": "2026-11-22T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-hc-attach",
+          "url": "https://github.com/barnuri/herdr-hc-attach"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-hc-attach/commits",
+        "count": 3,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/25",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T07:46:47Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Document known local model issues",
+        "url": "https://github.com/barnuri/llm-hub/pull/25",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/24",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-21T23:03:08Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Turn extensions and single rules on and off by env and UI",
+        "url": "https://github.com/barnuri/llm-hub/pull/24",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/23",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-21T22:14:08Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add local model tuner, prefill guard and notification system",
+        "url": "https://github.com/barnuri/llm-hub/pull/23",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/22",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-21T17:40:48Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Show managed profiles stopped on purpose as idle, not unhealthy",
+        "url": "https://github.com/barnuri/llm-hub/pull/22",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/21",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-21T16:44:45Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Managed profiles: start never-idle ones at boot, show stopped ones as idle",
+        "url": "https://github.com/barnuri/llm-hub/pull/21",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-21",
+        "kind": "commits",
+        "occurredAt": "2026-11-21T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-21",
+        "kind": "commits",
+        "occurredAt": "2026-11-21T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 2,
+        "state": null
+      },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/20",
         "kind": "pull_request",
@@ -2180,7 +2293,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 1,
+        "count": 2,
         "state": null
       },
       {
@@ -6448,7 +6561,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2333
+    "privateContributions": 2340
   },
   "stats": {
     "publicRepos": 45,
@@ -6458,17 +6571,17 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 48.2
+        "share": 47.1
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 30.5
+        "share": 30
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 12.7
+        "share": 14.5
       },
       {
         "name": "Swift",
@@ -6478,7 +6591,7 @@
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 2
+        "share": 1.9
       },
       {
         "name": "CSS",
@@ -6497,8 +6610,8 @@
       }
     ],
     "year": {
-      "commits": 875,
-      "pullRequests": 68,
+      "commits": 890,
+      "pullRequests": 73,
       "reviews": 5,
       "issues": 3,
       "reposCreated": 24,
