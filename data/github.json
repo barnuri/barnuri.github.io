@@ -13,7 +13,7 @@
       "name": "ghx",
       "description": "Use the right GitHub account in every folder: a thin per-directory profile wrapper for the gh CLI",
       "url": "https://github.com/barnuri/ghx",
-      "stars": 7,
+      "stars": 8,
       "language": "Go",
       "languageColor": "#00ADD8",
       "pushedAt": "2026-11-16T07:28:12Z"
@@ -57,6 +57,24 @@
   ],
   "recent": [
     {
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
+      "stars": 0,
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-23T10:10:20Z"
+    },
+    {
+      "name": "orch-skill",
+      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
+      "url": "https://github.com/barnuri/orch-skill",
+      "stars": 0,
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-23T07:32:48Z"
+    },
+    {
       "name": "herdr-vscode",
       "description": "VS Code-style layout and mods for herdr-app",
       "url": "https://github.com/barnuri/herdr-vscode",
@@ -73,24 +91,6 @@
       "language": "JavaScript",
       "languageColor": "#f1e05a",
       "pushedAt": "2026-11-22T10:25:10Z"
-    },
-    {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
-      "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-22T10:06:45Z"
-    },
-    {
-      "name": "orch-skill",
-      "description": "Orchestrate agent work across Claude Code, cursor-agent, opencode and local OpenAI-compatible models — profile routing, background DAGs, live dashboard",
-      "url": "https://github.com/barnuri/orch-skill",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-22T08:20:57Z"
     },
     {
       "name": "harness-status-line",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 3413,
+    "total": 3393,
     "weeks": [
       [
         {
@@ -2041,6 +2041,11 @@
       [
         {
           "date": "2026-11-22",
+          "count": 57,
+          "level": 4
+        },
+        {
+          "date": "2026-11-23",
           "count": 20,
           "level": 4
         }
@@ -2049,6 +2054,227 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "issue:https://github.com/herdrdev/herdr-app/issues/1359",
+        "kind": "issue",
+        "occurredAt": "2026-11-23T09:44:59Z",
+        "repo": {
+          "name": "herdrdev/herdr-app",
+          "url": "https://github.com/herdrdev/herdr-app"
+        },
+        "title": "Pass terminal file link line and column to mod handlers",
+        "url": "https://github.com/herdrdev/herdr-app/issues/1359",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "issue:https://github.com/herdrdev/herdr-app/issues/1358",
+        "kind": "issue",
+        "occurredAt": "2026-11-23T09:44:46Z",
+        "repo": {
+          "name": "herdrdev/herdr-app",
+          "url": "https://github.com/herdrdev/herdr-app"
+        },
+        "title": "Mods need editor scroll and whole-line decoration APIs",
+        "url": "https://github.com/herdrdev/herdr-app/issues/1358",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/38",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T09:09:01Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Restore media skip mode (#20) that PR 37 dropped",
+        "url": "https://github.com/barnuri/llm-hub/pull/38",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/37",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T08:20:44Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Integrate leftover local-serving, Smart Auto and insights work (review)",
+        "url": "https://github.com/barnuri/llm-hub/pull/37",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-23",
+        "kind": "commits",
+        "occurredAt": "2026-11-23T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-23",
+        "kind": "commits",
+        "occurredAt": "2026-11-23T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/36",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T06:28:07Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add watchdog for local model streams",
+        "url": "https://github.com/barnuri/llm-hub/pull/36",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/35",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T05:57:08Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Docs: clarify native local serving behavior",
+        "url": "https://github.com/barnuri/llm-hub/pull/35",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/34",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T21:49:30Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Document native local model serving",
+        "url": "https://github.com/barnuri/llm-hub/pull/34",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/33",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T21:42:14Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Tuner: native probe, stream_stall rule, per-model approve",
+        "url": "https://github.com/barnuri/llm-hub/pull/33",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/32",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T18:10:35Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Keep the server running when a profile configuration is invalid",
+        "url": "https://github.com/barnuri/llm-hub/pull/32",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/31",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T17:12:42Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Ensure the installed service is healthy on startup",
+        "url": "https://github.com/barnuri/llm-hub/pull/31",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/30",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T15:22:58Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Accept millisecond idle and start timeouts for managed processes",
+        "url": "https://github.com/barnuri/llm-hub/pull/30",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/29",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T15:08:03Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Native local model serving: per-model pool, memory budget, mistral.rs engine",
+        "url": "https://github.com/barnuri/llm-hub/pull/29",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/28",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T12:25:33Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Run CI tests with nextest and cache every branch",
+        "url": "https://github.com/barnuri/llm-hub/pull/28",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/27",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T12:11:30Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Retry Copilot refusals of chat and messages on /responses",
+        "url": "https://github.com/barnuri/llm-hub/pull/27",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/26",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-22T11:39:02Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Speed up local builds and fix a test hub port race",
+        "url": "https://github.com/barnuri/llm-hub/pull/26",
+        "count": null,
+        "state": "MERGED"
+      },
       {
         "id": "commits:barnuri/orch-skill:2026-11-22",
         "kind": "commits",
@@ -2059,7 +2285,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 3,
+        "count": 23,
         "state": null
       },
       {
@@ -2072,7 +2298,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 3,
+        "count": 11,
         "state": null
       },
       {
@@ -2723,7 +2949,7 @@
         "title": "Right-to-left text (Hebrew, Arabic) shows reversed in terminal panes",
         "url": "https://github.com/herdrdev/herdr-app/issues/1198",
         "count": null,
-        "state": "OPEN"
+        "state": "CLOSED"
       },
       {
         "id": "repository:barnuri/herdr-app",
@@ -6561,32 +6787,32 @@
         "state": null
       }
     ],
-    "privateContributions": 2340
+    "privateContributions": 2344
   },
   "stats": {
     "publicRepos": 45,
-    "stars": 55,
+    "stars": 56,
     "followers": 6,
     "languages": [
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 47.1
+        "share": 46.5
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 30
+        "share": 29.8
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 14.5
+        "share": 15.4
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 2.3
+        "share": 2.2
       },
       {
         "name": "Shell",
@@ -6610,10 +6836,10 @@
       }
     ],
     "year": {
-      "commits": 890,
-      "pullRequests": 73,
+      "commits": 928,
+      "pullRequests": 86,
       "reviews": 5,
-      "issues": 3,
+      "issues": 5,
       "reposCreated": 24,
       "contributedRepos": 30
     }
