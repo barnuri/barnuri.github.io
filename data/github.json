@@ -63,7 +63,7 @@
       "stars": 0,
       "language": "Rust",
       "languageColor": "#dea584",
-      "pushedAt": "2026-11-23T10:10:20Z"
+      "pushedAt": "2026-11-24T13:20:16Z"
     },
     {
       "name": "orch-skill",
@@ -72,7 +72,7 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-23T07:32:48Z"
+      "pushedAt": "2026-11-24T10:20:00Z"
     },
     {
       "name": "herdr-vscode",
@@ -112,7 +112,7 @@
     }
   ],
   "contributions": {
-    "total": 3393,
+    "total": 3457,
     "weeks": [
       [
         {
@@ -2046,7 +2046,12 @@
         },
         {
           "date": "2026-11-23",
-          "count": 20,
+          "count": 54,
+          "level": 4
+        },
+        {
+          "date": "2026-11-24",
+          "count": 30,
           "level": 4
         }
       ]
@@ -2054,6 +2059,188 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/50",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T13:20:25Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "scripts: measure prompt-cache savings before and after a deploy",
+        "url": "https://github.com/barnuri/llm-hub/pull/50",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/49",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T10:10:06Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "ui: GitHub repo icon and issues bug icon in the header",
+        "url": "https://github.com/barnuri/llm-hub/pull/49",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/48",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T09:37:52Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "ci: run the binary-size build only when it can matter",
+        "url": "https://github.com/barnuri/llm-hub/pull/48",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/47",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T09:29:37Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "tests: remove a 35 s stall on macOS CI and shorten the heavy tests",
+        "url": "https://github.com/barnuri/llm-hub/pull/47",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/46",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T09:14:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "tests: one integration-test binary",
+        "url": "https://github.com/barnuri/llm-hub/pull/46",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/45",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T08:52:36Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "tests: poll hub readiness every 10 ms",
+        "url": "https://github.com/barnuri/llm-hub/pull/45",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/44",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T08:33:54Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "store: open sqlite in WAL mode with NORMAL syncing",
+        "url": "https://github.com/barnuri/llm-hub/pull/44",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-24",
+        "kind": "commits",
+        "occurredAt": "2026-11-24T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 10,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-24",
+        "kind": "commits",
+        "occurredAt": "2026-11-24T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 7,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/43",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T06:12:27Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "ci: run the unit tests in one process on Windows",
+        "url": "https://github.com/barnuri/llm-hub/pull/43",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/42",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T22:24:27Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Make parallel test runs deterministic",
+        "url": "https://github.com/barnuri/llm-hub/pull/42",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/41",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T20:32:57Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add mistral.rs serving integration tests and GGUF smoke test",
+        "url": "https://github.com/barnuri/llm-hub/pull/41",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/40",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T20:10:02Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add local model engine switching and UI controls",
+        "url": "https://github.com/barnuri/llm-hub/pull/40",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/39",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-23T18:58:03Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add header bug-report link",
+        "url": "https://github.com/barnuri/llm-hub/pull/39",
+        "count": null,
+        "state": "MERGED"
+      },
       {
         "id": "issue:https://github.com/herdrdev/herdr-app/issues/1359",
         "kind": "issue",
@@ -2116,7 +2303,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 5,
+        "count": 31,
         "state": null
       },
       {
@@ -2129,7 +2316,20 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 5,
+        "count": 8,
+        "state": null
+      },
+      {
+        "id": "commits:herdrdev/herdr-app:2026-11-23",
+        "kind": "commits",
+        "occurredAt": "2026-11-23T08:00:00Z",
+        "repo": {
+          "name": "herdrdev/herdr-app",
+          "url": "https://github.com/herdrdev/herdr-app"
+        },
+        "title": null,
+        "url": "https://github.com/herdrdev/herdr-app/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -2663,7 +2863,7 @@
         "title": "feat: pass line and column of terminal file links to mod link handlers",
         "url": "https://github.com/herdrdev/herdr-app/pull/1237",
         "count": null,
-        "state": "OPEN"
+        "state": "MERGED"
       },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/10",
@@ -6787,7 +6987,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2344
+    "privateContributions": 2343
   },
   "stats": {
     "publicRepos": 45,
@@ -6797,17 +6997,17 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 46.5
+        "share": 45.6
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 29.8
+        "share": 31.1
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 15.4
+        "share": 15.1
       },
       {
         "name": "Swift",
@@ -6830,18 +7030,18 @@
         "share": 0.9
       },
       {
-        "name": "HTML",
-        "color": "#e34c26",
+        "name": "Python",
+        "color": "#3572A5",
         "share": 0.6
       }
     ],
     "year": {
-      "commits": 928,
-      "pullRequests": 86,
+      "commits": 975,
+      "pullRequests": 98,
       "reviews": 5,
       "issues": 5,
       "reposCreated": 24,
-      "contributedRepos": 30
+      "contributedRepos": 31
     }
   }
 }
