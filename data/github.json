@@ -57,13 +57,13 @@
   ],
   "recent": [
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
+      "name": "herdr-vscode",
+      "description": "VS Code-style layout and mods for herdr-app",
+      "url": "https://github.com/barnuri/herdr-vscode",
       "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-24T13:20:16Z"
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-25T12:35:31Z"
     },
     {
       "name": "orch-skill",
@@ -72,16 +72,25 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-24T10:20:00Z"
+      "pushedAt": "2026-11-25T12:29:32Z"
     },
     {
-      "name": "herdr-vscode",
-      "description": "VS Code-style layout and mods for herdr-app",
-      "url": "https://github.com/barnuri/herdr-vscode",
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
       "stars": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-22T10:55:01Z"
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-25T12:12:53Z"
+    },
+    {
+      "name": "dev-tools",
+      "description": "",
+      "url": "https://github.com/barnuri/dev-tools",
+      "stars": 0,
+      "language": "Shell",
+      "languageColor": "#89e051",
+      "pushedAt": "2026-11-25T09:47:01Z"
     },
     {
       "name": "herdr-hc-attach",
@@ -100,19 +109,10 @@
       "language": "TypeScript",
       "languageColor": "#3178c6",
       "pushedAt": "2026-11-19T14:49:17Z"
-    },
-    {
-      "name": "herdr-mods",
-      "description": "Run Claude Code style mods for opencode in herdr panes",
-      "url": "https://github.com/barnuri/herdr-mods",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-18T15:33:47Z"
     }
   ],
   "contributions": {
-    "total": 3457,
+    "total": 3549,
     "weeks": [
       [
         {
@@ -582,7 +582,7 @@
         {
           "date": "2026-02-19",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-02-20",
@@ -656,7 +656,7 @@
         {
           "date": "2026-03-05",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-03-06",
@@ -693,7 +693,7 @@
         {
           "date": "2026-03-12",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-03-13",
@@ -1603,7 +1603,7 @@
         {
           "date": "2026-08-31",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-09-01",
@@ -1820,7 +1820,7 @@
         {
           "date": "2026-10-11",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-10-12",
@@ -1840,7 +1840,7 @@
         {
           "date": "2026-10-15",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-10-16",
@@ -2005,7 +2005,7 @@
         {
           "date": "2026-11-15",
           "count": 19,
-          "level": 4
+          "level": 3
         },
         {
           "date": "2026-11-16",
@@ -2041,17 +2041,22 @@
       [
         {
           "date": "2026-11-22",
-          "count": 57,
+          "count": 58,
           "level": 4
         },
         {
           "date": "2026-11-23",
-          "count": 54,
+          "count": 58,
           "level": 4
         },
         {
           "date": "2026-11-24",
-          "count": 30,
+          "count": 78,
+          "level": 4
+        },
+        {
+          "date": "2026-11-25",
+          "count": 39,
           "level": 4
         }
       ]
@@ -2059,6 +2064,214 @@
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/60",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T11:37:01Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "opencode launcher: attach to the shared opencode service",
+        "url": "https://github.com/barnuri/llm-hub/pull/60",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/59",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T11:14:06Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Record cache write tokens and reuse the llama.cpp KV cache slot per stream",
+        "url": "https://github.com/barnuri/llm-hub/pull/59",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/58",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T10:53:47Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Return a refused only endpoint's 400 without a second upstream call",
+        "url": "https://github.com/barnuri/llm-hub/pull/58",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/57",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T10:24:31Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "deploy-stable: thin LTO for local service builds",
+        "url": "https://github.com/barnuri/llm-hub/pull/57",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "issue:https://github.com/jj-vcs/jj/issues/10767",
+        "kind": "issue",
+        "occurredAt": "2026-11-25T10:01:18Z",
+        "repo": {
+          "name": "jj-vcs/jj",
+          "url": "https://github.com/jj-vcs/jj"
+        },
+        "title": "FR: an opt-in `git`-compatible CLI mode, so `jj` can stand in for the `git` binary",
+        "url": "https://github.com/jj-vcs/jj/issues/10767",
+        "count": null,
+        "state": "OPEN"
+      },
+      {
+        "id": "issue:https://github.com/jj-vcs/jj/issues/10766",
+        "kind": "issue",
+        "occurredAt": "2026-11-25T10:01:02Z",
+        "repo": {
+          "name": "jj-vcs/jj",
+          "url": "https://github.com/jj-vcs/jj"
+        },
+        "title": "FR: an opt-in `git`-compatible CLI mode, so `jj` can stand in for the `git` binary",
+        "url": "https://github.com/jj-vcs/jj/issues/10766",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/56",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T09:23:47Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Tests under 1 s: in-process hub and _MS timing settings",
+        "url": "https://github.com/barnuri/llm-hub/pull/56",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-25",
+        "kind": "commits",
+        "occurredAt": "2026-11-25T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 13,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-25",
+        "kind": "commits",
+        "occurredAt": "2026-11-25T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 8,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-11-25",
+        "kind": "commits",
+        "occurredAt": "2026-11-25T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-vscode:2026-11-25",
+        "kind": "commits",
+        "occurredAt": "2026-11-25T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-vscode",
+          "url": "https://github.com/barnuri/herdr-vscode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-vscode/commits",
+        "count": 5,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/55",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T07:02:01Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Close data gaps G7-G10: stream label, fallback session, tool count, cache writes",
+        "url": "https://github.com/barnuri/llm-hub/pull/55",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/54",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T05:52:25Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Deploy stable releases for the always-on service",
+        "url": "https://github.com/barnuri/llm-hub/pull/54",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/53",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T22:19:23Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Cache-aware routing and prompt-cache hints for every provider",
+        "url": "https://github.com/barnuri/llm-hub/pull/53",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/52",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T17:10:01Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Tests: spawned hubs exit with their test; faster local-serving tests",
+        "url": "https://github.com/barnuri/llm-hub/pull/52",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/51",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-24T14:40:31Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Remove the local git hooks; GitHub checks are the gate",
+        "url": "https://github.com/barnuri/llm-hub/pull/51",
+        "count": null,
+        "state": "MERGED"
+      },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/50",
         "kind": "pull_request",
@@ -2070,7 +2283,7 @@
         "title": "scripts: measure prompt-cache savings before and after a deploy",
         "url": "https://github.com/barnuri/llm-hub/pull/50",
         "count": null,
-        "state": "OPEN"
+        "state": "MERGED"
       },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/49",
@@ -2160,7 +2373,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 10,
+        "count": 42,
         "state": null
       },
       {
@@ -2173,7 +2386,33 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 7,
+        "count": 9,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/dev-tools:2026-11-24",
+        "kind": "commits",
+        "occurredAt": "2026-11-24T08:00:00Z",
+        "repo": {
+          "name": "barnuri/dev-tools",
+          "url": "https://github.com/barnuri/dev-tools"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/dev-tools/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/herdr-vscode:2026-11-24",
+        "kind": "commits",
+        "occurredAt": "2026-11-24T08:00:00Z",
+        "repo": {
+          "name": "barnuri/herdr-vscode",
+          "url": "https://github.com/barnuri/herdr-vscode"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/herdr-vscode/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -2252,7 +2491,7 @@
         "title": "Pass terminal file link line and column to mod handlers",
         "url": "https://github.com/herdrdev/herdr-app/issues/1359",
         "count": null,
-        "state": "OPEN"
+        "state": "CLOSED"
       },
       {
         "id": "issue:https://github.com/herdrdev/herdr-app/issues/1358",
@@ -2303,7 +2542,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 31,
+        "count": 35,
         "state": null
       },
       {
@@ -2511,7 +2750,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/herdr-vscode/commits",
-        "count": 2,
+        "count": 3,
         "state": null
       },
       {
@@ -6987,7 +7226,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2343
+    "privateContributions": 2346
   },
   "stats": {
     "publicRepos": 45,
@@ -6997,22 +7236,22 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 45.6
+        "share": 44.8
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 31.1
+        "share": 31.9
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 15.1
+        "share": 15.2
       },
       {
         "name": "Swift",
         "color": "#F05138",
-        "share": 2.2
+        "share": 2.1
       },
       {
         "name": "Shell",
@@ -7036,12 +7275,12 @@
       }
     ],
     "year": {
-      "commits": 975,
-      "pullRequests": 98,
-      "reviews": 5,
-      "issues": 5,
+      "commits": 1041,
+      "pullRequests": 107,
+      "reviews": 4,
+      "issues": 7,
       "reposCreated": 24,
-      "contributedRepos": 31
+      "contributedRepos": 30
     }
   }
 }
