@@ -57,13 +57,13 @@
   ],
   "recent": [
     {
-      "name": "herdr-vscode",
-      "description": "VS Code-style layout and mods for herdr-app",
-      "url": "https://github.com/barnuri/herdr-vscode",
+      "name": "llm-hub",
+      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
+      "url": "https://github.com/barnuri/llm-hub",
       "stars": 0,
-      "language": "JavaScript",
-      "languageColor": "#f1e05a",
-      "pushedAt": "2026-11-25T12:35:31Z"
+      "language": "Rust",
+      "languageColor": "#dea584",
+      "pushedAt": "2026-11-26T12:20:11Z"
     },
     {
       "name": "orch-skill",
@@ -72,16 +72,25 @@
       "stars": 0,
       "language": "TypeScript",
       "languageColor": "#3178c6",
-      "pushedAt": "2026-11-25T12:29:32Z"
+      "pushedAt": "2026-11-26T05:57:46Z"
     },
     {
-      "name": "llm-hub",
-      "description": "One endpoint that merges many OpenAI-compatible LLM proxies, exposing every upstream model as profile/model",
-      "url": "https://github.com/barnuri/llm-hub",
+      "name": "harness-status-line",
+      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
+      "url": "https://github.com/barnuri/harness-status-line",
       "stars": 0,
-      "language": "Rust",
-      "languageColor": "#dea584",
-      "pushedAt": "2026-11-25T12:12:53Z"
+      "language": "TypeScript",
+      "languageColor": "#3178c6",
+      "pushedAt": "2026-11-25T13:12:25Z"
+    },
+    {
+      "name": "herdr-vscode",
+      "description": "VS Code-style layout and mods for herdr-app",
+      "url": "https://github.com/barnuri/herdr-vscode",
+      "stars": 0,
+      "language": "JavaScript",
+      "languageColor": "#f1e05a",
+      "pushedAt": "2026-11-25T12:53:31Z"
     },
     {
       "name": "dev-tools",
@@ -100,19 +109,10 @@
       "language": "JavaScript",
       "languageColor": "#f1e05a",
       "pushedAt": "2026-11-22T10:25:10Z"
-    },
-    {
-      "name": "harness-status-line",
-      "description": "Claude Code status line — cwd | model | context% | tokens | rate-limit stats",
-      "url": "https://github.com/barnuri/harness-status-line",
-      "stars": 0,
-      "language": "TypeScript",
-      "languageColor": "#3178c6",
-      "pushedAt": "2026-11-19T14:49:17Z"
     }
   ],
   "contributions": {
-    "total": 3549,
+    "total": 3614,
     "weeks": [
       [
         {
@@ -419,7 +419,7 @@
         {
           "date": "2026-01-19",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-01-20",
@@ -863,7 +863,7 @@
         {
           "date": "2026-04-13",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-04-14",
@@ -900,7 +900,7 @@
         {
           "date": "2026-04-20",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-04-21",
@@ -1401,7 +1401,7 @@
         {
           "date": "2026-07-24",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-07-25",
@@ -1487,7 +1487,7 @@
         {
           "date": "2026-08-09",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-08-10",
@@ -1655,7 +1655,7 @@
         {
           "date": "2026-09-10",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-09-11",
@@ -1904,7 +1904,7 @@
         {
           "date": "2026-10-27",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-10-28",
@@ -1973,7 +1973,7 @@
         {
           "date": "2026-11-09",
           "count": 4,
-          "level": 2
+          "level": 1
         },
         {
           "date": "2026-11-10",
@@ -2046,24 +2046,289 @@
         },
         {
           "date": "2026-11-23",
-          "count": 58,
+          "count": 59,
           "level": 4
         },
         {
           "date": "2026-11-24",
-          "count": 78,
+          "count": 80,
           "level": 4
         },
         {
           "date": "2026-11-25",
-          "count": 39,
+          "count": 83,
           "level": 4
+        },
+        {
+          "date": "2026-11-26",
+          "count": 18,
+          "level": 3
         }
       ]
     ]
   },
   "activity": {
     "items": [
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/78",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T12:14:42Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Make the readiness poll interval a hub timing and shorten it in tests, so real-process tests stop sitting near the per-test limit",
+        "url": "https://github.com/barnuri/llm-hub/pull/78",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/77",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T10:40:59Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Managed processes: a request in flight keeps its process from being stopped as idle",
+        "url": "https://github.com/barnuri/llm-hub/pull/77",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/76",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T10:17:34Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Load the system root certificates once per process instead of per HTTP client",
+        "url": "https://github.com/barnuri/llm-hub/pull/76",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/75",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T10:08:31Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "diag: throwaway profile",
+        "url": "https://github.com/barnuri/llm-hub/pull/75",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/74",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T09:55:06Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Speed up tests: build one HTTP client per hub, skip root certs for the local health probe, no price fetch in test hubs; add the no-gate-raising rule",
+        "url": "https://github.com/barnuri/llm-hub/pull/74",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/73",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T08:51:32Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add llm-hub setup <harness>: persistent hub config for every harness",
+        "url": "https://github.com/barnuri/llm-hub/pull/73",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "commits:barnuri/orch-skill:2026-11-26",
+        "kind": "commits",
+        "occurredAt": "2026-11-26T08:00:00Z",
+        "repo": {
+          "name": "barnuri/orch-skill",
+          "url": "https://github.com/barnuri/orch-skill"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/orch-skill/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/llm-hub:2026-11-26",
+        "kind": "commits",
+        "occurredAt": "2026-11-26T08:00:00Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/llm-hub/commits",
+        "count": 8,
+        "state": null
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/72",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-26T06:00:02Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Keep warm: count Copilot prompts as cached, tier-priced pings, since-start skip counts",
+        "url": "https://github.com/barnuri/llm-hub/pull/72",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/71",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T21:50:24Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Offer 1M models as bare id at 200k and [1m] at 1M; accept window suffixes",
+        "url": "https://github.com/barnuri/llm-hub/pull/71",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/70",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T20:45:32Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Set 24-hour quota cooldown per profile",
+        "url": "https://github.com/barnuri/llm-hub/pull/70",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/69",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T16:39:11Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Zero-gap restart, T21 tuner test, test speed gate",
+        "url": "https://github.com/barnuri/llm-hub/pull/69",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/68",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T16:26:45Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add the Phase 4 tuner integration test",
+        "url": "https://github.com/barnuri/llm-hub/pull/68",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/67",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T16:23:49Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Remove mistral.rs build jobs from the release workflow",
+        "url": "https://github.com/barnuri/llm-hub/pull/67",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/66",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T16:01:12Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Restart without a gap: refuse while busy, hand over to a successor",
+        "url": "https://github.com/barnuri/llm-hub/pull/66",
+        "count": null,
+        "state": "CLOSED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/65",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T15:23:12Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Build release in parallel with tests; tag after both pass",
+        "url": "https://github.com/barnuri/llm-hub/pull/65",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/64",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T14:46:18Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add a parallel mistral.rs release stream for every platform",
+        "url": "https://github.com/barnuri/llm-hub/pull/64",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/63",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T14:29:28Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add prompt-cache analysis, Overview cache-hit tile and cache-miss notifications",
+        "url": "https://github.com/barnuri/llm-hub/pull/63",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/62",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T13:52:34Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Log and count keep-warm skip reasons",
+        "url": "https://github.com/barnuri/llm-hub/pull/62",
+        "count": null,
+        "state": "MERGED"
+      },
+      {
+        "id": "pull_request:https://github.com/barnuri/llm-hub/pull/61",
+        "kind": "pull_request",
+        "occurredAt": "2026-11-25T13:50:27Z",
+        "repo": {
+          "name": "barnuri/llm-hub",
+          "url": "https://github.com/barnuri/llm-hub"
+        },
+        "title": "Add per-model context caps for llm-hub opencode",
+        "url": "https://github.com/barnuri/llm-hub/pull/61",
+        "count": null,
+        "state": "MERGED"
+      },
       {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/60",
         "kind": "pull_request",
@@ -2127,7 +2392,7 @@
         "title": "FR: an opt-in `git`-compatible CLI mode, so `jj` can stand in for the `git` binary",
         "url": "https://github.com/jj-vcs/jj/issues/10767",
         "count": null,
-        "state": "OPEN"
+        "state": "CLOSED"
       },
       {
         "id": "issue:https://github.com/jj-vcs/jj/issues/10766",
@@ -2165,7 +2430,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/orch-skill/commits",
-        "count": 13,
+        "count": 26,
         "state": null
       },
       {
@@ -2178,7 +2443,7 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/llm-hub/commits",
-        "count": 8,
+        "count": 15,
         "state": null
       },
       {
@@ -2204,7 +2469,20 @@
         },
         "title": null,
         "url": "https://github.com/barnuri/herdr-vscode/commits",
-        "count": 5,
+        "count": 7,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-25",
+        "kind": "commits",
+        "occurredAt": "2026-11-25T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
         "state": null
       },
       {
@@ -2416,6 +2694,19 @@
         "state": null
       },
       {
+        "id": "commits:barnuri/harness-status-line:2026-11-24",
+        "kind": "commits",
+        "occurredAt": "2026-11-24T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
+        "count": 1,
+        "state": null
+      },
+      {
         "id": "pull_request:https://github.com/barnuri/llm-hub/pull/43",
         "kind": "pull_request",
         "occurredAt": "2026-11-24T06:12:27Z",
@@ -2568,6 +2859,19 @@
         },
         "title": null,
         "url": "https://github.com/herdrdev/herdr-app/commits",
+        "count": 1,
+        "state": null
+      },
+      {
+        "id": "commits:barnuri/harness-status-line:2026-11-23",
+        "kind": "commits",
+        "occurredAt": "2026-11-23T08:00:00Z",
+        "repo": {
+          "name": "barnuri/harness-status-line",
+          "url": "https://github.com/barnuri/harness-status-line"
+        },
+        "title": null,
+        "url": "https://github.com/barnuri/harness-status-line/commits",
         "count": 1,
         "state": null
       },
@@ -7226,7 +7530,7 @@
         "state": null
       }
     ],
-    "privateContributions": 2346
+    "privateContributions": 2349
   },
   "stats": {
     "publicRepos": 45,
@@ -7236,17 +7540,17 @@
       {
         "name": "JavaScript",
         "color": "#f1e05a",
-        "share": 44.8
+        "share": 45
       },
       {
         "name": "TypeScript",
         "color": "#3178c6",
-        "share": 31.9
+        "share": 31.6
       },
       {
         "name": "Rust",
         "color": "#dea584",
-        "share": 15.2
+        "share": 15.5
       },
       {
         "name": "Swift",
@@ -7256,7 +7560,7 @@
       {
         "name": "Shell",
         "color": "#89e051",
-        "share": 1.9
+        "share": 1.8
       },
       {
         "name": "CSS",
@@ -7266,7 +7570,7 @@
       {
         "name": "C#",
         "color": "#7355dd",
-        "share": 0.9
+        "share": 0.8
       },
       {
         "name": "Python",
@@ -7275,12 +7579,12 @@
       }
     ],
     "year": {
-      "commits": 1041,
-      "pullRequests": 107,
+      "commits": 1074,
+      "pullRequests": 125,
       "reviews": 4,
       "issues": 7,
       "reposCreated": 24,
-      "contributedRepos": 30
+      "contributedRepos": 29
     }
   }
 }
